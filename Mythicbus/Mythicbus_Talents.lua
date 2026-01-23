@@ -60,6 +60,16 @@ local function GetData()
   return _G.Mythicbus_WowheadResults or {}
 end
 
+local function GetImageSize(path)
+  local sizes = _G.Mythicbus_ImageSizes
+  if not sizes or not path then return nil end
+  local name = tostring(path):gsub("\\", "/"):match("([^/]+)$")
+  if not name then return nil end
+  local info = sizes[name]
+  if not info then return nil end
+  return tonumber(info.width), tonumber(info.height)
+end
+
 -- ======================
 -- Class mapping (classFile -> English class name used in your CSV/Lua)
 -- ======================
@@ -160,9 +170,22 @@ local UI = {
   specDropdown = nil,
 }
 
+local ROW_HEIGHT = 40
+local ROW_GAP = 4
+
 local function SafeTrim(s)
   if not s then return "" end
   return (tostring(s):gsub("^%s+",""):gsub("%s+$",""))
+end
+
+local function BuildImagePath(p)
+  if not p or p == "" then return nil end
+  p = tostring(p):gsub("\\", "/")
+  p = p:gsub("%.png$", ".tga")
+  if p:match("^Interface/") then
+    return p:gsub("/", "\\")
+  end
+  return ("Interface\\AddOns\\Mythicbus\\%s"):format(p:gsub("/", "\\"))
 end
 
 local function SetCopyBox(text, title)
@@ -192,7 +215,7 @@ local function EnsureTalentsWindow()
   TFrame:SetClampedToScreen(true)
   TFrame:SetScript("OnDragStart", TFrame.StartMoving)
   TFrame:SetScript("OnDragStop",  TFrame.StopMovingOrSizing)
-  TFrame.TitleText:SetText("Mythicbus – Talents")
+  TFrame.TitleText:SetText("Mythicbus - Talents")
 
   local parent = _G.MythicbusFrame
   if parent and parent:GetWidth() then
@@ -300,9 +323,9 @@ local function EnsureRow(i)
   if not content then return nil end
 
   local row = CreateFrame("Frame", nil, content)
-  row:SetHeight(36)
-  row:SetPoint("TOPLEFT", 0, -(i-1)*38)
-  row:SetPoint("TOPRIGHT", 0, -(i-1)*38)
+  row:SetHeight(ROW_HEIGHT)
+  row:SetPoint("TOPLEFT", 0, 0)
+  row:SetPoint("TOPRIGHT", 0, 0)
 
   row.bg = row:CreateTexture(nil, "BACKGROUND")
   row.bg:SetAllPoints(true)
@@ -323,8 +346,19 @@ local function EnsureRow(i)
   row.buildBtn = CreateFrame("Button", nil, row, "UIPanelButtonTemplate")
   row.buildBtn:SetPoint("LEFT", 8, 0)
   row.buildBtn:SetPoint("RIGHT", row.sourceText, "LEFT", -10, 0)
-  row.buildBtn:SetHeight(24)
+  row.buildBtn:SetHeight(ROW_HEIGHT - 8)
   row.buildBtn:SetText("Copy Build")
+  if row.buildBtn.Left then row.buildBtn.Left:Hide() end
+  if row.buildBtn.Middle then row.buildBtn.Middle:Hide() end
+  if row.buildBtn.Right then row.buildBtn.Right:Hide() end
+  local normal = row.buildBtn:GetNormalTexture()
+  if normal then normal:SetTexture(nil); normal:Hide() end
+  local pushed = row.buildBtn:GetPushedTexture()
+  if pushed then pushed:SetTexture(nil); pushed:Hide() end
+  local highlight = row.buildBtn:GetHighlightTexture()
+  if highlight then highlight:SetTexture(nil); highlight:Hide() end
+  row.buildTex = row.buildBtn:CreateTexture(nil, "BACKGROUND")
+  row.buildTex:Hide()
 
   UI.rows[i] = row
   return row
@@ -341,7 +375,7 @@ local function RefreshList()
 
   local builds = GetBuildsForSelected()
 
-  UI.content:SetHeight(math.max(1, #builds * 38))
+  local totalHeight = 0
   for i = 1, #UI.rows do UI.rows[i]:Hide() end
 
   if #builds == 0 then
@@ -352,11 +386,71 @@ local function RefreshList()
   for i, b in ipairs(builds) do
     local row = EnsureRow(i)
     row:Show()
-
+    row:ClearAllPoints()
+    row:SetPoint("TOPLEFT", 0, -totalHeight)
+    row:SetPoint("TOPRIGHT", 0, -totalHeight)
     local label = SafeTrim(b.ButtonLabel)
     if label == "" then label = "Copy Build" end
 
-    row.buildBtn:SetText(label)
+    local imgW = tonumber(b.ImageWidth)
+    local imgH = tonumber(b.ImageHeight)
+    if (not imgW or not imgH) and b.ImagePath then
+      local sw, sh = GetImageSize(b.ImagePath)
+      imgW = imgW or sw
+      imgH = imgH or sh
+    end
+    local rowHeight = ROW_HEIGHT
+    if imgH and imgH > 0 and not (imgW == 618 and imgH == 37) then
+      rowHeight = math.max(ROW_HEIGHT, imgH + 8)
+    end
+    row:SetHeight(rowHeight)
+    row.buildBtn:SetHeight(rowHeight - 8)
+
+    local img = BuildImagePath(b.ImagePath)
+    if img then
+      row.buildTex:ClearAllPoints()
+      row.buildTex:SetTexture(img)
+      row.buildTex:Show()
+      row.buildBtn:SetText("")
+      if row.buildBtn.Left then row.buildBtn.Left:Hide() end
+      if row.buildBtn.Middle then row.buildBtn.Middle:Hide() end
+      if row.buildBtn.Right then row.buildBtn.Right:Hide() end
+
+      if imgW and imgH and imgW > 0 and imgH > 0 then
+        local btnW, btnH = row.buildBtn:GetSize()
+        if btnW and btnH and btnW > 0 and btnH > 0 then
+          if imgW == 618 and imgH == 37 then
+            row.buildTex:SetAllPoints(true)
+          else
+            local scale = math.min(1, btnW / imgW, btnH / imgH)
+            local targetW = math.floor((imgW * scale) + 0.5)
+            local targetH = math.floor((imgH * scale) + 0.5)
+            row.buildTex:SetPoint("LEFT", row.buildBtn, "LEFT", 4, 0)
+            row.buildTex:SetSize(targetW, targetH)
+          end
+        else
+          row.buildTex:SetAllPoints(true)
+        end
+      else
+        row.buildTex:SetAllPoints(true)
+      end
+
+      if not row.buildTex:GetTexture() then
+        row.buildTex:SetTexture(nil)
+        row.buildTex:Hide()
+        row.buildBtn:SetText(label)
+        if row.buildBtn.Left then row.buildBtn.Left:Show() end
+        if row.buildBtn.Middle then row.buildBtn.Middle:Show() end
+        if row.buildBtn.Right then row.buildBtn.Right:Show() end
+      end
+    else
+      row.buildTex:SetTexture(nil)
+      row.buildTex:Hide()
+      row.buildBtn:SetText(label)
+      if row.buildBtn.Left then row.buildBtn.Left:Show() end
+      if row.buildBtn.Middle then row.buildBtn.Middle:Show() end
+      if row.buildBtn.Right then row.buildBtn.Right:Show() end
+    end
 
     row.buildBtn:SetScript("OnClick", function()
       SetCopyBox(b.TalentString or "", label)
@@ -365,7 +459,11 @@ local function RefreshList()
     row.wowheadBtn:SetScript("OnClick", function()
       SetCopyBox(b.URL or "", "Wowhead Source URL")
     end)
+
+    totalHeight = totalHeight + rowHeight + ROW_GAP
   end
+
+  UI.content:SetHeight(math.max(1, totalHeight - ROW_GAP))
 end
 
 -- ======================
@@ -461,9 +559,9 @@ local function SetDetectedAndDefaultSelection()
 
   if UI.detectedText then
     if classEN and specName then
-      UI.detectedText:SetText(("Detected: |cffffffff%s|r – |cffffffff%s|r"):format(classEN, specName))
+      UI.detectedText:SetText(("Detected: |cffffffff%s|r - |cffffffff%s|r"):format(classEN, specName))
     elseif classEN then
-      UI.detectedText:SetText(("Detected: |cffffffff%s|r – |cffff6666(no spec detected)|r"):format(classEN))
+      UI.detectedText:SetText(("Detected: |cffffffff%s|r - |cffff6666(no spec detected)|r"):format(classEN))
     else
       UI.detectedText:SetText("Detected: |cffff6666(unknown)|r")
     end

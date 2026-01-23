@@ -1,0 +1,32 @@
+## Interface: 120000
+## Title: Mythicbus
+## Author: You
+## Version: 0.1.0
+## SavedVariables: MythicbusDB
+
+core.lua
+Talents.lua
+ImageSizes.lua
+ui.lua
+Mythicbus_Bounties.lua
+Mythicbus_Talents.lua
+
+# ======================
+# Guides (load order matters)
+# ======================
+Guides\Mythicbus_GuidesDB.lua
+
+Guides\Mythicbus_GuidesData_AraKara.lua
+Guides\Mythicbus_GuidesData_Dawnbreaker.lua
+Guides\Mythicbus_GuidesData_EcoDomeAldani.lua
+Guides\Mythicbus_GuidesData_HallsOfAtonement_TWW.lua
+Guides\Mythicbus_GuidesData_OperationFloodgate.lua
+Guides\Mythicbus_GuidesData_PrioryOfTheSacredFlame.lua
+Guides\Mythicbus_GuidesData_TazaveshStreetsOfWonder.lua
+Guides\Mythicbus_GuidesData_TazaveshSoleahsGambit.lua
+Guides\Mythicbus_GuidesSources.lua
+
+# Guides UI LAST (so it can read the DB)
+Mythicbus_Guides.lua
+
+

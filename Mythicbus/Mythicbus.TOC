@@ -6,6 +6,7 @@
 
 core.lua
 Talents.lua
+ImageSizes.lua
 ui.lua
 Mythicbus_Bounties.lua
 Mythicbus_Talents.lua
@@ -28,4 +29,3 @@ Guides\Mythicbus_GuidesSources.lua
 # Guides UI LAST (so it can read the DB)
 Mythicbus_Guides.lua
 
-match.lua

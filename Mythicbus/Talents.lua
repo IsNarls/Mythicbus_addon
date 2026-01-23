@@ -9,6 +9,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "1",
     ButtonLabel = "Copy Raid",
     TalentString = "CoPAAAAAAAAAAAAAAAAAAAAAAwYWGzwMGjhZbmZmmZxYmxMGAAAAYmZmZmZmZYGjBAMzMzAAAgxADQwywEYYBwMMDAgZGADA",
+    ImagePath = "Images/box_images/death_knight_blood_01.png",
     URL = "https://www.wowhead.com/guide/classes/death-knight/blood/talent-builds-pve-tank",
   },
   [2] = {
@@ -18,6 +19,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "2",
     ButtonLabel = "Copy Mythic+",
     TalentString = "CoPAAAAAAAAAAAAAAAAAAAAAAwYWmZGmxMzMMLzMz0MMGjZMAAAAgZmZmZmZGmZGAwYmZmBAAAz2ADQwygADLAmhZAAMzAAA",
+    ImagePath = "Images/box_images/death_knight_blood_02.png",
     URL = "https://www.wowhead.com/guide/classes/death-knight/blood/talent-builds-pve-tank",
   },
   [3] = {
@@ -27,6 +29,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "3",
     ButtonLabel = "Copy Cleave",
     TalentString = "CoPAAAAAAAAAAAAAAAAAAAAAAwYWmZGmxMzMMLzMz0MMGjZMAAAAgZmZmZmZGmxYAwYmZmBAAAjBGgglhJwwCgZYGAAzMAA",
+    ImagePath = "Images/box_images/death_knight_blood_03.png",
     URL = "https://www.wowhead.com/guide/classes/death-knight/blood/talent-builds-pve-tank",
   },
   [4] = {
@@ -36,6 +39,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "4",
     ButtonLabel = "Copy Council",
     TalentString = "CoPAAAAAAAAAAAAAAAAAAAAAAwYWmZGmxMzMMLzMz0MMGjZMAAAAgZmZmZmZGmxYAwYmZmBAAAjBGgglhJwwCgZYGAAzMAA",
+    ImagePath = "Images/box_images/death_knight_blood_04.png",
     URL = "https://www.wowhead.com/guide/classes/death-knight/blood/talent-builds-pve-tank",
   },
   [5] = {
@@ -45,6 +49,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "5",
     ButtonLabel = "Copy Delves",
     TalentString = "CoPAAAAAAAAAAAAAAAAAAAAAAwYWmZGmxMzMMLzMz0MMGjZMAAAAgZmZmZmZGmxYAwYmZmBAAAjBGgglhJwwCgZYGAAzMAA",
+    ImagePath = "Images/box_images/death_knight_blood_05.png",
     URL = "https://www.wowhead.com/guide/classes/death-knight/blood/talent-builds-pve-tank",
   },
   [6] = {
@@ -54,6 +59,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "6",
     ButtonLabel = "Copy Raid",
     TalentString = "CoPAAAAAAAAAAAAAAAAAAAAAAwYWGzwMGjhZbmZmmZxYmxMGAAAAYmZmZmZmZYGjBAMzMzAAAwADYsohNQWGwGgZYGAAwMwA",
+    ImagePath = "Images/box_images/death_knight_blood_06.png",
     URL = "https://www.wowhead.com/guide/classes/death-knight/blood/talent-builds-pve-tank",
   },
   [7] = {
@@ -63,6 +69,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "7",
     ButtonLabel = "Copy Mythic+",
     TalentString = "CoPAAAAAAAAAAAAAAAAAAAAAAwYWmZGmxMzMMLzMz0MMGjZMAAAAgZmZmZmZGmxYAwYmZmBAAgBGwYTDLgsMgNAzwMAAgZAA",
+    ImagePath = "Images/box_images/death_knight_blood_07.png",
     URL = "https://www.wowhead.com/guide/classes/death-knight/blood/talent-builds-pve-tank",
   },
   [8] = {
@@ -72,6 +79,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "8",
     ButtonLabel = "Copy Cleave",
     TalentString = "CoPAAAAAAAAAAAAAAAAAAAAAAwYWmZGmxMzMMLzMz0MMGjZMAAAAgZmZmZmZGmxYAwYmZmBAAgBGwYTDLgsMgNAzwMAAgZAA",
+    ImagePath = "Images/box_images/death_knight_blood_08.png",
     URL = "https://www.wowhead.com/guide/classes/death-knight/blood/talent-builds-pve-tank",
   },
   [9] = {
@@ -81,6 +89,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "9",
     ButtonLabel = "Copy Council",
     TalentString = "CoPAAAAAAAAAAAAAAAAAAAAAAwYWmZGmxMzMMLzMz0MMGjZMAAAAgZmZmZmZGmxYAwYmZmBAAgBGwYTDLgsMgNAzwMAAgZAA",
+    ImagePath = "Images/box_images/death_knight_blood_09.png",
     URL = "https://www.wowhead.com/guide/classes/death-knight/blood/talent-builds-pve-tank",
   },
   [10] = {
@@ -90,6 +99,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "10",
     ButtonLabel = "Copy Delves",
     TalentString = "CoPAAAAAAAAAAAAAAAAAAAAAAwYWmZGmxMzMMLzMz0MMGjZMAAAAgZmZmZmZGmxYAwYmZmBAAgBGwYTDLgsMgNAzwMAAgZAA",
+    ImagePath = "Images/box_images/death_knight_blood_10.png",
     URL = "https://www.wowhead.com/guide/classes/death-knight/blood/talent-builds-pve-tank",
   },
   [11] = {
@@ -99,6 +109,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "1",
     ButtonLabel = "Copy Raid",
     TalentString = "CsPAAAAAAAAAAAAAAAAAAAAAAMDwMjZMDY2mZmZmZxMjMDmxMzAPgxgZmZmZAAAAAAAAAAz2ADAYZQIjFMzMzMDMDghZGgZA",
+    ImagePath = "Images/box_images/death_knight_frost_01.png",
     URL = "https://www.wowhead.com/guide/classes/death-knight/frost/talent-builds-pve-dps",
   },
   [12] = {
@@ -108,6 +119,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "2",
     ButtonLabel = "Copy Mythic+",
     TalentString = "CsPAAAAAAAAAAAAAAAAAAAAAAMDYmhZMDY2MzMzMLmZ0MDGmZMgxMzMzMzMDAAAAAAAAAY2GYAALDCZsgZmZmZgBghZGgZA",
+    ImagePath = "Images/box_images/death_knight_frost_02.png",
     URL = "https://www.wowhead.com/guide/classes/death-knight/frost/talent-builds-pve-dps",
   },
   [13] = {
@@ -117,6 +129,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "3",
     ButtonLabel = "Copy Delves",
     TalentString = "CsPAAAAAAAAAAAAAAAAAAAAAAYAzMMjZAzmZmZmZxMjmZwwMjx4BmxMzMzMzMDAAAAAAAAAAbmNDDMwsphG2wMzMzMAAGAwMA",
+    ImagePath = "Images/box_images/death_knight_frost_03.png",
     URL = "https://www.wowhead.com/guide/classes/death-knight/frost/talent-builds-pve-dps",
   },
   [14] = {
@@ -126,6 +139,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "4",
     ButtonLabel = "Copy Raid",
     TalentString = "CsPAAAAAAAAAAAAAAAAAAAAAAYAmZMjZAz2MzMzMLmZkZwMmZmxYmBMzMzMDAAAAAAAAAAbmNDDAmNN0wGmZmZmBMAGAYmB",
+    ImagePath = "Images/box_images/death_knight_frost_04.png",
     URL = "https://www.wowhead.com/guide/classes/death-knight/frost/talent-builds-pve-dps",
   },
   [15] = {
@@ -135,6 +149,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "5",
     ButtonLabel = "Copy Mythic+",
     TalentString = "CsPAAAAAAAAAAAAAAAAAAAAAAYAzMMjZAzmZmZmZxMjmZwwMjx4BmxMzMzMzMDAAAAAAAAAAbmNDDMwsphG2wMzMzMAAGAwMA",
+    ImagePath = "Images/box_images/death_knight_frost_05.png",
     URL = "https://www.wowhead.com/guide/classes/death-knight/frost/talent-builds-pve-dps",
   },
   [16] = {
@@ -144,6 +159,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "6",
     ButtonLabel = "Copy Delves",
     TalentString = "CsPAAAAAAAAAAAAAAAAAAAAAAYAzMMjZAzmZmZmZxMjmZwwMjx4BmxMzMzMzMDAAAAAAAAAAbmNDDMwsphG2wMzMzMAAGAwMA",
+    ImagePath = "Images/box_images/death_knight_frost_06.png",
     URL = "https://www.wowhead.com/guide/classes/death-knight/frost/talent-builds-pve-dps",
   },
   [17] = {
@@ -153,6 +169,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "1",
     ButtonLabel = "Copy Rider ST",
     TalentString = "CwPAAAAAAAAAAAAAAAAAAAAAAAwMjZMGDzyMzMTzmxYMjZAAAAAAAAYGmZAwyMzMz2MzYGDwmZBGCY2YoxCAmBAmZGzAYGMD",
+    ImagePath = "Images/box_images/death_knight_unholy_01.png",
     URL = "https://www.wowhead.com/guide/classes/death-knight/unholy/talent-builds-pve-dps",
   },
   [18] = {
@@ -162,6 +179,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "2",
     ButtonLabel = "Copy Rider M+/Delves",
     TalentString = "CwPAAAAAAAAAAAAAAAAAAAAAAAYmhZMmZYWmZmZaYMmZGDAAAAAAAAzMYGAsMMzsNzMGGgFzCMEwsxQjFMgZAYmZmhBwMYG",
+    ImagePath = "Images/box_images/death_knight_unholy_02.png",
     URL = "https://www.wowhead.com/guide/classes/death-knight/unholy/talent-builds-pve-dps",
   },
   [19] = {
@@ -171,6 +189,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "3",
     ButtonLabel = "Copy Open World",
     TalentString = "CwPAAAAAAAAAAAAAAAAAAAAAAAwMMjxMDziZmZa2MmZmZMAAAAAAAAMzgZAwywMz2MzYYAWMLwQAzCDNWwAmBgZmZGGAzgZA",
+    ImagePath = "Images/box_images/death_knight_unholy_03.png",
     URL = "https://www.wowhead.com/guide/classes/death-knight/unholy/talent-builds-pve-dps",
   },
   [20] = {
@@ -180,6 +199,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "1",
     ButtonLabel = "Copy Raid",
     TalentString = "CEkAAAAAAAAAAAAAAAAAAAAAAYGYmZ2MmZmxYmMmZAAAAAAAzixsNYmxyMzYb2mZmZZMDWGwsYGY2kGmZMsBAAAAAAAwMDGAAAA",
+    ImagePath = "Images/box_images/demon_hunter_havoc_01.png",
     URL = "https://www.wowhead.com/guide/classes/demon-hunter/havoc/talent-builds-pve-dps",
   },
   [21] = {
@@ -189,6 +209,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "2",
     ButtonLabel = "Copy Raid No Mover",
     TalentString = "CEkAAAAAAAAAAAAAAAAAAAAAAYmZGzMzmxMzMGzkxMDAAAAAAYWMmtBzMWmHYGsNjZWGjhlBMbmBmNpxMzYYDAAAAAAAgZGMAAAA",
+    ImagePath = "Images/box_images/demon_hunter_havoc_02.png",
     URL = "https://www.wowhead.com/guide/classes/demon-hunter/havoc/talent-builds-pve-dps",
   },
   [22] = {
@@ -198,6 +219,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "3",
     ButtonLabel = "Copy Mythic+",
     TalentString = "CEkAAAAAAAAAAAAAAAAAAAAAAYmZmZmZ2MmZmxYmMmZAAAAAAAzixYwMzYMjtZzMDjBWGwsZGYWkGzMjZsBAAAMAAAAmZwAAAAA",
+    ImagePath = "Images/box_images/demon_hunter_havoc_03.png",
     URL = "https://www.wowhead.com/guide/classes/demon-hunter/havoc/talent-builds-pve-dps",
   },
   [23] = {
@@ -207,6 +229,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "4",
     ButtonLabel = "Copy M+ Low Mover",
     TalentString = "CEkAAAAAAAAAAAAAAAAAAAAAAYmZmZmZ2MmZmxYmMmZAAAAAAAzixYwMzYMD2mZGGDjlBMbmBmFpxMzYGbAAAADAAAgZGMAAAA",
+    ImagePath = "Images/box_images/demon_hunter_havoc_04.png",
     URL = "https://www.wowhead.com/guide/classes/demon-hunter/havoc/talent-builds-pve-dps",
   },
   [24] = {
@@ -216,6 +239,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "5",
     ButtonLabel = "Copy Cleave",
     TalentString = "CEkAAAAAAAAAAAAAAAAAAAAAAYmZmZmZ2MmZmxYmMmZAAAAAAAzixYwMzYMjtZzMDjBWGwsZGYWkGzMjZsBAAAMAAAAmZwAAAAA",
+    ImagePath = "Images/box_images/demon_hunter_havoc_05.png",
     URL = "https://www.wowhead.com/guide/classes/demon-hunter/havoc/talent-builds-pve-dps",
   },
   [25] = {
@@ -225,6 +249,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "6",
     ButtonLabel = "Copy Delves",
     TalentString = "CEkAAAAAAAAAAAAAAAAAAAAAAYmZmZmZ2MmZmxYmMmZAAAAAAAzixYwMzYMjtZzMDjBWGwsZGYWkGzMjZsBAAAMAAAAmZwAAAAA",
+    ImagePath = "Images/box_images/demon_hunter_havoc_06.png",
     URL = "https://www.wowhead.com/guide/classes/demon-hunter/havoc/talent-builds-pve-dps",
   },
   [26] = {
@@ -234,6 +259,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "7",
     ButtonLabel = "Copy Raid",
     TalentString = "CEkAAAAAAAAAAAAAAAAAAAAAAYGMzMzmxMzMGzkxMDAAAAAAYWMmtBzMz2MzYZ2mHYGLjhxyMmBDDYSGzMGWAAAAAAAAzMADAAAA",
+    ImagePath = "Images/box_images/demon_hunter_havoc_07.png",
     URL = "https://www.wowhead.com/guide/classes/demon-hunter/havoc/talent-builds-pve-dps",
   },
   [27] = {
@@ -243,6 +269,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "8",
     ButtonLabel = "Copy Raid No Mover",
     TalentString = "CEkAAAAAAAAAAAAAAAAAAAAAAYGMzMzmxMzMGzkxMDAAAAAAYWMmtBzMz2MzgtZMzyYGjlZMDGGwkMmZMsAAAAAAAAmZAGAAAA",
+    ImagePath = "Images/box_images/demon_hunter_havoc_08.png",
     URL = "https://www.wowhead.com/guide/classes/demon-hunter/havoc/talent-builds-pve-dps",
   },
   [28] = {
@@ -252,6 +279,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "9",
     ButtonLabel = "Copy Mythic+",
     TalentString = "CEkAAAAAAAAAAAAAAAAAAAAAAYmZmZmZ2MmZmxYmMmZAAAAAAAzixYwMzsNmBbzMDjhxyMmBDDYSmZmxMWAAAAAAAAzMADAAAA",
+    ImagePath = "Images/box_images/demon_hunter_havoc_09.png",
     URL = "https://www.wowhead.com/guide/classes/demon-hunter/havoc/talent-builds-pve-dps",
   },
   [29] = {
@@ -261,6 +289,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "10",
     ButtonLabel = "Copy M+ Low Mover",
     TalentString = "CEkAAAAAAAAAAAAAAAAAAAAAAYmZmZmZ2MmZmxYmMmZAAAAAAAzixYwMzsNmBbzMDjhxyMmBDDYSmZmxMWAAAAAAAAzMADAAAA",
+    ImagePath = "Images/box_images/demon_hunter_havoc_10.png",
     URL = "https://www.wowhead.com/guide/classes/demon-hunter/havoc/talent-builds-pve-dps",
   },
   [30] = {
@@ -270,6 +299,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "11",
     ButtonLabel = "Copy Cleave",
     TalentString = "CEkAAAAAAAAAAAAAAAAAAAAAAYmZmZmZ2MmZmxYmMmZAAAAAAAzixYwMzsNmBbzMDjhxyMmBDDYSmZmxMWAAAAAAAAzMADAAAA",
+    ImagePath = "Images/box_images/demon_hunter_havoc_11.png",
     URL = "https://www.wowhead.com/guide/classes/demon-hunter/havoc/talent-builds-pve-dps",
   },
   [31] = {
@@ -279,6 +309,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "12",
     ButtonLabel = "Copy Delves",
     TalentString = "CEkAAAAAAAAAAAAAAAAAAAAAAYmZmZmZ2MmZmxYmMmZAAAAAAAzixYwMzsNmBbzMDjhxyMmBDDYSmZmxMWAAAAAAAAzMADAAAA",
+    ImagePath = "Images/box_images/demon_hunter_havoc_12.png",
     URL = "https://www.wowhead.com/guide/classes/demon-hunter/havoc/talent-builds-pve-dps",
   },
   [32] = {
@@ -288,6 +319,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "1",
     ButtonLabel = "Copy Raid",
     TalentString = "CUkAAAAAAAAAAAAAAAAAAAAAAAAYMzMjZmZkZmZYYmZGDzYmxMmxMzwMmZsxMGDAAAAYMDGGwEGmZGLAAAAYwAQAmZAGAAAA",
+    ImagePath = "Images/box_images/demon_hunter_vengeance_01.png",
     URL = "https://www.wowhead.com/guide/classes/demon-hunter/vengeance/talent-builds-pve-tank",
   },
   [33] = {
@@ -297,6 +329,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "2",
     ButtonLabel = "Copy Mythic+",
     TalentString = "CUkAAAAAAAAAAAAAAAAAAAAAAAAYMzMjhZkZmBWMjZwMjZGz8AzMzYYmtZGbMjxYGAAAAsNDGG2YCDzMjFAAAAMwAIAmBYAAAAA",
+    ImagePath = "Images/box_images/demon_hunter_vengeance_02.png",
     URL = "https://www.wowhead.com/guide/classes/demon-hunter/vengeance/talent-builds-pve-tank",
   },
   [34] = {
@@ -306,6 +339,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "3",
     ButtonLabel = "Copy Cleave",
     TalentString = "CUkAAAAAAAAAAAAAAAAAAAAAAAAYMzMjZmZkZmZYYmZGDzYmxMmxMmxMmZsxMGDAAAAYMDGGwEGmZGLAAAAYwAQAmZAGAAAA",
+    ImagePath = "Images/box_images/demon_hunter_vengeance_03.png",
     URL = "https://www.wowhead.com/guide/classes/demon-hunter/vengeance/talent-builds-pve-tank",
   },
   [35] = {
@@ -315,6 +349,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "4",
     ButtonLabel = "Copy Council",
     TalentString = "CUkAAAAAAAAAAAAAAAAAAAAAAAAYMzMjZmZkZmZYYmZGDzYmxMmxMmxMmZsxMGDAAAAYMDGGwEGmZGLAAAAYwAQAmZAGAAAA",
+    ImagePath = "Images/box_images/demon_hunter_vengeance_04.png",
     URL = "https://www.wowhead.com/guide/classes/demon-hunter/vengeance/talent-builds-pve-tank",
   },
   [36] = {
@@ -324,6 +359,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "5",
     ButtonLabel = "Copy Delves",
     TalentString = "CUkAAAAAAAAAAAAAAAAAAAAAAAAYMzMjhZkZmBWMjZwMjZGz8AzYGjZmtZGbMjxYGAAAAGzghBMhhZmxCAAAAGYAEgZGgBAAAA",
+    ImagePath = "Images/box_images/demon_hunter_vengeance_05.png",
     URL = "https://www.wowhead.com/guide/classes/demon-hunter/vengeance/talent-builds-pve-tank",
   },
   [37] = {
@@ -333,6 +369,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "6",
     ButtonLabel = "Copy Raid",
     TalentString = "CUkAAAAAAAAAAAAAAAAAAAAAAAAYMzMjZmZkZmZYYmZGDzYmxMmxMzwMmZsxMGDAAAAAAAEwMzYDAAAADGzwMabmZGAYAAAAA",
+    ImagePath = "Images/box_images/demon_hunter_vengeance_06.png",
     URL = "https://www.wowhead.com/guide/classes/demon-hunter/vengeance/talent-builds-pve-tank",
   },
   [38] = {
@@ -342,6 +379,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "7",
     ButtonLabel = "Copy Mythic+",
     TalentString = "CUkAAAAAAAAAAAAAAAAAAAAAAAAYMzMjhZkZmBWMjZwMjZGz8AzMzYYmtZGbMjxYGAAAAAAABMzM2AAAAwAzMMj2mZmBAGAAAA",
+    ImagePath = "Images/box_images/demon_hunter_vengeance_07.png",
     URL = "https://www.wowhead.com/guide/classes/demon-hunter/vengeance/talent-builds-pve-tank",
   },
   [39] = {
@@ -351,6 +389,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "8",
     ButtonLabel = "Copy Cleave",
     TalentString = "CUkAAAAAAAAAAAAAAAAAAAAAAAAYMzMjZmZkZmZYYmZGDzYmxMmxMmxMmZsxMGDAAAAAAAEwMzYDAAAADGzwMabmZGAYAAAAA",
+    ImagePath = "Images/box_images/demon_hunter_vengeance_08.png",
     URL = "https://www.wowhead.com/guide/classes/demon-hunter/vengeance/talent-builds-pve-tank",
   },
   [40] = {
@@ -360,6 +399,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "9",
     ButtonLabel = "Copy Council",
     TalentString = "CUkAAAAAAAAAAAAAAAAAAAAAAAAYMzMjZmZkZmZYYmZGDzYmxMmxMmxMmZsxMGDAAAAAAAEwMzYDAAAADGzwMabmZGAYAAAAA",
+    ImagePath = "Images/box_images/demon_hunter_vengeance_09.png",
     URL = "https://www.wowhead.com/guide/classes/demon-hunter/vengeance/talent-builds-pve-tank",
   },
   [41] = {
@@ -369,6 +409,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "10",
     ButtonLabel = "Copy Delves",
     TalentString = "CUkAAAAAAAAAAAAAAAAAAAAAAAAYMzMjhZkZmBWMjZwMjZGz8AzYGjZmtZGbMjxYGAAAAAAABMzM2AAAAwAzYMj2mZmBAGAAAA",
+    ImagePath = "Images/box_images/demon_hunter_vengeance_10.png",
     URL = "https://www.wowhead.com/guide/classes/demon-hunter/vengeance/talent-builds-pve-tank",
   },
   [42] = {
@@ -378,6 +419,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "1",
     ButtonLabel = "Copy Raid Single Target Build",
     TalentString = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMaGjZG4BMLzMzMDwMDzsNjZMjtxyMmZMMbYAwAssBMZmlRAAAA2Mz8AzMYzAjZAMzAA",
+    ImagePath = "Images/box_images/druid_balance_01.png",
     URL = "https://www.wowhead.com/guide/classes/druid/balance/talent-builds-pve-dps",
   },
   [43] = {
@@ -387,6 +429,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "2",
     ButtonLabel = "Copy Raid Multi-Target Build",
     TalentString = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNjxMDwsYmZGLMMmZbmlx2MmxGLzYMzgFMMADwyGwkZWGBAAAYzMjZGsZYMmBwMDAA",
+    ImagePath = "Images/box_images/druid_balance_02.png",
     URL = "https://www.wowhead.com/guide/classes/druid/balance/talent-builds-pve-dps",
   },
   [44] = {
@@ -396,6 +439,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "3",
     ButtonLabel = "Copy Mythic+ Build",
     TalentString = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNMmZAmlZmZmZhhxMmZZmFzMjlxyMLjxgFMAYsYmBMGBmAAAAswMmZw2ywYMAAMzA",
+    ImagePath = "Images/box_images/druid_balance_03.png",
     URL = "https://www.wowhead.com/guide/classes/druid/balance/talent-builds-pve-dps",
   },
   [45] = {
@@ -405,6 +449,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "4",
     ButtonLabel = "Copy KOTG Mythic+ Build",
     TalentString = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNMmZAmlZmZmZhhxMLzsMWGmx2MLzYMGsgBADwyGwkZWGBAAAYzMjZGsZYMmBwMDAA",
+    ImagePath = "Images/box_images/druid_balance_04.png",
     URL = "https://www.wowhead.com/guide/classes/druid/balance/talent-builds-pve-dps",
   },
   [46] = {
@@ -414,6 +459,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "5",
     ButtonLabel = "Copy Delve Build",
     TalentString = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNMmZAmlZmZmZhhxMmZbsNjZsNzyMGjBLYAwAssBMZmlRAAAA2MzYmBbGGjZAMzAA",
+    ImagePath = "Images/box_images/druid_balance_05.png",
     URL = "https://www.wowhead.com/guide/classes/druid/balance/talent-builds-pve-dps",
   },
   [47] = {
@@ -423,6 +469,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "1",
     ButtonLabel = "Copy Raid",
     TalentString = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjhxMzMzMmtNWmZbGzYmZAAAAYJYWMGmZUzYWYmZGjZYAAAAAAMwAAAAIjZbMzACsAmZAWYwAAAYmN",
+    ImagePath = "Images/box_images/druid_feral_01.png",
     URL = "https://www.wowhead.com/guide/classes/druid/feral/talent-builds-pve-dps",
   },
   [48] = {
@@ -432,6 +479,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "2",
     ButtonLabel = "Copy Mythic+",
     TalentString = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAmZ2MzMzMGzmx2YbmZm5BmZAAAAYJYWMGmZUzYWYmZmlxMAAAAAAwADAAAgMmtZmZABWAzMALMYAAAY2A",
+    ImagePath = "Images/box_images/druid_feral_02.png",
     URL = "https://www.wowhead.com/guide/classes/druid/feral/talent-builds-pve-dps",
   },
   [49] = {
@@ -441,6 +489,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "3",
     ButtonLabel = "Copy Cleave",
     TalentString = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAghZMmZmZmxsZsN2mZmZMzAAAAwSwsYMMzomxswMzMLjZAAAAAAgBGAAAAZMbzMzACsAmZAWYwAAAwsB",
+    ImagePath = "Images/box_images/druid_feral_03.png",
     URL = "https://www.wowhead.com/guide/classes/druid/feral/talent-builds-pve-dps",
   },
   [50] = {
@@ -450,6 +499,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "4",
     ButtonLabel = "Copy Council",
     TalentString = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAghZMmZmZmxsZsN2mZmZMzAAAAwSwsYMMzomxswMzMLjZAAAAAAgBGAAAAZMbzMzACsAmZAWYwAAAwsB",
+    ImagePath = "Images/box_images/druid_feral_04.png",
     URL = "https://www.wowhead.com/guide/classes/druid/feral/talent-builds-pve-dps",
   },
   [51] = {
@@ -459,6 +509,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "5",
     ButtonLabel = "Copy Delves",
     TalentString = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAmZ2MzMzMGzmx2YbmZm5BmZAAAAYJYWMGmZUzYWYmZmlxMAAAAAAwADAAAgMmtZmZABWAzMALMYAAAY2A",
+    ImagePath = "Images/box_images/druid_feral_05.png",
     URL = "https://www.wowhead.com/guide/classes/druid/feral/talent-builds-pve-dps",
   },
   [52] = {
@@ -468,6 +519,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "6",
     ButtonLabel = "Copy Raid",
     TalentString = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZMmZmZmxstwyYbGzYmZAAAAYJYWMGmZUzYWYmZGjZYAAAAAAMwAAAAIAYY2aWGLbgZGgFGMAAmZAA",
+    ImagePath = "Images/box_images/druid_feral_06.png",
     URL = "https://www.wowhead.com/guide/classes/druid/feral/talent-builds-pve-dps",
   },
   [53] = {
@@ -477,6 +529,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "7",
     ButtonLabel = "Copy Mythic+",
     TalentString = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZ2MzMzMGzmx2YbmZm5BmZAAAAYJYWMGmZUzYWYmZGjZYAAAAAAMwAAAAIAYY2aWGLbgZGgFGMAAmZAA",
+    ImagePath = "Images/box_images/druid_feral_07.png",
     URL = "https://www.wowhead.com/guide/classes/druid/feral/talent-builds-pve-dps",
   },
   [54] = {
@@ -486,6 +539,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "8",
     ButtonLabel = "Copy Cleave",
     TalentString = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZ2MzMzMGzmx2YbmZm5BmZAAAAYJYWMGmZUzYWYmZGjZYAAAAAAMwAAAAIAYY2aWGLbgZGgFGMAAmZAA",
+    ImagePath = "Images/box_images/druid_feral_08.png",
     URL = "https://www.wowhead.com/guide/classes/druid/feral/talent-builds-pve-dps",
   },
   [55] = {
@@ -495,6 +549,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "9",
     ButtonLabel = "Copy Council",
     TalentString = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZ2MzMzMGzmx2YbmZm5BmZAAAAYJYWMGmZUzYWYmZGjZYAAAAAAMwAAAAIAYY2aWGLbgZGgFGMAAmZAA",
+    ImagePath = "Images/box_images/druid_feral_09.png",
     URL = "https://www.wowhead.com/guide/classes/druid/feral/talent-builds-pve-dps",
   },
   [56] = {
@@ -504,6 +559,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "10",
     ButtonLabel = "Copy Delves",
     TalentString = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZ2MzMzMGzmx2YbmZm5BmZAAAAYJYWMGmZUzYWYmZGjZYAAAAAAMwAAAAIAYY2aWGLbgZGgFGMAAmZAA",
+    ImagePath = "Images/box_images/druid_feral_10.png",
     URL = "https://www.wowhead.com/guide/classes/druid/feral/talent-builds-pve-dps",
   },
   [57] = {
@@ -513,6 +569,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "1",
     ButtonLabel = "Copy Raid",
     TalentString = "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmxs4BGzDM2MLzMPgZZZAMMaimZmlZmZmZZMDAAAAAAjZbGwiZGwYAMFAAAYDzAYxMYwgltBYmBA",
+    ImagePath = "Images/box_images/druid_guardian_01.png",
     URL = "https://www.wowhead.com/guide/classes/druid/guardian/talent-builds-pve-tank",
   },
   [58] = {
@@ -522,6 +579,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "2",
     ButtonLabel = "Copy Mythic+",
     TalentString = "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmZmlZmZMWMLeg5BmZZZAbGGNRzMzyYmZmlxMAAAAAAMmNDYxMDYMAmCAAAshZAsYGMYwyGgZGA",
+    ImagePath = "Images/box_images/druid_guardian_02.png",
     URL = "https://www.wowhead.com/guide/classes/druid/guardian/talent-builds-pve-tank",
   },
   [59] = {
@@ -531,6 +589,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "3",
     ButtonLabel = "Copy Delves",
     TalentString = "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmZmlZmZMWMLeg5BmZZZAbGGNRzMzyYmZmlxMAAAAAAMmNDYxMDYMAmCAAAshZAsYGMYwyGgZGA",
+    ImagePath = "Images/box_images/druid_guardian_03.png",
     URL = "https://www.wowhead.com/guide/classes/druid/guardian/talent-builds-pve-tank",
   },
   [60] = {
@@ -540,6 +599,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "4",
     ButtonLabel = "Copy Raid",
     TalentString = "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmxs4BGzDM2MLzMPgZZZAMMaimZmlZmZmxYGDAAAAAwY2mBAAAgyYWmxMAAWwMAWMDGMYZbAwMLA",
+    ImagePath = "Images/box_images/druid_guardian_04.png",
     URL = "https://www.wowhead.com/guide/classes/druid/guardian/talent-builds-pve-tank",
   },
   [61] = {
@@ -549,6 +609,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "5",
     ButtonLabel = "Copy Mythic+",
     TalentString = "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmZml5BmZMWMLeg5BmZZZAbGGNRzMzyYmZmlxMAAAAAAMmNDAAAAlxsMjZAAsgZAsYGMYwy2AgZWA",
+    ImagePath = "Images/box_images/druid_guardian_05.png",
     URL = "https://www.wowhead.com/guide/classes/druid/guardian/talent-builds-pve-tank",
   },
   [62] = {
@@ -558,6 +619,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "6",
     ButtonLabel = "Copy Delves",
     TalentString = "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmZml5BmZMWMLeg5BmZZZAbGGNRzMzyYmZmlxMAAAAAAMmNDAAAAlxsMjZAAsgZAsYGMYwy2AgZWA",
+    ImagePath = "Images/box_images/druid_guardian_06.png",
     URL = "https://www.wowhead.com/guide/classes/druid/guardian/talent-builds-pve-tank",
   },
   [63] = {
@@ -567,6 +629,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "1",
     ButtonLabel = "Copy Raid",
     TalentString = "CkGAAAAAAAAAAAAAAAAAAAAAAMjxMLz2MmZY2GmxMYswAAAAAAAAAAAbDa2YMNDDjZZmZmZYYmBAAAAAAwYAbGLYaYZAAACYhxMwMDQzAgZGAA",
+    ImagePath = "Images/box_images/druid_restoration_01.png",
     URL = "https://www.wowhead.com/guide/classes/druid/restoration/talent-builds-pve-healer",
   },
   [64] = {
@@ -576,6 +639,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "2",
     ButtonLabel = "Copy Mythic+",
     TalentString = "CkGAAAAAAAAAAAAAAAAAAAAAAMMmxsNjZmxsN8AMzswsYbGAAAAAAAAAAsNoZDmmhhxsYmZmZZGMDAAAAAAgxA2MWw0wyAAAEwCjZgxsBaGAMzAA",
+    ImagePath = "Images/box_images/druid_restoration_02.png",
     URL = "https://www.wowhead.com/guide/classes/druid/restoration/talent-builds-pve-healer",
   },
   [65] = {
@@ -585,6 +649,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "3",
     ButtonLabel = "Copy Delves",
     TalentString = "CkGAAAAAAAAAAAAAAAAAAAAAAMMmxYGzMjZbmZYYhZx2MAAAAAAAAAAYbQzGMNDDjZxMzMzyMMGAAAAAAAjBsYsgphtBAAIgFGzAzYD0MAYmBAA",
+    ImagePath = "Images/box_images/druid_restoration_03.png",
     URL = "https://www.wowhead.com/guide/classes/druid/restoration/talent-builds-pve-healer",
   },
   [66] = {
@@ -594,6 +659,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "4",
     ButtonLabel = "Copy Raid",
     TalentString = "CkGAAAAAAAAAAAAAAAAAAAAAAMjxMbz2MmZY2GmxMYswAAAAAAAAAAAbDa2YMNDzYMLMzMDDzMAAAAAAAGDAABAAMbjtmFDbMzMwMDQzAAMzAA",
+    ImagePath = "Images/box_images/druid_restoration_04.png",
     URL = "https://www.wowhead.com/guide/classes/druid/restoration/talent-builds-pve-healer",
   },
   [67] = {
@@ -603,6 +669,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "5",
     ButtonLabel = "Copy Mythic+",
     TalentString = "CkGAAAAAAAAAAAAAAAAAAAAAAMMmxsNjZmxsN8AMzswsYbGAAAAAAAAAAsNoZDmmhZ8AmFzMzMLzwDMDAAAAAAgxAAQAAAz2YrZxwGjZgxsAaGAgZGA",
+    ImagePath = "Images/box_images/druid_restoration_05.png",
     URL = "https://www.wowhead.com/guide/classes/druid/restoration/talent-builds-pve-healer",
   },
   [68] = {
@@ -612,6 +679,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "6",
     ButtonLabel = "Copy Delves",
     TalentString = "CkGAAAAAAAAAAAAAAAAAAAAAAMMmxYGzMjZbmZYYhZx2MAAAAAAAAAAYbQzGMNDzYMLmZmZWmhHwAAAAAAAYMAAEAAwws1sMWsxYGYGbgmBAYmBA",
+    ImagePath = "Images/box_images/druid_restoration_06.png",
     URL = "https://www.wowhead.com/guide/classes/druid/restoration/talent-builds-pve-healer",
   },
   [69] = {
@@ -621,6 +689,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "1",
     ButtonLabel = "Copy ST",
     TalentString = "CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmZwMDGMgBjZaGzMZMWmZmZGmZmZGwMmZGzMbjZwMwwMAwCYGmAbBLDDAzA",
+    ImagePath = "Images/box_images/evoker_devastation_01.png",
     URL = "https://www.wowhead.com/guide/classes/evoker/devastation/talent-builds-pve-dps",
   },
   [70] = {
@@ -630,6 +699,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "2",
     ButtonLabel = "Copy Mythic+",
     TalentString = "CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmHYMzMzMzwMwwYYaYmJjx2gZGGzMzAmZmZGzMbjZwMwwMAwCYGmAbBLDDAzMA",
+    ImagePath = "Images/box_images/evoker_devastation_02.png",
     URL = "https://www.wowhead.com/guide/classes/evoker/devastation/talent-builds-pve-dps",
   },
   [71] = {
@@ -639,6 +709,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "3",
     ButtonLabel = "Copy Cleave",
     TalentString = "CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmZwMDGMgBjZaGzMZMWmZmZGmZmZGwMmZGzMbjZwMwwMAwCYGmAbBLDDAzA",
+    ImagePath = "Images/box_images/evoker_devastation_03.png",
     URL = "https://www.wowhead.com/guide/classes/evoker/devastation/talent-builds-pve-dps",
   },
   [72] = {
@@ -648,6 +719,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "4",
     ButtonLabel = "Copy Council",
     TalentString = "CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmHYMzMzMzwMwwYYaYmJjx2gZGGzMzAmZmZGzMbjZwMwwMAwCYGmAbBLDDAzMA",
+    ImagePath = "Images/box_images/evoker_devastation_04.png",
     URL = "https://www.wowhead.com/guide/classes/evoker/devastation/talent-builds-pve-dps",
   },
   [73] = {
@@ -657,6 +729,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "5",
     ButtonLabel = "Copy Delves",
     TalentString = "CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmHYMzMzMzwMwwYYaYmJjx2gZGGzMzAmZmZGzMbjZwMwwMAwCYGmAbBLDDAzMA",
+    ImagePath = "Images/box_images/evoker_devastation_05.png",
     URL = "https://www.wowhead.com/guide/classes/evoker/devastation/talent-builds-pve-dps",
   },
   [74] = {
@@ -666,6 +739,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "6",
     ButtonLabel = "Copy ST",
     TalentString = "CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMDMDzgBMYMTjZmpZmZWGMzMz8AzMzAmxMzYmZbMDMwYAwY0YbAZggNMwMDG",
+    ImagePath = "Images/box_images/evoker_devastation_06.png",
     URL = "https://www.wowhead.com/guide/classes/evoker/devastation/talent-builds-pve-dps",
   },
   [75] = {
@@ -675,6 +749,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "7",
     ButtonLabel = "Copy Mythic+",
     TalentString = "CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmZgZYGMwADTjZmpZmZWmhZmZGzMzAmZMzYmZbmZgBGDWgFGNAkZQwGGYmBzA",
+    ImagePath = "Images/box_images/evoker_devastation_07.png",
     URL = "https://www.wowhead.com/guide/classes/evoker/devastation/talent-builds-pve-dps",
   },
   [76] = {
@@ -684,6 +759,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "8",
     ButtonLabel = "Copy Cleave",
     TalentString = "CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMDMDzgBMYMTjZmpZmZWmhZmZGzMzAmxMzYmZbMDMwYAwY0wAyMIYDDMzgB",
+    ImagePath = "Images/box_images/evoker_devastation_08.png",
     URL = "https://www.wowhead.com/guide/classes/evoker/devastation/talent-builds-pve-dps",
   },
   [77] = {
@@ -693,6 +769,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "9",
     ButtonLabel = "Copy Council",
     TalentString = "CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmZgZYGMwADTjZmpZmZWmhZmZGzMzAmZMzYmZbmZgBGDWgFGNAkZQwGGYmBzA",
+    ImagePath = "Images/box_images/evoker_devastation_09.png",
     URL = "https://www.wowhead.com/guide/classes/evoker/devastation/talent-builds-pve-dps",
   },
   [78] = {
@@ -702,6 +779,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "10",
     ButtonLabel = "Copy Delves",
     TalentString = "CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmZgZYGMwADTjZmpZmZWmhZmZGzMzAmZMzYmZbmZgBGDWgFGNAkZQwGGYmBzA",
+    ImagePath = "Images/box_images/evoker_devastation_10.png",
     URL = "https://www.wowhead.com/guide/classes/evoker/devastation/talent-builds-pve-dps",
   },
   [79] = {
@@ -711,6 +789,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "1",
     ButtonLabel = "Copy Raid",
     TalentString = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAYmZ2WmHAzYmxsYMzMzyAAAYGzYGMmRmBAAAgZmZyMzMzDMbjZAwMmBWALAYCZD2gBwMD",
+    ImagePath = "Images/box_images/evoker_preservation_01.png",
     URL = "https://www.wowhead.com/guide/classes/evoker/preservation/talent-builds-pve-healer",
   },
   [80] = {
@@ -720,6 +799,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "2",
     ButtonLabel = "Copy Mythic+",
     TalentString = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAmZmZ2MwwMzDMLmxMsNAAAmxMmBjZkZmBAAAYmZmMmZmHYMmBAGzALgFwMMhsxYzwAAA",
+    ImagePath = "Images/box_images/evoker_preservation_02.png",
     URL = "https://www.wowhead.com/guide/classes/evoker/preservation/talent-builds-pve-healer",
   },
   [81] = {
@@ -729,6 +809,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "3",
     ButtonLabel = "Copy Delves",
     TalentString = "[=talent-build-13096",
+    ImagePath = "Images/box_images/evoker_preservation_03.png",
     URL = "https://www.wowhead.com/guide/classes/evoker/preservation/talent-builds-pve-healer",
   },
   [82] = {
@@ -738,6 +819,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "4",
     ButtonLabel = "Copy Raid",
     TalentString = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAYmZ2WGYGzMPwsYMzMzyAAAYGzYGMmRmBAAAgZmZyMzMzDMbjZAwAjZAwADN0AWgxMDA",
+    ImagePath = "Images/box_images/evoker_preservation_04.png",
     URL = "https://www.wowhead.com/guide/classes/evoker/preservation/talent-builds-pve-healer",
   },
   [83] = {
@@ -747,6 +829,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "5",
     ButtonLabel = "Copy Mythic+",
     TalentString = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAmZmZ2MwwMzDMLmZmhNAAAmhxMYMjMzMAAAgtZmZyYmZmxYGAAGzAgBGaoBjFYMzAA",
+    ImagePath = "Images/box_images/evoker_preservation_05.png",
     URL = "https://www.wowhead.com/guide/classes/evoker/preservation/talent-builds-pve-healer",
   },
   [84] = {
@@ -756,6 +839,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "6",
     ButtonLabel = "Copy Delves",
     TalentString = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAmZmZ2MwYmZGMzMDbAAAYYMDGzIzMDAAAYZmZmMGzMjZmBAgxMAAMjGawYBGzMAD",
+    ImagePath = "Images/box_images/evoker_preservation_06.png",
     URL = "https://www.wowhead.com/guide/classes/evoker/preservation/talent-builds-pve-healer",
   },
   [85] = {
@@ -765,6 +849,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "1",
     ButtonLabel = "Copy ST",
     TalentString = "CEcBAAAAAAAAAAAAAAAAAAAAAMmxMbzMzMWGMzYGjhZ2AAAAAgBAAzMgBD1YmZGAAAAMjZMmZ2GzMwMbGYMDAGYwQjYBzMmZAM",
+    ImagePath = "Images/box_images/evoker_augmentation_01.png",
     URL = "https://www.wowhead.com/guide/classes/evoker/augmentation/talent-builds-pve-dps",
   },
   [86] = {
@@ -774,6 +859,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "2",
     ButtonLabel = "Copy Mythic+",
     TalentString = "CEcBAAAAAAAAAAAAAAAAAAAAAMmZmZbmZmhBmZZGjhZ2AAAAAAAAwMwMYoGzMzAAAAgZmZMmZMmZgZ2MwYGAMwghGxCmZmZGAD",
+    ImagePath = "Images/box_images/evoker_augmentation_02.png",
     URL = "https://www.wowhead.com/guide/classes/evoker/augmentation/talent-builds-pve-dps",
   },
   [87] = {
@@ -783,6 +869,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "3",
     ButtonLabel = "Copy Cleave",
     TalentString = "CEcBAAAAAAAAAAAAAAAAAAAAAMmxMbzMzMWGYmlZMGmZDAAAAAGAAMzAGMUjZmZAAAAwMmxYmZbMzAzsZgxMAYgBDNiFMzYmBwA",
+    ImagePath = "Images/box_images/evoker_augmentation_03.png",
     URL = "https://www.wowhead.com/guide/classes/evoker/augmentation/talent-builds-pve-dps",
   },
   [88] = {
@@ -792,6 +879,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "4",
     ButtonLabel = "Copy Council",
     TalentString = "CEcBAAAAAAAAAAAAAAAAAAAAAMmxMbzMzMWGYmlZMGmZDAAAAAGAAMzAGMUjZmZAAAAwMmxYmZbMzAzsZgxMAYgBDNiFMzYmBwA",
+    ImagePath = "Images/box_images/evoker_augmentation_04.png",
     URL = "https://www.wowhead.com/guide/classes/evoker/augmentation/talent-builds-pve-dps",
   },
   [89] = {
@@ -801,6 +889,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "5",
     ButtonLabel = "Copy Delves",
     TalentString = "CEcBAAAAAAAAAAAAAAAAAAAAAMmZmZbmZmhBmZZGjhZ2AAAAAAAAwMwMYoGzMzAAAAgZmZMmZMmZgZ2MwYGAMwghGxCmZmZGAD",
+    ImagePath = "Images/box_images/evoker_augmentation_05.png",
     URL = "https://www.wowhead.com/guide/classes/evoker/augmentation/talent-builds-pve-dps",
   },
   [90] = {
@@ -810,6 +899,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "6",
     ButtonLabel = "Copy ST",
     TalentString = "CEcBAAAAAAAAAAAAAAAAAAAAAMmxMbzMzMWGMzYGjhZ2AAAAAgBAAzMgBD1YmZGAAAAMjZMmZ2GzMwMbGwCYMMMAmJiNMzAzMwA",
+    ImagePath = "Images/box_images/evoker_augmentation_06.png",
     URL = "https://www.wowhead.com/guide/classes/evoker/augmentation/talent-builds-pve-dps",
   },
   [91] = {
@@ -819,6 +909,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "7",
     ButtonLabel = "Copy Mythic+",
     TalentString = "CEcBAAAAAAAAAAAAAAAAAAAAAMmZmZbmZmhBmZZGjhZ2AAAAAAAAwMwMYoGzMzAAAAgZmZMmZMmZgZ2MgFwYYYAMTEbYmZwMDM",
+    ImagePath = "Images/box_images/evoker_augmentation_07.png",
     URL = "https://www.wowhead.com/guide/classes/evoker/augmentation/talent-builds-pve-dps",
   },
   [92] = {
@@ -828,6 +919,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "8",
     ButtonLabel = "Copy Cleave",
     TalentString = "CEcBAAAAAAAAAAAAAAAAAAAAAMmxMbzMzMWGYmlZMGmZDAAAAAGAAMzAGMUjZmZAAAAwMmxYmZbMzAzsZALgxwwAYmI2wMDMzAD",
+    ImagePath = "Images/box_images/evoker_augmentation_08.png",
     URL = "https://www.wowhead.com/guide/classes/evoker/augmentation/talent-builds-pve-dps",
   },
   [93] = {
@@ -837,6 +929,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "9",
     ButtonLabel = "Copy Council",
     TalentString = "CEcBAAAAAAAAAAAAAAAAAAAAAMmxMbzMzMWGYmlZMGmZDAAAAAGAAMzAGMUjZmZAAAAwMmxYmZbMzAzsZALgxwwAYmI2wMDMzAD",
+    ImagePath = "Images/box_images/evoker_augmentation_09.png",
     URL = "https://www.wowhead.com/guide/classes/evoker/augmentation/talent-builds-pve-dps",
   },
   [94] = {
@@ -846,6 +939,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "10",
     ButtonLabel = "Copy Delves",
     TalentString = "CEcBAAAAAAAAAAAAAAAAAAAAAMmZmZbmZmhBmZZGjhZ2AAAAAAAAwMwMYoGzMzAAAAgZmZMmZMmZgZ2MgFwYYYAMTEbYmZwMDM",
+    ImagePath = "Images/box_images/evoker_augmentation_10.png",
     URL = "https://www.wowhead.com/guide/classes/evoker/augmentation/talent-builds-pve-dps",
   },
   [95] = {
@@ -855,6 +949,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "1",
     ButtonLabel = "Copy Raid",
     TalentString = "C0PAAAAAAAAAAAAAAAAAAAAAAYzYgBAYYDyYBAAzw2YmlZGmxMDDzMGzMmZGzYGmZGzYGM0MAAAAAgZAAAYMzMYmBIgZBsB",
+    ImagePath = "Images/box_images/hunter_beast_mastery_01.png",
     URL = "https://www.wowhead.com/guide/classes/hunter/beast-mastery/talent-builds-pve-dps",
   },
   [96] = {
@@ -864,6 +959,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "2",
     ButtonLabel = "Copy Mythic+",
     TalentString = "C0PAAAAAAAAAAAAAAAAAAAAAAYzsBGwAGAyYBAAzMWmZmFzwMjZYGzMGmxMzYGzwMzwYGWYaGAAAAAwMAAAMGzMMzAkNYWAbA",
+    ImagePath = "Images/box_images/hunter_beast_mastery_02.png",
     URL = "https://www.wowhead.com/guide/classes/hunter/beast-mastery/talent-builds-pve-dps",
   },
   [97] = {
@@ -873,6 +969,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "3",
     ButtonLabel = "Copy Cleave",
     TalentString = "C0PAAAAAAAAAAAAAAAAAAAAAAYzsBGwAGAyYBAAzMWmZmFzwMjZYGzMGmxMzYGzwMzYGzghmBAAAAAMDAAAjZmBzMABMLgN",
+    ImagePath = "Images/box_images/hunter_beast_mastery_03.png",
     URL = "https://www.wowhead.com/guide/classes/hunter/beast-mastery/talent-builds-pve-dps",
   },
   [98] = {
@@ -882,6 +979,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "4",
     ButtonLabel = "Copy Delves",
     TalentString = "C0PAAAAAAAAAAAAAAAAAAAAAAYzsBGwAGAyYBAAzMWmZmFzwMjZYGzMGmxMzMzYGmZGGzMw0MAAAAAgZAAAYMmBzMABLzsAA",
+    ImagePath = "Images/box_images/hunter_beast_mastery_04.png",
     URL = "https://www.wowhead.com/guide/classes/hunter/beast-mastery/talent-builds-pve-dps",
   },
   [99] = {
@@ -891,6 +989,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "5",
     ButtonLabel = "Copy Raid",
     TalentString = "C0PAAAAAAAAAAAAAAAAAAAAAAAMGG2gFYGQDbAAYGz2YmtZGmxMDjhxMzMjZGzYGmZGzYGM0MAAAAAAAAAYMzMAzABMLgN",
+    ImagePath = "Images/box_images/hunter_beast_mastery_05.png",
     URL = "https://www.wowhead.com/guide/classes/hunter/beast-mastery/talent-builds-pve-dps",
   },
   [100] = {
@@ -900,6 +999,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "6",
     ButtonLabel = "Copy Mythic+",
     TalentString = "C0PAAAAAAAAAAAAAAAAAAAAAAAMGG2gFYGQDbAAYGzyMzsZGmZmZGzMMmxMMzYGzwMzwYGWYaGAAAAAAAAAMGzMgZgsBzCYD",
+    ImagePath = "Images/box_images/hunter_beast_mastery_06.png",
     URL = "https://www.wowhead.com/guide/classes/hunter/beast-mastery/talent-builds-pve-dps",
   },
   [101] = {
@@ -909,6 +1009,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "7",
     ButtonLabel = "Copy Cleave",
     TalentString = "C0PAAAAAAAAAAAAAAAAAAAAAAAMGG2gFYGQDbAAYGzyMzsZGmZmZGzMMmxMMzYGzwMzYGzghmBAAAAAAAAAjZmBYGIgZBsB",
+    ImagePath = "Images/box_images/hunter_beast_mastery_07.png",
     URL = "https://www.wowhead.com/guide/classes/hunter/beast-mastery/talent-builds-pve-dps",
   },
   [102] = {
@@ -918,6 +1019,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "8",
     ButtonLabel = "Copy Delves",
     TalentString = "C0PAAAAAAAAAAAAAAAAAAAAAAAMGG2gFYGQDbAAYGzyMzsZGmZmZGzMMmxMMzMzYGmZGGzMw0MAAAAAAAAAYMmBYGIYZmFA",
+    ImagePath = "Images/box_images/hunter_beast_mastery_08.png",
     URL = "https://www.wowhead.com/guide/classes/hunter/beast-mastery/talent-builds-pve-dps",
   },
   [103] = {
@@ -927,6 +1029,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "1",
     ButtonLabel = "Copy Raid",
     TalentString = "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwwohBwMYDAAAAAAAAYGzYGmxMzYGMmmxYGz22mZmZYmZYmZZwsMYGAAAzMGAMTbMMAbD",
+    ImagePath = "Images/box_images/hunter_marksmanship_01.png",
     URL = "https://www.wowhead.com/guide/classes/hunter/marksmanship/talent-builds-pve-dps",
   },
   [104] = {
@@ -936,6 +1039,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "2",
     ButtonLabel = "Copy Mythic+",
     TalentString = "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwwohBwMYDAAAAAAAAYGzMzYbGzYMDGTzYMzYZbzMzMMzMMzsMGzywMDAAgxYAwoNwAsN",
+    ImagePath = "Images/box_images/hunter_marksmanship_02.png",
     URL = "https://www.wowhead.com/guide/classes/hunter/marksmanship/talent-builds-pve-dps",
   },
   [105] = {
@@ -945,6 +1049,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "3",
     ButtonLabel = "Copy Soul Hunters",
     TalentString = "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwwohBwMYDAAAAAAAAYGzMzwMmxYGMmGmZGz22mZmZYmZYGLDmlBzAAAMzMGAMTbgBYbA",
+    ImagePath = "Images/box_images/hunter_marksmanship_03.png",
     URL = "https://www.wowhead.com/guide/classes/hunter/marksmanship/talent-builds-pve-dps",
   },
   [106] = {
@@ -954,6 +1059,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "4",
     ButtonLabel = "Copy Delves",
     TalentString = "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwwohBwMYDAAAAAAAAYGzMzYbGzYMDGTzYMzMLbbmZmhZmhZsMGzygZAAAMGDAmpFwAsN",
+    ImagePath = "Images/box_images/hunter_marksmanship_04.png",
     URL = "https://www.wowhead.com/guide/classes/hunter/marksmanship/talent-builds-pve-dps",
   },
   [107] = {
@@ -963,6 +1069,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "1",
     ButtonLabel = "Copy Raid",
     TalentString = "C8PAAAAAAAAAAAAAAAAAAAAAAMWgBmxohBwMBbGzMjZmlBAAAAAAzYmZGMGzYgxkBAAAAAAMW2mZmFzMzYmZGAwAGGjZsB",
+    ImagePath = "Images/box_images/hunter_survival_01.png",
     URL = "https://www.wowhead.com/guide/classes/hunter/survival/talent-builds-pve-dps",
   },
   [108] = {
@@ -972,6 +1079,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "2",
     ButtonLabel = "Copy Mythic+",
     TalentString = "C8PAAAAAAAAAAAAAAAAAAAAAAMWgBmxohBwMBbzMzMjZmtZAAAAAAYGzMzYbGjZMwYyAAAAAGAALbzM2mxMjxMDAYAYMMzG",
+    ImagePath = "Images/box_images/hunter_survival_02.png",
     URL = "https://www.wowhead.com/guide/classes/hunter/survival/talent-builds-pve-dps",
   },
   [109] = {
@@ -981,6 +1089,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "3",
     ButtonLabel = "Copy Cleave",
     TalentString = "C8PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNMAmJYzYmZMzsMAAAAAAYGzMzgxYGDMmMAAAAAAAW2mZmFzMzYmZGAwAmFjxMzG",
+    ImagePath = "Images/box_images/hunter_survival_03.png",
     URL = "https://www.wowhead.com/guide/classes/hunter/survival/talent-builds-pve-dps",
   },
   [110] = {
@@ -990,6 +1099,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "4",
     ButtonLabel = "Copy Council",
     TalentString = "C8PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNMAmJYzYmZMzsMAAAAAAYGzMzgxYGDMmMAAAAAAAW2mZmFzMzYmZGAwAmFjxMzG",
+    ImagePath = "Images/box_images/hunter_survival_04.png",
     URL = "https://www.wowhead.com/guide/classes/hunter/survival/talent-builds-pve-dps",
   },
   [111] = {
@@ -999,6 +1109,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "5",
     ButtonLabel = "Copy Delves",
     TalentString = "C8PAAAAAAAAAAAAAAAAAAAAAAMWgBGGNAwMBbzMzMzMzsNPAAAAAAAzMzMzwMGzYMMmMAAAAgBAwy2MjtZMzgZGAYG2AjhZ2A",
+    ImagePath = "Images/box_images/hunter_survival_05.png",
     URL = "https://www.wowhead.com/guide/classes/hunter/survival/talent-builds-pve-dps",
   },
   [112] = {
@@ -1008,6 +1119,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "6",
     ButtonLabel = "Copy Raid",
     TalentString = "C8PAAAAAAAAAAAAAAAAAAAAAAAMGAyGMDDNYxYmZmZsMAAAAAAYGzMzgxYGDMmMAAAAAAgxy2MzsYmZmZmZGAzsBYWMGzYD",
+    ImagePath = "Images/box_images/hunter_survival_06.png",
     URL = "https://www.wowhead.com/guide/classes/hunter/survival/talent-builds-pve-dps",
   },
   [113] = {
@@ -1017,6 +1129,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "7",
     ButtonLabel = "Copy Mythic+",
     TalentString = "C8PAAAAAAAAAAAAAAAAAAAAAAAMmxwGBMDDNYxMzMzMzDsMAAAAAAYGzMzYzYMjBGTGAAAAwAAYZZm5B2MzMjZmZAwGAMGzMbA",
+    ImagePath = "Images/box_images/hunter_survival_07.png",
     URL = "https://www.wowhead.com/guide/classes/hunter/survival/talent-builds-pve-dps",
   },
   [114] = {
@@ -1026,6 +1139,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "8",
     ButtonLabel = "Copy Cleave",
     TalentString = "C8PAAAAAAAAAAAAAAAAAAAAAAAMmxwCBMDDNYxYmZmZeglBAAAAAAzYmZGMGzYgxkBAAAAAAwy2MzsYmZGzMzAgNAzixYmZD",
+    ImagePath = "Images/box_images/hunter_survival_08.png",
     URL = "https://www.wowhead.com/guide/classes/hunter/survival/talent-builds-pve-dps",
   },
   [115] = {
@@ -1035,6 +1149,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "9",
     ButtonLabel = "Copy Council",
     TalentString = "C8PAAAAAAAAAAAAAAAAAAAAAAAMmxwCBMDDNYxYmZmZeglBAAAAAAzYmZGMGzYgxkBAAAAAAwy2MzsYmZGzMzAgNAzixYmZD",
+    ImagePath = "Images/box_images/hunter_survival_09.png",
     URL = "https://www.wowhead.com/guide/classes/hunter/survival/talent-builds-pve-dps",
   },
   [116] = {
@@ -1044,6 +1159,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "10",
     ButtonLabel = "Copy Delves",
     TalentString = "C8PAAAAAAAAAAAAAAAAAAAAAAAMmxwGBMDDNYZmZmZmZmt5BAAAAAAYmZmZGMGzYMMmMAAAAgBAwy2MjtZMzwMzAgNAYMMzG",
+    ImagePath = "Images/box_images/hunter_survival_10.png",
     URL = "https://www.wowhead.com/guide/classes/hunter/survival/talent-builds-pve-dps",
   },
   [117] = {
@@ -1053,6 +1169,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "1",
     ButtonLabel = "Copy Raid",
     TalentString = "C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMzQzwAAAwAAgAGzMLMTsAAAmZmZGbWmZmZZwYMzMzYhZmZMDAwAAAMzsAAmBAD",
+    ImagePath = "Images/box_images/mage_arcane_01.png",
     URL = "https://www.wowhead.com/guide/classes/mage/arcane/talent-builds-pve-dps",
   },
   [118] = {
@@ -1062,6 +1179,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "2",
     ButtonLabel = "Copy Mythic+",
     TalentString = "C4DAAAAAAAAAAAAAAAAAAAAAAMzwYZmZmFMzQzMGAAAAAgAGzMLMTsAAwGmZmhNLzMzsMYMzMzMjFmxMPwMAADAAwMzCAYGAM",
+    ImagePath = "Images/box_images/mage_arcane_02.png",
     URL = "https://www.wowhead.com/guide/classes/mage/arcane/talent-builds-pve-dps",
   },
   [119] = {
@@ -1071,6 +1189,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "3",
     ButtonLabel = "Copy Cleave",
     TalentString = "C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMzQzwAAAwAAgAGzMLMTsAAAmZmZGbWmZmZZwYMzMzYhZmZMDAwAAAMzsAAmBAD",
+    ImagePath = "Images/box_images/mage_arcane_03.png",
     URL = "https://www.wowhead.com/guide/classes/mage/arcane/talent-builds-pve-dps",
   },
   [120] = {
@@ -1080,6 +1199,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "4",
     ButtonLabel = "Copy Council",
     TalentString = "C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMzQzwAAAwAAgAGzMLMTsAAAMzMDbWmZmZZwYmZmZGLMzMjZAAGAAgZmFAwMAYA",
+    ImagePath = "Images/box_images/mage_arcane_04.png",
     URL = "https://www.wowhead.com/guide/classes/mage/arcane/talent-builds-pve-dps",
   },
   [121] = {
@@ -1089,6 +1209,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "5",
     ButtonLabel = "Copy Delves",
     TalentString = "C4DAAAAAAAAAAAAAAAAAAAAAAMzwYZmZmFMzQzMGAAAAAgAGzMLMTsAAwGmZmhNLzMzsMYMzMzMjFmxMPwMAADAAwMzCAYGAM",
+    ImagePath = "Images/box_images/mage_arcane_05.png",
     URL = "https://www.wowhead.com/guide/classes/mage/arcane/talent-builds-pve-dps",
   },
   [122] = {
@@ -1098,6 +1219,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "6",
     ButtonLabel = "Copy Raid",
     TalentString = "C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMzQzwAAAwAAMzklNzAAxGAAYmZmZsZZmZmlxYMmZGjFmZmxMAADAAwAMzAmBAD",
+    ImagePath = "Images/box_images/mage_arcane_06.png",
     URL = "https://www.wowhead.com/guide/classes/mage/arcane/talent-builds-pve-dps",
   },
   [123] = {
@@ -1107,6 +1229,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "7",
     ButtonLabel = "Copy Mythic+",
     TalentString = "C4DAAAAAAAAAAAAAAAAAAAAAAMzwYZmZmFMzQzMGAAAAAmZmswMAQsBAwGmZmhNLzMzsMYMzMzMjFmxMPwMAADAAwAMzAmBAD",
+    ImagePath = "Images/box_images/mage_arcane_07.png",
     URL = "https://www.wowhead.com/guide/classes/mage/arcane/talent-builds-pve-dps",
   },
   [124] = {
@@ -1116,6 +1239,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "8",
     ButtonLabel = "Copy Cleave",
     TalentString = "C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMzQzwAAAwAAmZmswMAQsBAAmZmZGbWmZmZZwYMzMzYhZmZMDAwAAAMAzMgZAwA",
+    ImagePath = "Images/box_images/mage_arcane_08.png",
     URL = "https://www.wowhead.com/guide/classes/mage/arcane/talent-builds-pve-dps",
   },
   [125] = {
@@ -1125,6 +1249,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "9",
     ButtonLabel = "Copy Council",
     TalentString = "C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMzQzwAAAwAAmZmswMAQsBAAMzMDbWmZmZZwYmZmZGLMzMjZAAGAAgBYmBMDAG",
+    ImagePath = "Images/box_images/mage_arcane_09.png",
     URL = "https://www.wowhead.com/guide/classes/mage/arcane/talent-builds-pve-dps",
   },
   [126] = {
@@ -1134,6 +1259,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "10",
     ButtonLabel = "Copy Delves",
     TalentString = "C4DAAAAAAAAAAAAAAAAAAAAAAMzwYZmZmFMzQzMGAAAAAmZmswMAQsBAwGmZmhNLzMzsMYMzMzMjFmxMPwMAADAAwAMzAmBAD",
+    ImagePath = "Images/box_images/mage_arcane_10.png",
     URL = "https://www.wowhead.com/guide/classes/mage/arcane/talent-builds-pve-dps",
   },
   [127] = {
@@ -1142,7 +1268,8 @@ Mythicbus_WowheadResults = {
     Role = "dps",
     RowIndex = "1",
     ButtonLabel = "Copy Raid",
-    TalentString = "C8DAAAAAAAAAAAAAAAAAAAAAAYGYZmZmFmZIzMGAAAGAwMzklFzAAsZmxDsMMmZAAAAAAbmZmZGAAMmxMmZmZmlBAzQYMGYA",
+    TalentString = "C8DAAAAAAAAAAAAAAAAAAAAAAYGYZmZmFmZIzMGAAAGAwMzklFzAAsZmxDsMMmZAAAAAAbmZmZGAAMmxMmZGzsMAYGCjxgZA",
+    ImagePath = "Images/box_images/mage_fire_01.png",
     URL = "https://www.wowhead.com/guide/classes/mage/fire/talent-builds-pve-dps",
   },
   [128] = {
@@ -1151,7 +1278,8 @@ Mythicbus_WowheadResults = {
     Role = "dps",
     RowIndex = "2",
     ButtonLabel = "Copy Mythic+",
-    TalentString = "C8DAAAAAAAAAAAAAAAAAAAAAAMzALzMzsgZGZmxAAAwAAmZmssYGAgNzMeglhxMzCAAAAAsZmZm5BAAwYGzYmZmZWGAMDhxYgB",
+    TalentString = "C8DAAAAAAAAAAAAAAAAAAAAAAMzALzMzsgZGZmxAAAwAAmZmssZGAgNzMsMzMzYWAAAAAgNzMzMPAAAmZYmZmZmZWAgZIMGDA",
+    ImagePath = "Images/box_images/mage_fire_02.png",
     URL = "https://www.wowhead.com/guide/classes/mage/fire/talent-builds-pve-dps",
   },
   [129] = {
@@ -1160,7 +1288,8 @@ Mythicbus_WowheadResults = {
     Role = "dps",
     RowIndex = "3",
     ButtonLabel = "Copy Cleave",
-    TalentString = "C8DAAAAAAAAAAAAAAAAAAAAAAMzALzMzsgZGZmxAAAwAAmZmssYGAgNzMeglhxMzCAAAAAsZmZm5BAAwYGzYmZmZWGAMDhxYgB",
+    TalentString = "C8DAAAAAAAAAAAAAAAAAAAAAAYGYZmZmFmZIzMGAAAGAwMzklFzAAsZmxDsMMmZAAAAAAbmZmZGAAMmxMmZmZmlBAzQYMGYA",
+    ImagePath = "Images/box_images/mage_fire_03.png",
     URL = "https://www.wowhead.com/guide/classes/mage/fire/talent-builds-pve-dps",
   },
   [130] = {
@@ -1169,7 +1298,8 @@ Mythicbus_WowheadResults = {
     Role = "dps",
     RowIndex = "4",
     ButtonLabel = "Copy Council",
-    TalentString = "C8DAAAAAAAAAAAAAAAAAAAAAAYGYZmZmFmZIzMGAAAGAwMzklFzAAsZmxDsMMmZAAAAAAbmZmZGAAMmxMmZmZmlBAzQYMGYA",
+    TalentString = "C8DAAAAAAAAAAAAAAAAAAAAAAMzALzMzsgZGZmxAAAwAAmZmssZGAgNzMsMzMzYWAAAAAgNzMzMPAAAmZYmZmZmZWAgZIMGDA",
+    ImagePath = "Images/box_images/mage_fire_04.png",
     URL = "https://www.wowhead.com/guide/classes/mage/fire/talent-builds-pve-dps",
   },
   [131] = {
@@ -1179,6 +1309,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "5",
     ButtonLabel = "Copy Delves",
     TalentString = "C8DAAAAAAAAAAAAAAAAAAAAAAMzALzMzsgZGZmxAAAwAAmZmssZGAgNzMzDsNzMzMWAAAAAgNzMzMPAAAmxYmZmxMzyAgZIMGgB",
+    ImagePath = "Images/box_images/mage_fire_05.png",
     URL = "https://www.wowhead.com/guide/classes/mage/fire/talent-builds-pve-dps",
   },
   [132] = {
@@ -1188,6 +1319,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "6",
     ButtonLabel = "Copy Raid",
     TalentString = "C8DAAAAAAAAAAAAAAAAAAAAAAYGYZmZmFmZIzMGAAAmZZGDbDIAAgFzMeglxMzMDAAAAAYzMzMzAAgxMmZMzMzsAMzACjxAA",
+    ImagePath = "Images/box_images/mage_fire_06.png",
     URL = "https://www.wowhead.com/guide/classes/mage/fire/talent-builds-pve-dps",
   },
   [133] = {
@@ -1197,6 +1329,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "7",
     ButtonLabel = "Copy Mythic+",
     TalentString = "C8DAAAAAAAAAAAAAAAAAAAAAAMzALzMzsgZGZmxAAAwMLzYYZABAAsYmxDsMmZmZWAAAAAgNzMzMPAAAGzYmxMzMzCwMDIMGDA",
+    ImagePath = "Images/box_images/mage_fire_07.png",
     URL = "https://www.wowhead.com/guide/classes/mage/fire/talent-builds-pve-dps",
   },
   [134] = {
@@ -1206,6 +1339,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "8",
     ButtonLabel = "Copy Cleave",
     TalentString = "C8DAAAAAAAAAAAAAAAAAAAAAAMzALzMzsgZGZmxAAAwMLzYYZABAAsYmxDsMmZmZWAAAAAgNzMzMPAAAGzYmxMzMzCwMDIMGDA",
+    ImagePath = "Images/box_images/mage_fire_08.png",
     URL = "https://www.wowhead.com/guide/classes/mage/fire/talent-builds-pve-dps",
   },
   [135] = {
@@ -1215,6 +1349,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "9",
     ButtonLabel = "Copy Council",
     TalentString = "C8DAAAAAAAAAAAAAAAAAAAAAAMzALzMzsgZGZmxAAAwMLzYYZABAAsYmxDsMmZmZWAAAAAgNzMzMPAAAGzYmxMzMzCwMDIMGDA",
+    ImagePath = "Images/box_images/mage_fire_09.png",
     URL = "https://www.wowhead.com/guide/classes/mage/fire/talent-builds-pve-dps",
   },
   [136] = {
@@ -1224,6 +1359,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "10",
     ButtonLabel = "Copy Delves",
     TalentString = "C8DAAAAAAAAAAAAAAAAAAAAAAMzALzMzsgZGZmxAAAwMLzYmZZWgAAAWMzM2mZmZmHYBAAAAA2MzMz8AAAYGjZmZmZmZBAgwYAA",
+    ImagePath = "Images/box_images/mage_fire_10.png",
     URL = "https://www.wowhead.com/guide/classes/mage/fire/talent-builds-pve-dps",
   },
   [137] = {
@@ -1233,6 +1369,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "1",
     ButtonLabel = "Copy Raid",
     TalentString = "CAEAAAAAAAAAAAAAAAAAAAAAAYGGLzYmFmZmYGmZMjZWMzMzMmZsMTmZZWAAAQLAAAAAAgNA22GzMzgZZGjZstAAAAMDGZMgBA",
+    ImagePath = "Images/box_images/mage_frost_01.png",
     URL = "https://www.wowhead.com/guide/classes/mage/frost/talent-builds-pve-dps",
   },
   [138] = {
@@ -1242,6 +1379,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "2",
     ButtonLabel = "Copy Mythic+",
     TalentString = "CAEAAAAAAAAAAAAAAAAAAAAAAYGGLzYmFmZmYGmZmZmZWMzMzMGjlZyMLzCAAAaBAAAAAAsAw22YmZGMbGzMzYDAAAYGMyYAA",
+    ImagePath = "Images/box_images/mage_frost_02.png",
     URL = "https://www.wowhead.com/guide/classes/mage/frost/talent-builds-pve-dps",
   },
   [139] = {
@@ -1251,6 +1389,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "3",
     ButtonLabel = "Copy Cleave",
     TalentString = "CAEAAAAAAAAAAAAAAAAAAAAAAYGGLzYmFmZmYGmZmZmZWMzMzMGjlZyMLzCAAAaBAAAAAAsAw22YmZGMbGzMzYDAAAYGMyYAA",
+    ImagePath = "Images/box_images/mage_frost_03.png",
     URL = "https://www.wowhead.com/guide/classes/mage/frost/talent-builds-pve-dps",
   },
   [140] = {
@@ -1260,6 +1399,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "4",
     ButtonLabel = "Copy Council",
     TalentString = "CAEAAAAAAAAAAAAAAAAAAAAAAYGGLzYmFmZmYGmZmZmZWMzMzMGjlZyMLzCAAAaBAAAAAAsAw22YmZGMbGzMzYDAAAYGMyYAA",
+    ImagePath = "Images/box_images/mage_frost_04.png",
     URL = "https://www.wowhead.com/guide/classes/mage/frost/talent-builds-pve-dps",
   },
   [141] = {
@@ -1269,6 +1409,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "5",
     ButtonLabel = "Copy Delves",
     TalentString = "CAEAAAAAAAAAAAAAAAAAAAAAAYGGLzYmFmZmYGmZmZmZWMzMzMGjlZyMLzCAAAaBAAAAAAsAw22YmZGMbGzMzYDAAAYGMyYAA",
+    ImagePath = "Images/box_images/mage_frost_05.png",
     URL = "https://www.wowhead.com/guide/classes/mage/frost/talent-builds-pve-dps",
   },
   [142] = {
@@ -1278,6 +1419,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "6",
     ButtonLabel = "Copy Raid",
     TalentString = "CAEAAAAAAAAAAAAAAAAAAAAAAYGGLzYmFmZmYGmZMjZWMzMzMjZAAAgZGsMz0GAAAAAAYDgttxMzMYWmxYGWAAAYmFgZiZADA",
+    ImagePath = "Images/box_images/mage_frost_06.png",
     URL = "https://www.wowhead.com/guide/classes/mage/frost/talent-builds-pve-dps",
   },
   [143] = {
@@ -1287,6 +1429,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "7",
     ButtonLabel = "Copy Mythic+",
     TalentString = "CAEAAAAAAAAAAAAAAAAAAAAAAYGGLzYmFmZmYGmZmZmZ2MzMzMMDAAAMzglZm2AAAAAAALAstNmZmBzmxYmxGAAAzsBMTGDAA",
+    ImagePath = "Images/box_images/mage_frost_07.png",
     URL = "https://www.wowhead.com/guide/classes/mage/frost/talent-builds-pve-dps",
   },
   [144] = {
@@ -1296,6 +1439,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "8",
     ButtonLabel = "Copy Cleave",
     TalentString = "CAEAAAAAAAAAAAAAAAAAAAAAAYGGLzYmFmZmYGmZmZmZ2MzMzMMDAAAMzglZm2AAAAAAALAstNmZmBzmxYmxGAAAzsBMTGDAA",
+    ImagePath = "Images/box_images/mage_frost_08.png",
     URL = "https://www.wowhead.com/guide/classes/mage/frost/talent-builds-pve-dps",
   },
   [145] = {
@@ -1305,6 +1449,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "9",
     ButtonLabel = "Copy Council",
     TalentString = "CAEAAAAAAAAAAAAAAAAAAAAAAYGGLzYmFmZmYGmZmZmZ2MzMzMMDAAAMzglZm2AAAAAAALAstNmZmBzmxYmxGAAAzsBMTGDAA",
+    ImagePath = "Images/box_images/mage_frost_09.png",
     URL = "https://www.wowhead.com/guide/classes/mage/frost/talent-builds-pve-dps",
   },
   [146] = {
@@ -1314,6 +1459,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "10",
     ButtonLabel = "Copy Delves",
     TalentString = "CAEAAAAAAAAAAAAAAAAAAAAAAYGGLzYmFmZmYGmZmZmZ2MzMzMMDAAAMzglZm2AAAAAAALAstNmZmBzmxYmxGAAAzsBMTGDAA",
+    ImagePath = "Images/box_images/mage_frost_10.png",
     URL = "https://www.wowhead.com/guide/classes/mage/frost/talent-builds-pve-dps",
   },
   [147] = {
@@ -1323,6 +1469,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "1",
     ButtonLabel = "Copy Standard Raid",
     TalentString = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAgZbzYGPwYWM2mxMDAAAAAAALLYEmBmhBzgZmZGmlhZMzywymltZZYWAAgNEAAAbzSzMzsYGWAMw0YAAA",
+    ImagePath = "Images/box_images/monk_brewmaster_01.png",
     URL = "https://www.wowhead.com/guide/classes/monk/brewmaster/talent-builds-pve-tank",
   },
   [148] = {
@@ -1332,6 +1479,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "2",
     ButtonLabel = "Copy Advanced Raid",
     TalentString = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAwMbbGzYGzyM2wMDAAAAAAALLYEmBmhBzgZmZGmlhZMzyw2mttxwsBAAbIAAAMLNzMziZYDwMYaMAAA",
+    ImagePath = "Images/box_images/monk_brewmaster_02.png",
     URL = "https://www.wowhead.com/guide/classes/monk/brewmaster/talent-builds-pve-tank",
   },
   [149] = {
@@ -1341,6 +1489,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "3",
     ButtonLabel = "Copy Cleave",
     TalentString = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAwMbbGzYGzyM2wMDAAAAAAALLYEmBmhBzgZmZGmlhZMzyw2mttxwsBAAbIAAAMLNzMziZYDwMYaMAAA",
+    ImagePath = "Images/box_images/monk_brewmaster_03.png",
     URL = "https://www.wowhead.com/guide/classes/monk/brewmaster/talent-builds-pve-tank",
   },
   [150] = {
@@ -1350,6 +1499,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "4",
     ButtonLabel = "Copy Council",
     TalentString = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAgZbzYGPwYWM2mxMDAAAAAAALLYEmBmhBzgZmZGmlhZMzywymltZZYWAAgNEAAAbzSzMzsYGWAMw0YAAA",
+    ImagePath = "Images/box_images/monk_brewmaster_04.png",
     URL = "https://www.wowhead.com/guide/classes/monk/brewmaster/talent-builds-pve-tank",
   },
   [151] = {
@@ -1359,6 +1509,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "5",
     ButtonLabel = "Copy Mythic+",
     TalentString = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAgZZzYGzwyM2MmZAAAAAAAYZBmwMwMMYGMzMzYmFMjZWG22ssNbzYWAAgNEAAAbzSzMzsZG2AMw0AAAA",
+    ImagePath = "Images/box_images/monk_brewmaster_05.png",
     URL = "https://www.wowhead.com/guide/classes/monk/brewmaster/talent-builds-pve-tank",
   },
   [152] = {
@@ -1368,6 +1519,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "6",
     ButtonLabel = "Copy Delves",
     TalentString = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAgZZzYGzwix2MmZAAAAAAAYZBEzMwMMYGMzMzYmthZMzCW2ssNbDzGAAshAAAws0MzMLmhNAzgpxAGAA",
+    ImagePath = "Images/box_images/monk_brewmaster_06.png",
     URL = "https://www.wowhead.com/guide/classes/monk/brewmaster/talent-builds-pve-tank",
   },
   [153] = {
@@ -1377,6 +1529,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "7",
     ButtonLabel = "Copy Legacy",
     TalentString = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAwMLbGzYGWmxGmZMAAAAAAAWAxMDMMjFzgZmZGzYYmZmFssZbbMjZDAA2QAAAYWamZmNzwGgZw0YAAA",
+    ImagePath = "Images/box_images/monk_brewmaster_07.png",
     URL = "https://www.wowhead.com/guide/classes/monk/brewmaster/talent-builds-pve-tank",
   },
   [154] = {
@@ -1386,6 +1539,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "8",
     ButtonLabel = "Copy Standard Raid",
     TalentString = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAgZbzYGPwYWM2mxMDAAAAAAALLYEmBmhBzgZmZGmlhZMzywymltZZYWAAglZZaZMWGAAIAzwCMDw0YAAA",
+    ImagePath = "Images/box_images/monk_brewmaster_08.png",
     URL = "https://www.wowhead.com/guide/classes/monk/brewmaster/talent-builds-pve-tank",
   },
   [155] = {
@@ -1395,6 +1549,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "9",
     ButtonLabel = "Copy Advanced Raid",
     TalentString = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAwMbbGzYGzyM2wMDAAAAAAALLYEmBmhBzgZmZGmlhZMzyw2mttxwsAAALzy0yYYAAgAMDbwMDYaMAAA",
+    ImagePath = "Images/box_images/monk_brewmaster_09.png",
     URL = "https://www.wowhead.com/guide/classes/monk/brewmaster/talent-builds-pve-tank",
   },
   [156] = {
@@ -1404,6 +1559,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "10",
     ButtonLabel = "Copy Cleave",
     TalentString = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAwMbbGzYGzyM2wMDAAAAAAALLYEmBmhBzgZmZGmlhZMzyw2mttxwsAAALzy0yYYAAgAMDbwMDYaMAAA",
+    ImagePath = "Images/box_images/monk_brewmaster_10.png",
     URL = "https://www.wowhead.com/guide/classes/monk/brewmaster/talent-builds-pve-tank",
   },
   [157] = {
@@ -1413,6 +1569,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "11",
     ButtonLabel = "Copy Council",
     TalentString = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAgZbzYGPwYWM2mxMDAAAAAAALLYEmBmhBzgZmZGmlhZMzywymltZZYWAAglZZaZMWGAAIAzwCMDw0YAAA",
+    ImagePath = "Images/box_images/monk_brewmaster_11.png",
     URL = "https://www.wowhead.com/guide/classes/monk/brewmaster/talent-builds-pve-tank",
   },
   [158] = {
@@ -1422,6 +1579,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "12",
     ButtonLabel = "Copy Mythic+",
     TalentString = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAgZZzYGzwyM2mxMDAAAAAAALLwEmBmhBzgZmZGzsgZMzyw2mltZbYWAAglZZaZMWGAAIAzwGMDw0AAAA",
+    ImagePath = "Images/box_images/monk_brewmaster_12.png",
     URL = "https://www.wowhead.com/guide/classes/monk/brewmaster/talent-builds-pve-tank",
   },
   [159] = {
@@ -1431,6 +1589,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "13",
     ButtonLabel = "Copy Delves",
     TalentString = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAgZZzYGzwix2MmZAAAAAAAYZBEzMwMMYGMzMzYmthZMzCW2ssNbDzGAAsMLTLjhBAACwMsBzMgpxAGAA",
+    ImagePath = "Images/box_images/monk_brewmaster_13.png",
     URL = "https://www.wowhead.com/guide/classes/monk/brewmaster/talent-builds-pve-tank",
   },
   [160] = {
@@ -1440,6 +1599,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "14",
     ButtonLabel = "Copy Legacy",
     TalentString = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAwMLbGzYGWmxGmZMAAAAAAAWAxMDMMjFzgZmZGzYYmZmFssZbbMjZDAAWmlplxwAAABYG2gZGw0YAAA",
+    ImagePath = "Images/box_images/monk_brewmaster_14.png",
     URL = "https://www.wowhead.com/guide/classes/monk/brewmaster/talent-builds-pve-tank",
   },
   [161] = {
@@ -1449,6 +1609,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "1",
     ButtonLabel = "Copy Raid",
     TalentString = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAM2mB2sYGzMbzYDzMDzsstNzYhZ0MmBMYAzyMzMDz2gBLmAAAAAIALWGLMzAAAAAzAGDjFZMD",
+    ImagePath = "Images/box_images/monk_mistweaver_01.png",
     URL = "https://www.wowhead.com/guide/classes/monk/mistweaver/talent-builds-pve-healer",
   },
   [162] = {
@@ -1458,6 +1619,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "2",
     ButtonLabel = "Copy Mythic+",
     TalentString = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAmxyYZYxixMjNjlltZ4B2Mz222MjFmRzYGwgBMLzMzMMbYGmFTAAAAAEgFbjFmZAAAAgZAjBWkxMA",
+    ImagePath = "Images/box_images/monk_mistweaver_02.png",
     URL = "https://www.wowhead.com/guide/classes/monk/mistweaver/talent-builds-pve-healer",
   },
   [163] = {
@@ -1467,6 +1629,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "3",
     ButtonLabel = "Copy Mythic+ (Mistline)",
     TalentString = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMWmZZYxmxMjNstsNjZYmtttZGLMjmxMgBDYWmZmZY2wMMLmAAAAAIAL2GLMzAAAAAzAGDsIjZA",
+    ImagePath = "Images/box_images/monk_mistweaver_03.png",
     URL = "https://www.wowhead.com/guide/classes/monk/mistweaver/talent-builds-pve-healer",
   },
   [164] = {
@@ -1476,6 +1639,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "4",
     ButtonLabel = "Copy Delves",
     TalentString = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMWmZZML2mxMjNzADzmZ222mZswQzYGwgZBGzMzgZDzwsMTAAAAAEgFbjNmZAAAAgZAMYWkxMA",
+    ImagePath = "Images/box_images/monk_mistweaver_04.png",
     URL = "https://www.wowhead.com/guide/classes/monk/mistweaver/talent-builds-pve-healer",
   },
   [165] = {
@@ -1485,6 +1649,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "5",
     ButtonLabel = "Copy Raid",
     TalentString = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAM2mB2sYGzMbzYDzMDzsstNzYhZ0MmBMYAzyMzMDz2gBLmAAAAAWmWmthZDAAAAgZGAYMMWkBA",
+    ImagePath = "Images/box_images/monk_mistweaver_05.png",
     URL = "https://www.wowhead.com/guide/classes/monk/mistweaver/talent-builds-pve-healer",
   },
   [166] = {
@@ -1494,6 +1659,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "6",
     ButtonLabel = "Copy Mythic+",
     TalentString = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAmxyYZYxixMjNjlltZ4B2Mz222MjFmRzYGwgBMLzMzMMbYGmFTAAAAALTbz2wsBAAAAwMDAMGYRGA",
+    ImagePath = "Images/box_images/monk_mistweaver_06.png",
     URL = "https://www.wowhead.com/guide/classes/monk/mistweaver/talent-builds-pve-healer",
   },
   [167] = {
@@ -1503,6 +1669,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "7",
     ButtonLabel = "Copy Mythic+ (Mistline)",
     TalentString = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMWmZZYxmxMjNstsNjZYmtttZGLMjmxMgBDYWmZmZY2wMMLmAAAAAWm2mthZDAAAAgZGAYMwiMA",
+    ImagePath = "Images/box_images/monk_mistweaver_07.png",
     URL = "https://www.wowhead.com/guide/classes/monk/mistweaver/talent-builds-pve-healer",
   },
   [168] = {
@@ -1512,6 +1679,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "8",
     ButtonLabel = "Copy Delves",
     TalentString = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMWmZZML2MmZsZsYbGegNzsttNzYhhmxMgBzCMmZmBzGmhZZmAAAAAWm2mlhZDAAAAgZGAgBziMA",
+    ImagePath = "Images/box_images/monk_mistweaver_08.png",
     URL = "https://www.wowhead.com/guide/classes/monk/mistweaver/talent-builds-pve-healer",
   },
   [169] = {
@@ -1521,6 +1689,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "1",
     ButtonLabel = "Copy Raid",
     TalentString = "C0QAAAAAAAAAAAAAAAAAAAAAAMzMzMLMGmlZmZDAAAAAAAAAAAglhZCzYZYADDzMzMMbDzwsYCAYzMLjxwMzAAYDAYWamZmFMAYGAwyAxA",
+    ImagePath = "Images/box_images/monk_windwalker_01.png",
     URL = "https://www.wowhead.com/guide/classes/monk/windwalker/talent-builds-pve-dps",
   },
   [170] = {
@@ -1530,6 +1699,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "2",
     ButtonLabel = "Copy Mythic+",
     TalentString = "C0QAAAAAAAAAAAAAAAAAAAAAAMzMzMLMGsNzMbYAAAAAAAAAAAglhZCzYZYADDzMzMMbDzwsYCAYzMbjBmZGAAbAAzSzMzsghBYGAwyAxA",
+    ImagePath = "Images/box_images/monk_windwalker_02.png",
     URL = "https://www.wowhead.com/guide/classes/monk/windwalker/talent-builds-pve-dps",
   },
   [171] = {
@@ -1539,6 +1709,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "3",
     ButtonLabel = "Copy Cleave",
     TalentString = "C0QAAAAAAAAAAAAAAAAAAAAAAMzMzMLMGmlZmZDAAAAAAAAAAAglhZCzYZYADDzMzMMbDzwsYCAYzMLjxwMzAAYDAYWamZmFMAYGAwyAxA",
+    ImagePath = "Images/box_images/monk_windwalker_03.png",
     URL = "https://www.wowhead.com/guide/classes/monk/windwalker/talent-builds-pve-dps",
   },
   [172] = {
@@ -1548,6 +1719,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "4",
     ButtonLabel = "Copy Council",
     TalentString = "C0QAAAAAAAAAAAAAAAAAAAAAAMzMzMLMGsNzMbYAAAAAAAAAAAglhZCzYZYADDzMzMMbDzwsYCAYzMbjBmZGAAbAAzSzMzsghBYGAwyAxA",
+    ImagePath = "Images/box_images/monk_windwalker_04.png",
     URL = "https://www.wowhead.com/guide/classes/monk/windwalker/talent-builds-pve-dps",
   },
   [173] = {
@@ -1557,6 +1729,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "5",
     ButtonLabel = "Copy Delves",
     TalentString = "C0QAAAAAAAAAAAAAAAAAAAAAAMzMzMLMGsNzMbYAAAAAAAAAAAglhZCzYZYADDzMzMMbDzwsYCAYzMbjBmZGAAbAAzSzMzsghBYGAwyAxA",
+    ImagePath = "Images/box_images/monk_windwalker_05.png",
     URL = "https://www.wowhead.com/guide/classes/monk/windwalker/talent-builds-pve-dps",
   },
   [174] = {
@@ -1566,6 +1739,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "6",
     ButtonLabel = "Copy Raid",
     TalentString = "C0QAAAAAAAAAAAAAAAAAAAAAAMzMzMLMGsMzMbAAAAAAAAAAAAsMMTYGLDDYYYmZmhZbYGmFTAAbmZZMGzMzAAYxYhxEEAGAgZAYZgYmZ2A",
+    ImagePath = "Images/box_images/monk_windwalker_06.png",
     URL = "https://www.wowhead.com/guide/classes/monk/windwalker/talent-builds-pve-dps",
   },
   [175] = {
@@ -1575,6 +1749,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "7",
     ButtonLabel = "Copy Mythic+",
     TalentString = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYmZhxgtZmZDDAAAAAAAAAAAsMMTYGLDDYYYmZmhZbYGmFTAAbmZbMYmZGAALGLMmgAwwAgZAYZgYmZ2A",
+    ImagePath = "Images/box_images/monk_windwalker_07.png",
     URL = "https://www.wowhead.com/guide/classes/monk/windwalker/talent-builds-pve-dps",
   },
   [176] = {
@@ -1584,6 +1759,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "8",
     ButtonLabel = "Copy Cleave",
     TalentString = "C0QAAAAAAAAAAAAAAAAAAAAAAMzMzMLMGsMzMbAAAAAAAAAAAAsMMTYGLDDYYYmZmhZbYGmFTAAbmZZMGzMzAAYxYhxEEAGAgZAYZgYmZ2A",
+    ImagePath = "Images/box_images/monk_windwalker_08.png",
     URL = "https://www.wowhead.com/guide/classes/monk/windwalker/talent-builds-pve-dps",
   },
   [177] = {
@@ -1593,6 +1769,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "9",
     ButtonLabel = "Copy Council",
     TalentString = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYmZhxgtZmZDDAAAAAAAAAAAsMMTYGLDDYYYmZmhZbYGmFTAAbmZbMYmZGAALGLMmgAwwAgZAYZgYmZ2A",
+    ImagePath = "Images/box_images/monk_windwalker_09.png",
     URL = "https://www.wowhead.com/guide/classes/monk/windwalker/talent-builds-pve-dps",
   },
   [178] = {
@@ -1602,6 +1779,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "10",
     ButtonLabel = "Copy Delves",
     TalentString = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYmZhxgtZmZDDAAAAAAAAAAAsMMTYGLDDYYYmZmhZbYGmFTAAbmZbMYmZGAALGLMmgAwwAgZAYZgYmZ2A",
+    ImagePath = "Images/box_images/monk_windwalker_10.png",
     URL = "https://www.wowhead.com/guide/classes/monk/windwalker/talent-builds-pve-dps",
   },
   [179] = {
@@ -1611,6 +1789,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "1",
     ButtonLabel = "Copy Raid",
     TalentString = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAAYBAMAAGsMzMzYGzMwgxsMYmlZ0EDjZmhhZLDADAbgNWmZmZZ2mxsFAAAgF2GgFYMjZYAAYMMjxI",
+    ImagePath = "Images/box_images/paladin_holy_01.png",
     URL = "https://www.wowhead.com/guide/classes/paladin/holy/talent-builds-pve-healer",
   },
   [180] = {
@@ -1620,6 +1799,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "2",
     ButtonLabel = "Copy Mythic+",
     TalentString = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAAYBAMAAGsMmZmZGzMwgxsMYmFz0EDDzMMMbZAYAYDsxyMzMLz2MmtAAAAsw2AsYgZMDDAAjhZMGB",
+    ImagePath = "Images/box_images/paladin_holy_02.png",
     URL = "https://www.wowhead.com/guide/classes/paladin/holy/talent-builds-pve-healer",
   },
   [181] = {
@@ -1629,6 +1809,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "3",
     ButtonLabel = "Copy Delves",
     TalentString = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAAMLAgBAwglZmZmZGzMWgxMWGMziZaixMYGGmtMAMAsB2YZmZmlZbGzWAAAAWYDwiBmhhBAgxwMGjA",
+    ImagePath = "Images/box_images/paladin_holy_03.png",
     URL = "https://www.wowhead.com/guide/classes/paladin/holy/talent-builds-pve-healer",
   },
   [182] = {
@@ -1638,6 +1819,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "4",
     ButtonLabel = "Copy Raid",
     TalentString = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAAYBAMAAGsMzMzYGzMwgxsMYmlZ0EDjZmhhZLDADAbgNWmZGAEAwwy2ilxwGbDwCMmxMMAMzAwMGjA",
+    ImagePath = "Images/box_images/paladin_holy_04.png",
     URL = "https://www.wowhead.com/guide/classes/paladin/holy/talent-builds-pve-healer",
   },
   [183] = {
@@ -1647,6 +1829,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "5",
     ButtonLabel = "Copy Mythic+",
     TalentString = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAAYBAMAAGsMmZmZGzMwgxsMYmFz0EDDzMMMbZAYAYDsxyMzAgAAGW2WsMG2YbAWMwMmhBgZGAmxYE",
+    ImagePath = "Images/box_images/paladin_holy_05.png",
     URL = "https://www.wowhead.com/guide/classes/paladin/holy/talent-builds-pve-healer",
   },
   [184] = {
@@ -1656,6 +1839,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "6",
     ButtonLabel = "Copy Delves",
     TalentString = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAAMLAgBAwglZmZmZGzMWgxMWGMziZaixMYGGmtMAMAsB2YZmZAQAADLbLWGDbsBYxAzwwAwMDAzYMC",
+    ImagePath = "Images/box_images/paladin_holy_06.png",
     URL = "https://www.wowhead.com/guide/classes/paladin/holy/talent-builds-pve-healer",
   },
   [185] = {
@@ -1665,6 +1849,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "1",
     ButtonLabel = "Copy Raid",
     TalentString = "CIEAAAAAAAAAAAAAAAAAAAAAAsZGzwyMLmZmZGWGMzML2mxAAAAAAAAApZGmxMDjZ2CAGwAgtBAAMTmZWMAAbgZMAGzwYAAWmBYmBB",
+    ImagePath = "Images/box_images/paladin_protection_01.png",
     URL = "https://www.wowhead.com/guide/classes/paladin/protection/talent-builds-pve-tank",
   },
   [186] = {
@@ -1674,6 +1859,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "2",
     ButtonLabel = "Copy Mythic+",
     TalentString = "CIEAAAAAAAAAAAAAAAAAAAAAAsZ4BwyYZmZMzMLLYmZmlxMGAAAAAAAAopZGmxMDjZEAMgBAbDAAMzkZmFDAwmZYGDgxMMGAAzAmZGE",
+    ImagePath = "Images/box_images/paladin_protection_02.png",
     URL = "https://www.wowhead.com/guide/classes/paladin/protection/talent-builds-pve-tank",
   },
   [187] = {
@@ -1683,6 +1869,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "3",
     ButtonLabel = "Copy Delves",
     TalentString = "CIEAAAAAAAAAAAAAAAAAAAAAAsZ4BwyYZmZMzMLLYmZmlxMGAAAAAAAAopZGmxMDjZEAMgBAbDAAMzkZmFDAwmZYGDgxMMGAAzAmZGE",
+    ImagePath = "Images/box_images/paladin_protection_03.png",
     URL = "https://www.wowhead.com/guide/classes/paladin/protection/talent-builds-pve-tank",
   },
   [188] = {
@@ -1692,6 +1879,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "4",
     ButtonLabel = "Copy Raid",
     TalentString = "CIEAAAAAAAAAAAAAAAAAAAAAAsZGzwyMLmZmZGWGMzML2mxAAAAAAAAApZGmxMDjZ2CAGwAgtBAAQAmZWskZYBMjBwYGGDAmZAwMDC",
+    ImagePath = "Images/box_images/paladin_protection_04.png",
     URL = "https://www.wowhead.com/guide/classes/paladin/protection/talent-builds-pve-tank",
   },
   [189] = {
@@ -1701,6 +1889,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "5",
     ButtonLabel = "Copy Mythic+",
     TalentString = "CIEAAAAAAAAAAAAAAAAAAAAAAsZ4BwyYZmZMzMLLYmZmlxMGAAAAAAAAopZGmxMDjZEAMgBAbDAAgAMzsst0CsYGmxAYMDjBAzMAMzMI",
+    ImagePath = "Images/box_images/paladin_protection_05.png",
     URL = "https://www.wowhead.com/guide/classes/paladin/protection/talent-builds-pve-tank",
   },
   [190] = {
@@ -1710,6 +1899,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "6",
     ButtonLabel = "Copy Delves",
     TalentString = "CIEAAAAAAAAAAAAAAAAAAAAAAsZ4BwyYZmZMzMLLYmZmlxMGAAAAAAAAopZGmxMDjZEAMgBAbDAAgAMzsst0CsYGmxAYMDjBAzMAMzMI",
+    ImagePath = "Images/box_images/paladin_protection_06.png",
     URL = "https://www.wowhead.com/guide/classes/paladin/protection/talent-builds-pve-tank",
   },
   [191] = {
@@ -1719,6 +1909,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "1",
     ButtonLabel = "Copy Raid",
     TalentString = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAAQzy2MzsMMzAAAAAAwoMmhZGbDjhZ2mxYMzwwCbDDAAZGtNGzAA2AMAYMDzgZMmNsMDGGDD",
+    ImagePath = "Images/box_images/paladin_retribution_01.png",
     URL = "https://www.wowhead.com/guide/classes/paladin/retribution/talent-builds-pve-dps",
   },
   [192] = {
@@ -1728,6 +1919,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "2",
     ButtonLabel = "Copy Mythic+",
     TalentString = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAAQzy2MzsMGzMAAAAAAmpMMMzYbYMMz2MzYMGGWYDDAAZGtNGzAA2AMAYMDzgZMzshlZwwYYA",
+    ImagePath = "Images/box_images/paladin_retribution_02.png",
     URL = "https://www.wowhead.com/guide/classes/paladin/retribution/talent-builds-pve-dps",
   },
   [193] = {
@@ -1737,6 +1929,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "3",
     ButtonLabel = "Copy Cleave",
     TalentString = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAAQzy2MzsMmZmBAAAAAwoMmhZGbDjhZ2mZGjxwwCbYAAIzotxYGAwGgBAjZYGMjxshlZwwYYA",
+    ImagePath = "Images/box_images/paladin_retribution_03.png",
     URL = "https://www.wowhead.com/guide/classes/paladin/retribution/talent-builds-pve-dps",
   },
   [194] = {
@@ -1746,6 +1939,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "4",
     ButtonLabel = "Copy Council",
     TalentString = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAAQzy2MzsMGzMAAAAAAGlxMMzYbYMMz2MzYMGGWYDDAAZGtNGzAA2AMAYMDzgZMzshlZwwYYA",
+    ImagePath = "Images/box_images/paladin_retribution_04.png",
     URL = "https://www.wowhead.com/guide/classes/paladin/retribution/talent-builds-pve-dps",
   },
   [195] = {
@@ -1755,6 +1949,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "5",
     ButtonLabel = "Copy Delves",
     TalentString = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAAQzyyMzsMzMzMDAAAAAwMlhBzYbGjhZ2MjZ8AzAWYbAAAZGtNGzAA2AMAgZYghZmFsMDGzYGD",
+    ImagePath = "Images/box_images/paladin_retribution_05.png",
     URL = "https://www.wowhead.com/guide/classes/paladin/retribution/talent-builds-pve-dps",
   },
   [196] = {
@@ -1764,6 +1959,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "6",
     ButtonLabel = "Copy Raid",
     TalentString = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAAQzy2MzsMMzAAAAAAwoMmhZGbDjhZ2mxYMzwwCbDDwysNzMaQAAALAGAMmhZwMGzGwYGGDD",
+    ImagePath = "Images/box_images/paladin_retribution_06.png",
     URL = "https://www.wowhead.com/guide/classes/paladin/retribution/talent-builds-pve-dps",
   },
   [197] = {
@@ -1773,6 +1969,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "7",
     ButtonLabel = "Copy Mythic+",
     TalentString = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAAQzy2MzsMGzMAAAAAAmpMMMzYbYMMz2MzYMGGWYDDwysNzMaQAAALAGAMmhZwMmZ2AGzwYYA",
+    ImagePath = "Images/box_images/paladin_retribution_07.png",
     URL = "https://www.wowhead.com/guide/classes/paladin/retribution/talent-builds-pve-dps",
   },
   [198] = {
@@ -1782,6 +1979,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "8",
     ButtonLabel = "Copy Cleave",
     TalentString = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAAQzy2MzsMmZmBAAAAAwoMmhZGbDjhZ2mZGjxwwCbYAWmtZmRDCAAYBwAgxMMDmxY2AGzwYYA",
+    ImagePath = "Images/box_images/paladin_retribution_08.png",
     URL = "https://www.wowhead.com/guide/classes/paladin/retribution/talent-builds-pve-dps",
   },
   [199] = {
@@ -1791,6 +1989,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "9",
     ButtonLabel = "Copy Council",
     TalentString = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAAQzy2MzsMGzMAAAAAAGlxMMzYbYMMz2MzYMGGWYDDwysNzMaQAAALAGAMmhZwMmZ2AGzwYYA",
+    ImagePath = "Images/box_images/paladin_retribution_09.png",
     URL = "https://www.wowhead.com/guide/classes/paladin/retribution/talent-builds-pve-dps",
   },
   [200] = {
@@ -1800,6 +1999,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "10",
     ButtonLabel = "Copy Delves",
     TalentString = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAAQzyyMzsMmZmZAAAAAAmpMMYGbzYMMz2MjZ8AzAWYbAwysMzMaQAAALAGAwMMwwMzCwYGzYGD",
+    ImagePath = "Images/box_images/paladin_retribution_10.png",
     URL = "https://www.wowhead.com/guide/classes/paladin/retribution/talent-builds-pve-dps",
   },
   [201] = {
@@ -1809,6 +2009,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "1",
     ButtonLabel = "Copy Raid Oracle",
     TalentString = "CAQAAAAAAAAAAAAAAAAAAAAAAADsMGWmZMYGmZbmtZmZmxMDAAAAAAAAAgBLzMmZmZwwMgpZaMAzshhwYAYMYBAAGDzYwMAmZmA",
+    ImagePath = "Images/box_images/priest_discipline_01.png",
     URL = "https://www.wowhead.com/guide/classes/priest/discipline/talent-builds-pve-healer",
   },
   [202] = {
@@ -1818,6 +2019,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "2",
     ButtonLabel = "Copy Oracle Mythic+ Build",
     TalentString = "CAQAAAAAAAAAAAAAAAAAAAAAAADsMGWmZMmZGmZbmtZmZmhZAAAAAAAAAAMYZmxMzMDGjBMNTMAzshhwYAYMYBAAGzYGDmBwMzE",
+    ImagePath = "Images/box_images/priest_discipline_02.png",
     URL = "https://www.wowhead.com/guide/classes/priest/discipline/talent-builds-pve-healer",
   },
   [203] = {
@@ -1827,6 +2029,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "3",
     ButtonLabel = "Copy VW Mythic+ Build",
     TalentString = "CAQAAAAAAAAAAAAAAAAAAAAAAADswY2YMzMzMzMbsNzMzMMAAAAAAAAAAMYZmxMzMDGjBMNTzAzMAIAmlZDYsZAAYMMjBzAGMaA",
+    ImagePath = "Images/box_images/priest_discipline_03.png",
     URL = "https://www.wowhead.com/guide/classes/priest/discipline/talent-builds-pve-healer",
   },
   [204] = {
@@ -1836,6 +2039,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "4",
     ButtonLabel = "Copy Open-World Build",
     TalentString = "CAQAAAAAAAAAAAAAAAAAAAAAAADsMGWmZMmZGmZbmtZmZmhZAAAAAAAAAAMYxwMzMjNjxw2mpZiBYmNMEGDAjBLAAwYGzYwAwMzE",
+    ImagePath = "Images/box_images/priest_discipline_04.png",
     URL = "https://www.wowhead.com/guide/classes/priest/discipline/talent-builds-pve-healer",
   },
   [205] = {
@@ -1845,6 +2049,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "1",
     ButtonLabel = "Copy Oracle Raid",
     TalentString = "CEQAAAAAAAAAAAAAAAAAAAAAAwYAAAAAAAGjZmlZmZMzMDzMDLzwMAAAAGsMzYmZmhZYGAmaAMzCGCjBgxALMmNAZMGjhZGAzMA",
+    ImagePath = "Images/box_images/priest_holy_01.png",
     URL = "https://www.wowhead.com/guide/classes/priest/holy/talent-builds-pve-healer",
   },
   [206] = {
@@ -1854,6 +2059,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "2",
     ButtonLabel = "Copy Archon Raid",
     TalentString = "CEQAAAAAAAAAAAAAAAAAAAAAAwYAAAAAAgZzwYMYMzMzYmZGLzMzMAAAAGmlZGjZmBjZGAzUDAMDzEMAwYwmxYDQzYGGDmZZZAmB",
+    ImagePath = "Images/box_images/priest_holy_02.png",
     URL = "https://www.wowhead.com/guide/classes/priest/holy/talent-builds-pve-healer",
   },
   [207] = {
@@ -1863,6 +2069,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "3",
     ButtonLabel = "Copy Oracle Mythic+ Build",
     TalentString = "CEQAAAAAAAAAAAAAAAAAAAAAAwYAAAAAAAMmxYMDzMzwMzwyMzMDAAAgBLzMmZmZwYmBwMFAmFMEGDAjBWMzYDQzYGGDmBYmZGA",
+    ImagePath = "Images/box_images/priest_holy_03.png",
     URL = "https://www.wowhead.com/guide/classes/priest/holy/talent-builds-pve-healer",
   },
   [208] = {
@@ -1872,6 +2079,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "4",
     ButtonLabel = "Copy Archon Mythic+",
     TalentString = "CEQAAAAAAAAAAAAAAAAAAAAAAwYAAAAAAAbGzYMYMzMDzMzYZmZmBAAAwwsMzYMzMYMzAYmaAgZYmgBAGD2MzAgmxMMGMz2yAMDA",
+    ImagePath = "Images/box_images/priest_holy_04.png",
     URL = "https://www.wowhead.com/guide/classes/priest/holy/talent-builds-pve-healer",
   },
   [209] = {
@@ -1881,6 +2089,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "5",
     ButtonLabel = "Copy Open-World Build",
     TalentString = "CEQAAAAAAAAAAAAAAAAAAAAAAwYAAAAAAAbGzYWGzwMjhZGjlZmZGAAAADWMMzMzYzYmxsthZKAgZxMxmBAGD2MGbAaYGGDmxyAMA",
+    ImagePath = "Images/box_images/priest_holy_05.png",
     URL = "https://www.wowhead.com/guide/classes/priest/holy/talent-builds-pve-healer",
   },
   [210] = {
@@ -1890,6 +2099,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "1",
     ButtonLabel = "Copy Raid",
     TalentString = "CIQAAAAAAAAAAAAAAAAAAAAAAMMjZGAAAAAAAAAAAgxDYzMGLzMMz2MDzw2MzYYmByMsMTDwMAzsYGmNDAZMWAwMDyYmZGz2YGAMTA",
+    ImagePath = "Images/box_images/priest_shadow_01.png",
     URL = "https://www.wowhead.com/guide/classes/priest/shadow/talent-builds-pve-dps",
   },
   [211] = {
@@ -1899,6 +2109,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "2",
     ButtonLabel = "Copy Mythic+",
     TalentString = "CIQAAAAAAAAAAAAAAAAAAAAAAMMjZGAAAAAAAAAAAgxDYzMGLzMMz2MDzw2MzYYmByMsMTDwMAzsYGmNDAZMWAwMDyYmZGz2YGAMTA",
+    ImagePath = "Images/box_images/priest_shadow_02.png",
     URL = "https://www.wowhead.com/guide/classes/priest/shadow/talent-builds-pve-dps",
   },
   [212] = {
@@ -1908,6 +2119,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "3",
     ButtonLabel = "Copy Cleave",
     TalentString = "CIQAAAAAAAAAAAAAAAAAAAAAAMMjZGAAAAAAAAAAAgxDYzMGLzMMz2MDzw2MzYYmByMsMTDwMAzsYGmNDAZMWAwMDyYmZGz2YGAMTA",
+    ImagePath = "Images/box_images/priest_shadow_03.png",
     URL = "https://www.wowhead.com/guide/classes/priest/shadow/talent-builds-pve-dps",
   },
   [213] = {
@@ -1917,6 +2129,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "4",
     ButtonLabel = "Copy Council",
     TalentString = "CIQAAAAAAAAAAAAAAAAAAAAAAMMjZGAAAAAAAAAAAgxDYzMGLzMMz2MDzw2MzYYmByMsMTDwMAzsYGmNDAZMWAwMDyYmZGz2YGAMTA",
+    ImagePath = "Images/box_images/priest_shadow_04.png",
     URL = "https://www.wowhead.com/guide/classes/priest/shadow/talent-builds-pve-dps",
   },
   [214] = {
@@ -1926,6 +2139,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "5",
     ButtonLabel = "Copy Delves",
     TalentString = "CIQAAAAAAAAAAAAAAAAAAAAAAMMjZGAAAAAAAAAAAgxDYzMGLzMMz2MDzw2MzYYmByMsMTDwMAzsYGmNDAZMWAwMDyYmZGz2YGAMTA",
+    ImagePath = "Images/box_images/priest_shadow_05.png",
     URL = "https://www.wowhead.com/guide/classes/priest/shadow/talent-builds-pve-dps",
   },
   [215] = {
@@ -1935,6 +2149,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "6",
     ButtonLabel = "Copy Raid",
     TalentString = "CIQAAAAAAAAAAAAAAAAAAAAAAMjZMGAAAAAAAAAAAADLzMGLzMMz2MDzw2MzYYmByMsMTDwMzMAQAmtZDY2YAGjRGzMzY2GzAGMTA",
+    ImagePath = "Images/box_images/priest_shadow_06.png",
     URL = "https://www.wowhead.com/guide/classes/priest/shadow/talent-builds-pve-dps",
   },
   [216] = {
@@ -1944,6 +2159,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "7",
     ButtonLabel = "Copy Mythic+",
     TalentString = "CIQAAAAAAAAAAAAAAAAAAAAAAMjZMGAAAAAAAAAAAADLzMGLzMMz2MDzw2MzYYmByMsMTDwMzMAQAmtZDY2YAGjRGzMzY2GzAGMTA",
+    ImagePath = "Images/box_images/priest_shadow_07.png",
     URL = "https://www.wowhead.com/guide/classes/priest/shadow/talent-builds-pve-dps",
   },
   [217] = {
@@ -1953,6 +2169,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "8",
     ButtonLabel = "Copy Cleave",
     TalentString = "CIQAAAAAAAAAAAAAAAAAAAAAAMjZMGAAAAAAAAAAAADLzMGLzMMz2MDzw2MzYYmByMsMTDwMzMAQAmtZDY2YAGjRGzMzY2GzAGMTA",
+    ImagePath = "Images/box_images/priest_shadow_08.png",
     URL = "https://www.wowhead.com/guide/classes/priest/shadow/talent-builds-pve-dps",
   },
   [218] = {
@@ -1962,6 +2179,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "9",
     ButtonLabel = "Copy Council",
     TalentString = "CIQAAAAAAAAAAAAAAAAAAAAAAMjZMGAAAAAAAAAAAADLzMGLzMMz2MDzw2MzYYmByMsMTDwMzMAQAmtZDY2YAGjRGzMzY2GzAGMTA",
+    ImagePath = "Images/box_images/priest_shadow_09.png",
     URL = "https://www.wowhead.com/guide/classes/priest/shadow/talent-builds-pve-dps",
   },
   [219] = {
@@ -1971,6 +2189,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "10",
     ButtonLabel = "Copy Delves",
     TalentString = "CIQAAAAAAAAAAAAAAAAAAAAAAMjZMGAAAAAAAAAAAADLzMGLzMMz2MDzw2MzYYmByMsMTDwMzMAQAmtZDY2YAGjRGzMzY2GzAGMTA",
+    ImagePath = "Images/box_images/priest_shadow_10.png",
     URL = "https://www.wowhead.com/guide/classes/priest/shadow/talent-builds-pve-dps",
   },
   [220] = {
@@ -1980,6 +2199,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "1",
     ButtonLabel = "Copy Raid",
     TalentString = "CMQAAAAAAAAAAAAAAAAAAAAAAYmZMLzgBAAAAAmtBLzAAAAAAy2YmZmZGjZmZmtZ2mZmBjZmZGzMGGADsBDjGAyyA2MAYmB",
+    ImagePath = "Images/box_images/rogue_assassination_01.png",
     URL = "https://www.wowhead.com/guide/classes/rogue/assassination/talent-builds-pve-dps",
   },
   [221] = {
@@ -1989,6 +2209,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "2",
     ButtonLabel = "Copy Mythic+",
     TalentString = "CMQAAAAAAAAAAAAAAAAAAAAAA4BmZmZxgBAAAAAmtBbzAAAAAAy2YmZmZGjZmZmtZ2mZMegZmZmxwMjxAYgNYY0AQWGwmBAzMA",
+    ImagePath = "Images/box_images/rogue_assassination_02.png",
     URL = "https://www.wowhead.com/guide/classes/rogue/assassination/talent-builds-pve-dps",
   },
   [222] = {
@@ -1998,6 +2219,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "3",
     ButtonLabel = "Copy Cleave",
     TalentString = "CMQAAAAAAAAAAAAAAAAAAAAAA4BmZMLGMAAAAAwsNYZGAAAAAQ2GzMzMzYMzMzsNz2MzMMzMzMzwMjxAYgNYY0AQWGwmBAzMA",
+    ImagePath = "Images/box_images/rogue_assassination_03.png",
     URL = "https://www.wowhead.com/guide/classes/rogue/assassination/talent-builds-pve-dps",
   },
   [223] = {
@@ -2007,6 +2229,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "4",
     ButtonLabel = "Copy Council",
     TalentString = "CMQAAAAAAAAAAAAAAAAAAAAAA4BmZMLGMAAAAAwsNYZGAAAAAQ2GzMzMzYMzMzsNz2MzMMzMzMzwMjxAYgNYY0AQWGwmBAzMA",
+    ImagePath = "Images/box_images/rogue_assassination_04.png",
     URL = "https://www.wowhead.com/guide/classes/rogue/assassination/talent-builds-pve-dps",
   },
   [224] = {
@@ -2016,6 +2239,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "5",
     ButtonLabel = "Copy Delves",
     TalentString = "CMQAAAAAAAAAAAAAAAAAAAAAA4BmZmZxgBAAAAAmtBbzAAAAAAy2YmZmZGjZmZmtZ2mZMegZmZmxwMjxAYgNYY0AQWGwmBAzMA",
+    ImagePath = "Images/box_images/rogue_assassination_05.png",
     URL = "https://www.wowhead.com/guide/classes/rogue/assassination/talent-builds-pve-dps",
   },
   [225] = {
@@ -2025,6 +2249,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "6",
     ButtonLabel = "Copy Raid",
     TalentString = "CMQAAAAAAAAAAAAAAAAAAAAAAYmZMLzgBAAAAAmtBLzAAAAAAy2YmZmZGjZmZmtZ2mZmBjZmZGzMGGAmFwAWCWGEYYxgZGAA",
+    ImagePath = "Images/box_images/rogue_assassination_06.png",
     URL = "https://www.wowhead.com/guide/classes/rogue/assassination/talent-builds-pve-dps",
   },
   [226] = {
@@ -2034,6 +2259,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "7",
     ButtonLabel = "Copy Mythic+",
     TalentString = "CMQAAAAAAAAAAAAAAAAAAAAAA4BmZmZxgBAAAAAmtBbzAAAAAAy2YmZmZGjZmZmtZ2mZMegZmZmxwMjxAwsAGwSwygADLGMzAA",
+    ImagePath = "Images/box_images/rogue_assassination_07.png",
     URL = "https://www.wowhead.com/guide/classes/rogue/assassination/talent-builds-pve-dps",
   },
   [227] = {
@@ -2043,6 +2269,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "8",
     ButtonLabel = "Copy Cleave",
     TalentString = "CMQAAAAAAAAAAAAAAAAAAAAAA4BmZMLGMAAAAAwsNYZGAAAAAQ2GzMzMzYMzMzsNz2MzMMzMzMzwMjxAwsAGwSwygADLGMzAA",
+    ImagePath = "Images/box_images/rogue_assassination_08.png",
     URL = "https://www.wowhead.com/guide/classes/rogue/assassination/talent-builds-pve-dps",
   },
   [228] = {
@@ -2052,6 +2279,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "9",
     ButtonLabel = "Copy Council",
     TalentString = "CMQAAAAAAAAAAAAAAAAAAAAAA4BmZMLGMAAAAAwsNYZGAAAAAQ2GzMzMzYMzMzsNz2MzMMzMzMzwMjxAwsAGwSwygADLGMzAA",
+    ImagePath = "Images/box_images/rogue_assassination_09.png",
     URL = "https://www.wowhead.com/guide/classes/rogue/assassination/talent-builds-pve-dps",
   },
   [229] = {
@@ -2061,6 +2289,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "10",
     ButtonLabel = "Copy Delves",
     TalentString = "CMQAAAAAAAAAAAAAAAAAAAAAA4BmZmZxgBAAAAAmtBbzAAAAAAy2YmZmZGjZmZmtZ2mZMegZmZmxwMjxAwsAGwSwygADLGMzAA",
+    ImagePath = "Images/box_images/rogue_assassination_10.png",
     URL = "https://www.wowhead.com/guide/classes/rogue/assassination/talent-builds-pve-dps",
   },
   [230] = {
@@ -2070,6 +2299,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "1",
     ButtonLabel = "Copy Raid",
     TalentString = "CQQAAAAAAAAAAAAAAAAAAAAAAAghHYMGzYmZbmZmZGPgZjHYmZWmWGsNDAAAAAw22YmxMzMzMmZmtBAAAgBwAbgxoxsBYbCLMAwA",
+    ImagePath = "Images/box_images/rogue_outlaw_01.png",
     URL = "https://www.wowhead.com/guide/classes/rogue/outlaw/talent-builds-pve-dps",
   },
   [231] = {
@@ -2079,6 +2309,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "2",
     ButtonLabel = "Copy Mythic+",
     TalentString = "CQQAAAAAAAAAAAAAAAAAAAAAAAghHYMmZGzMmZmZMzDMzGPwMzYaZw2MAAAAAAbbjZGzMzMzYmZ2GAAAAGADsBGjGzGgtJswAADA",
+    ImagePath = "Images/box_images/rogue_outlaw_02.png",
     URL = "https://www.wowhead.com/guide/classes/rogue/outlaw/talent-builds-pve-dps",
   },
   [232] = {
@@ -2088,6 +2319,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "3",
     ButtonLabel = "Copy Cleave",
     TalentString = "CQQAAAAAAAAAAAAAAAAAAAAAAAghHYMmZGzMmZmZMzDMzGPwMzYaZw2MAAAAAAbbjZGzMzMzYmZ2GAAAAGADsBGjGzGgtJswAADA",
+    ImagePath = "Images/box_images/rogue_outlaw_03.png",
     URL = "https://www.wowhead.com/guide/classes/rogue/outlaw/talent-builds-pve-dps",
   },
   [233] = {
@@ -2097,6 +2329,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "4",
     ButtonLabel = "Copy Council",
     TalentString = "CQQAAAAAAAAAAAAAAAAAAAAAAAghHYMmZGzMmZmZMzDMzGPwMzYaZw2MAAAAAAbbjZGzMzMzYmZ2GAAAAGADsBGjGzGgtJswAADA",
+    ImagePath = "Images/box_images/rogue_outlaw_04.png",
     URL = "https://www.wowhead.com/guide/classes/rogue/outlaw/talent-builds-pve-dps",
   },
   [234] = {
@@ -2106,6 +2339,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "5",
     ButtonLabel = "Copy Delves",
     TalentString = "CQQAAAAAAAAAAAAAAAAAAAAAAAgBMmZGMbzMzMm5BmZjZmZMtMYbGAAAAAwstNzMDzMzMjZmZbAAAAYAA2AjRjZDgJswAgZmZA",
+    ImagePath = "Images/box_images/rogue_outlaw_05.png",
     URL = "https://www.wowhead.com/guide/classes/rogue/outlaw/talent-builds-pve-dps",
   },
   [235] = {
@@ -2115,6 +2349,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "6",
     ButtonLabel = "Copy Raid",
     TalentString = "CQQAAAAAAAAAAAAAAAAAAAAAAAghHYMGzYmZbmZmx4BMb8AzMzy0ygtZAAAAAA22GzMmZmZmxMzsNAAAAMGAMGGGyAWYhwGDwMDA",
+    ImagePath = "Images/box_images/rogue_outlaw_06.png",
     URL = "https://www.wowhead.com/guide/classes/rogue/outlaw/talent-builds-pve-dps",
   },
   [236] = {
@@ -2124,6 +2359,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "7",
     ButtonLabel = "Copy Mythic+",
     TalentString = "CQQAAAAAAAAAAAAAAAAAAAAAAAghHYMmZGmxMzMjZegZ24BmZGTLD2mBAAAAAYbbMzYmZmZGzMzyAAAAwYAwYYYIDYhFCbMAzMA",
+    ImagePath = "Images/box_images/rogue_outlaw_07.png",
     URL = "https://www.wowhead.com/guide/classes/rogue/outlaw/talent-builds-pve-dps",
   },
   [237] = {
@@ -2133,6 +2369,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "8",
     ButtonLabel = "Copy Cleave",
     TalentString = "CQQAAAAAAAAAAAAAAAAAAAAAAAghHYMmZGmxMzMjZegZ24BmZGTLD2mBAAAAAYbbMzYmZmZGzMzyAAAAwYAwYYYIDYhFCbMAzMA",
+    ImagePath = "Images/box_images/rogue_outlaw_08.png",
     URL = "https://www.wowhead.com/guide/classes/rogue/outlaw/talent-builds-pve-dps",
   },
   [238] = {
@@ -2142,6 +2379,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "9",
     ButtonLabel = "Copy Council",
     TalentString = "CQQAAAAAAAAAAAAAAAAAAAAAAAghHYMmZGmxMzMjZegZ24BmZGTLD2mBAAAAAYbbMzYmZmZGzMzyAAAAwYAwYYYIDYhFCbMAzMA",
+    ImagePath = "Images/box_images/rogue_outlaw_09.png",
     URL = "https://www.wowhead.com/guide/classes/rogue/outlaw/talent-builds-pve-dps",
   },
   [239] = {
@@ -2151,6 +2389,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "10",
     ButtonLabel = "Copy Delves",
     TalentString = "CQQAAAAAAAAAAAAAAAAAAAAAAAgBMmZGmxMzMjZegZ24BmZGTLD2mBAAAAAMbbzMzwMzMzYmZ2GAAAAGDAGDDDZALsQYjBYmBzA",
+    ImagePath = "Images/box_images/rogue_outlaw_10.png",
     URL = "https://www.wowhead.com/guide/classes/rogue/outlaw/talent-builds-pve-dps",
   },
   [240] = {
@@ -2160,6 +2399,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "1",
     ButtonLabel = "Copy Raid",
     TalentString = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGbTMbbjxMMDegZmZGjZbmZG2mZmZmZGAzsNAAAAMYMMLDMAADTIzCmhZGgZA",
+    ImagePath = "Images/box_images/rogue_subtlety_01.png",
     URL = "https://www.wowhead.com/guide/classes/rogue/subtlety/talent-builds-pve-dps",
   },
   [241] = {
@@ -2169,6 +2409,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "2",
     ButtonLabel = "Copy Mythic+",
     TalentString = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGbTMbLjxMMjxDMzMzYMbzYG2mZmZmZGAzsNAAAAMYMMLDMAglBhMLYGmZAmB",
+    ImagePath = "Images/box_images/rogue_subtlety_02.png",
     URL = "https://www.wowhead.com/guide/classes/rogue/subtlety/talent-builds-pve-dps",
   },
   [242] = {
@@ -2178,6 +2419,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "3",
     ButtonLabel = "Copy Cleave",
     TalentString = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGbTMbbjxMYMegZmZGjZbmZG2mZmZmZGAzsNAAAAMYMMLDMAADTIzCmhZGgZA",
+    ImagePath = "Images/box_images/rogue_subtlety_03.png",
     URL = "https://www.wowhead.com/guide/classes/rogue/subtlety/talent-builds-pve-dps",
   },
   [243] = {
@@ -2187,6 +2429,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "4",
     ButtonLabel = "Copy Council",
     TalentString = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGbTMbLjxMYmxDMzMzYMbzYG2mZmZmZGAzsNAAAAMYMMLDMAglBhMLYGmZAmB",
+    ImagePath = "Images/box_images/rogue_subtlety_04.png",
     URL = "https://www.wowhead.com/guide/classes/rogue/subtlety/talent-builds-pve-dps",
   },
   [244] = {
@@ -2196,6 +2439,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "5",
     ButtonLabel = "Copy Delves",
     TalentString = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGbTMbbjxMMDegZmZGjZbmZG2mZmZmZGAzsNAAAAMYMMLDMAADTIzCmhZGgZA",
+    ImagePath = "Images/box_images/rogue_subtlety_05.png",
     URL = "https://www.wowhead.com/guide/classes/rogue/subtlety/talent-builds-pve-dps",
   },
   [245] = {
@@ -2205,6 +2449,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "6",
     ButtonLabel = "Copy Raid",
     TalentString = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGbTMbbjxMMDegZmZGjZbmZG2mZmZmZGAzsNAAAAMYMgxwwADYRLEbYGwMDmB",
+    ImagePath = "Images/box_images/rogue_subtlety_06.png",
     URL = "https://www.wowhead.com/guide/classes/rogue/subtlety/talent-builds-pve-dps",
   },
   [246] = {
@@ -2214,6 +2459,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "7",
     ButtonLabel = "Copy Mythic+",
     TalentString = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGbTMbLjxMMjxDMzMzYMbzYG2mZmZmZGAzsNAAAAMYMgxwwADYRLEbYGwMDmB",
+    ImagePath = "Images/box_images/rogue_subtlety_07.png",
     URL = "https://www.wowhead.com/guide/classes/rogue/subtlety/talent-builds-pve-dps",
   },
   [247] = {
@@ -2223,6 +2469,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "8",
     ButtonLabel = "Copy Cleave",
     TalentString = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGbTMbbjxMYMegZmZGjZbmZG2mZmZmZGAzsNAAAAMYMgxwwADYRLEbYGwMDmB",
+    ImagePath = "Images/box_images/rogue_subtlety_08.png",
     URL = "https://www.wowhead.com/guide/classes/rogue/subtlety/talent-builds-pve-dps",
   },
   [248] = {
@@ -2232,6 +2479,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "9",
     ButtonLabel = "Copy Council",
     TalentString = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGbTMbLjxMYmxDMzMzYMbzYG2mZmZmZGAzsNAAAAMYMgxwwADYRLEbYGwMDmB",
+    ImagePath = "Images/box_images/rogue_subtlety_09.png",
     URL = "https://www.wowhead.com/guide/classes/rogue/subtlety/talent-builds-pve-dps",
   },
   [249] = {
@@ -2241,6 +2489,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "10",
     ButtonLabel = "Copy Delves",
     TalentString = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGbTMbLjxMMjxDMzMzYMbzYG2mZmZmZGAzsNAAAAMYMgxwwADYRLEbYGwMDmB",
+    ImagePath = "Images/box_images/rogue_subtlety_10.png",
     URL = "https://www.wowhead.com/guide/classes/rogue/subtlety/talent-builds-pve-dps",
   },
   [250] = {
@@ -2250,6 +2499,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "1",
     ButtonLabel = "Copy Raid",
     TalentString = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAmZZZmxMzMbLLjxMmZAAAAAbmZDGwAmNmQmFAYWmZmxYbxEmZMWmZmZMsYxYBzMzsAAMAAMMA",
+    ImagePath = "Images/box_images/shaman_elemental_01.png",
     URL = "https://www.wowhead.com/guide/classes/shaman/elemental/talent-builds-pve-dps",
   },
   [251] = {
@@ -2259,6 +2509,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "2",
     ButtonLabel = "Copy Mythic+",
     TalentString = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAmZZZmxMzMbLLjxMMDAAAAYxMbwAGwsxEysAAzyMzMGbLmwMjxyMzMjhFLGLDjZmFAgBAghB",
+    ImagePath = "Images/box_images/shaman_elemental_02.png",
     URL = "https://www.wowhead.com/guide/classes/shaman/elemental/talent-builds-pve-dps",
   },
   [252] = {
@@ -2268,6 +2519,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "3",
     ButtonLabel = "Copy Cleave",
     TalentString = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAmZZZmxMzMbLLjxMmZAAAAAbmZDGwAmNmQmFAYWmZmxYbxEmZMWmZmZMsYxYBzMzsAAMAAMMA",
+    ImagePath = "Images/box_images/shaman_elemental_03.png",
     URL = "https://www.wowhead.com/guide/classes/shaman/elemental/talent-builds-pve-dps",
   },
   [253] = {
@@ -2277,6 +2529,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "4",
     ButtonLabel = "Copy Council",
     TalentString = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAmZZZmxMzMbLLjxMmZAAAAAbmZDGwAmNmQmFAYWmZmxYbxEmZMWmZmZMsYxYBzMzsAAMAAMMA",
+    ImagePath = "Images/box_images/shaman_elemental_04.png",
     URL = "https://www.wowhead.com/guide/classes/shaman/elemental/talent-builds-pve-dps",
   },
   [254] = {
@@ -2286,6 +2539,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "5",
     ButtonLabel = "Copy Delves",
     TalentString = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAmZZZmxMzMbLLjxMmZAAAAAbmZDGwAmNmQmFAYWmZmxYbxEmZMWmZmZMsYxYBzMzsAAMAAMMA",
+    ImagePath = "Images/box_images/shaman_elemental_05.png",
     URL = "https://www.wowhead.com/guide/classes/shaman/elemental/talent-builds-pve-dps",
   },
   [255] = {
@@ -2295,6 +2549,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "6",
     ButtonLabel = "Copy Raid",
     TalentString = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAmZZZmxMzMbLLjxMmZAAAAAAmxwGAmRoxGAMLzMzYstYCzMGLzMzMGWsYsgZmZWAAGAzMwwA",
+    ImagePath = "Images/box_images/shaman_elemental_06.png",
     URL = "https://www.wowhead.com/guide/classes/shaman/elemental/talent-builds-pve-dps",
   },
   [256] = {
@@ -2304,6 +2559,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "7",
     ButtonLabel = "Copy Mythic+",
     TalentString = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAmZZZmxMzMbLLjxMMDAAAAAwMG2AwMCN2AgZZmZGjtFTYmxYZmZmxwiFjlhxMzCAwAYmBGG",
+    ImagePath = "Images/box_images/shaman_elemental_07.png",
     URL = "https://www.wowhead.com/guide/classes/shaman/elemental/talent-builds-pve-dps",
   },
   [257] = {
@@ -2313,6 +2569,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "8",
     ButtonLabel = "Copy Cleave",
     TalentString = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAmZZZmxMzMbLLjxMmZAAAAAAmxwGAmRoxGAMLzMzYstYCzMGLzMzMGWsYsgZmZWAAGAzMwwA",
+    ImagePath = "Images/box_images/shaman_elemental_08.png",
     URL = "https://www.wowhead.com/guide/classes/shaman/elemental/talent-builds-pve-dps",
   },
   [258] = {
@@ -2322,6 +2579,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "9",
     ButtonLabel = "Copy Council",
     TalentString = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAmZZZmxMzMbLLjxMmZAAAAAAmxwGAmRoxGAMLzMzYstYCzMGLzMzMGWsYsgZmZWAAGAzMwwA",
+    ImagePath = "Images/box_images/shaman_elemental_09.png",
     URL = "https://www.wowhead.com/guide/classes/shaman/elemental/talent-builds-pve-dps",
   },
   [259] = {
@@ -2331,6 +2589,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "10",
     ButtonLabel = "Copy Delves",
     TalentString = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAmZZZmxMzMbLLjxMmZAAAAAAmxwGAmRoxGAMLzMzYstYCzMGLzMzMGWsYsgZmZWAAGAzMwwA",
+    ImagePath = "Images/box_images/shaman_elemental_10.png",
     URL = "https://www.wowhead.com/guide/classes/shaman/elemental/talent-builds-pve-dps",
   },
   [260] = {
@@ -2340,6 +2599,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "1",
     ButtonLabel = "Copy Raid",
     TalentString = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzYmZmZmZmhZGDAAAAAAAAgNAMjhNCYGQDWAYWmxMzYZZGYmZjlZmZGGYGAgZYMzwIwMDgB",
+    ImagePath = "Images/box_images/shaman_enhancement_01.png",
     URL = "https://www.wowhead.com/guide/classes/shaman/enhancement/talent-builds-pve-dps",
   },
   [261] = {
@@ -2349,6 +2609,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "2",
     ButtonLabel = "Copy Mythic+",
     TalentString = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzYMzMzMzMMzMDAAAAAAAAgNAMjhNCYGQDWAYWmxMGLLzAzMYZmZmZMwMAAGGzMMCMzgBD",
+    ImagePath = "Images/box_images/shaman_enhancement_02.png",
     URL = "https://www.wowhead.com/guide/classes/shaman/enhancement/talent-builds-pve-dps",
   },
   [262] = {
@@ -2358,6 +2619,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "3",
     ButtonLabel = "Copy Cleave",
     TalentString = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzYmZmZmZmhZGDAAAAAAAAgNAMjhNCYGQDWAYWmxMzYZZGYmZjlZmZGGYGAgZYMzwIwMDgB",
+    ImagePath = "Images/box_images/shaman_enhancement_03.png",
     URL = "https://www.wowhead.com/guide/classes/shaman/enhancement/talent-builds-pve-dps",
   },
   [263] = {
@@ -2367,6 +2629,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "4",
     ButtonLabel = "Copy Delves",
     TalentString = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzYMzMzMzMMzMDAAAAAAAAgNAMjhNCYGQDWAYWmxMGLLzAzMYxMzMjBmBAwwYmhZCMzgBD",
+    ImagePath = "Images/box_images/shaman_enhancement_04.png",
     URL = "https://www.wowhead.com/guide/classes/shaman/enhancement/talent-builds-pve-dps",
   },
   [264] = {
@@ -2376,6 +2639,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "5",
     ButtonLabel = "Copy Raid",
     TalentString = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzMzMzMzMzMmZGzAAAAAAAAAALAYG0YbAMC2AwyMmxYZZGYmZjlZmZGGGzAAYYYYGxMDAMA",
+    ImagePath = "Images/box_images/shaman_enhancement_05.png",
     URL = "https://www.wowhead.com/guide/classes/shaman/enhancement/talent-builds-pve-dps",
   },
   [265] = {
@@ -2385,6 +2649,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "6",
     ButtonLabel = "Copy Mythic+",
     TalentString = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzMjZMzMzMzMzYGAAAAAAAAAYBAzgGbDgRwGAzyMmxYZxAzMbsMjZmBGzAAAjZYmJmZAGMA",
+    ImagePath = "Images/box_images/shaman_enhancement_06.png",
     URL = "https://www.wowhead.com/guide/classes/shaman/enhancement/talent-builds-pve-dps",
   },
   [266] = {
@@ -2394,6 +2659,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "7",
     ButtonLabel = "Copy Cleave",
     TalentString = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzMzMzMzMzMmZGzAAAAAAAAAALAYG0YbAMC2AwyMmxYZZGYmZjlZmZGGGzAAAjZYGxMDAMA",
+    ImagePath = "Images/box_images/shaman_enhancement_07.png",
     URL = "https://www.wowhead.com/guide/classes/shaman/enhancement/talent-builds-pve-dps",
   },
   [267] = {
@@ -2403,6 +2669,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "8",
     ButtonLabel = "Copy Delves",
     TalentString = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzMzMzMzMzMmZGzAAAAAAAAAALAYG0YbAMC2AYWmxMGLLzAzMYxMzMjBmBAAGzwMiZGAYA",
+    ImagePath = "Images/box_images/shaman_enhancement_08.png",
     URL = "https://www.wowhead.com/guide/classes/shaman/enhancement/talent-builds-pve-dps",
   },
   [268] = {
@@ -2412,6 +2679,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "1",
     ButtonLabel = "Copy Raid",
     TalentString = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAjZmxy2MMjxMzMzwgxCMABzCTgxixYgtxYmmtlZGmxswixMjZYWGAAAYmZAwMDzMA",
+    ImagePath = "Images/box_images/shaman_restoration_01.png",
     URL = "https://www.wowhead.com/guide/classes/shaman/restoration/talent-builds-pve-healer",
   },
   [269] = {
@@ -2421,6 +2689,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "2",
     ButtonLabel = "Copy Mythic+",
     TalentString = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAjZMW2mhZmZmZmxwgxCMABzCTgxCmZwsNzY0stMzwMmFWMmZMYWGAAMAzMDAmZYmB",
+    ImagePath = "Images/box_images/shaman_restoration_02.png",
     URL = "https://www.wowhead.com/guide/classes/shaman/restoration/talent-builds-pve-healer",
   },
   [270] = {
@@ -2430,6 +2699,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "3",
     ButtonLabel = "Copy Delves",
     TalentString = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAjZmxy2MMzMzMzMmxgxCMABzCTgxCmZgtZmZ0stMzgZGsMjZGzwsAAADwMzAgZGGA",
+    ImagePath = "Images/box_images/shaman_restoration_03.png",
     URL = "https://www.wowhead.com/guide/classes/shaman/restoration/talent-builds-pve-healer",
   },
   [271] = {
@@ -2439,6 +2709,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "4",
     ButtonLabel = "Copy Raid",
     TalentString = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAjZmZZbZGzMGzMjZYYBAzgGbDIDYjhxM2GjZa2WmZYGzCLGzMmhZZAAgBMzMYmBgxA",
+    ImagePath = "Images/box_images/shaman_restoration_04.png",
     URL = "https://www.wowhead.com/guide/classes/shaman/restoration/talent-builds-pve-healer",
   },
   [272] = {
@@ -2448,6 +2719,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "5",
     ButtonLabel = "Copy Mythic+",
     TalentString = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAjZMLbLzMzMzYmBDDgFwYTjtBkZgNGGzMbzMGNbLzMMjZhFjZGDmlBAAzAmZGYGAGD",
+    ImagePath = "Images/box_images/shaman_restoration_05.png",
     URL = "https://www.wowhead.com/guide/classes/shaman/restoration/talent-builds-pve-healer",
   },
   [273] = {
@@ -2457,6 +2729,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "6",
     ButtonLabel = "Copy Delves",
     TalentString = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYMzMLLbzMzYmZmZGzYYBAzgGbDIDYjxMw2MzMa2WmZwMDWmxMjZYWAAgBYmZwMDADA",
+    ImagePath = "Images/box_images/shaman_restoration_06.png",
     URL = "https://www.wowhead.com/guide/classes/shaman/restoration/talent-builds-pve-healer",
   },
   [274] = {
@@ -2466,6 +2739,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "1",
     ButtonLabel = "Copy Raid",
     TalentString = "CkQAAAAAAAAAAAAAAAAAAAAAAgZMzoZjhZmxsMAAAzMLzmZmNzAAWgBGGNMgMLglBAAgZAAAzAmZmZMDMzMzMjBzMzMAgZA",
+    ImagePath = "Images/box_images/warlock_affliction_01.png",
     URL = "https://www.wowhead.com/guide/classes/warlock/affliction/talent-builds-pve-dps",
   },
   [275] = {
@@ -2475,6 +2749,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "2",
     ButtonLabel = "Copy Mythic+",
     TalentString = "CkQAAAAAAAAAAAAAAAAAAAAAAghZGNbmx2MzYWGAAwMzsMbzMz2YAALwADjGGQmFwyAAAgBAAMDGzwMbzMmBzMzMGmZmBAYA",
+    ImagePath = "Images/box_images/warlock_affliction_02.png",
     URL = "https://www.wowhead.com/guide/classes/warlock/affliction/talent-builds-pve-dps",
   },
   [276] = {
@@ -2484,6 +2759,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "3",
     ButtonLabel = "Copy Cleave",
     TalentString = "CkQAAAAAAAAAAAAAAAAAAAAAAgZMzoZjhZmxsMAAgZmZxmZmFzAAWgBGGNMgMLglBAAgZAAAzAmZmZMgZmZmZmBzMzMAgZA",
+    ImagePath = "Images/box_images/warlock_affliction_03.png",
     URL = "https://www.wowhead.com/guide/classes/warlock/affliction/talent-builds-pve-dps",
   },
   [277] = {
@@ -2493,6 +2769,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "4",
     ButtonLabel = "Copy Delves",
     TalentString = "CkQAAAAAAAAAAAAAAAAAAAAAAghZGNbmx2MzYWGAAwMzsMbzMz2YAALwADjGGQmFwyAAAgBAAMDGzwMbzMmBzMzMGmZmBAYA",
+    ImagePath = "Images/box_images/warlock_affliction_04.png",
     URL = "https://www.wowhead.com/guide/classes/warlock/affliction/talent-builds-pve-dps",
   },
   [278] = {
@@ -2502,6 +2779,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "5",
     ButtonLabel = "Copy Raid",
     TalentString = "CkQAAAAAAAAAAAAAAAAAAAAAAgZMzoZjhZmxsMAAgZmZxmZmNzAAjllBGwEMDbBG2GAAAmBAAAYmZmxAmZmZmZGMzMzAAmB",
+    ImagePath = "Images/box_images/warlock_affliction_05.png",
     URL = "https://www.wowhead.com/guide/classes/warlock/affliction/talent-builds-pve-dps",
   },
   [279] = {
@@ -2510,7 +2788,8 @@ Mythicbus_WowheadResults = {
     Role = "dps",
     RowIndex = "6",
     ButtonLabel = "Copy Mythic+",
-    TalentString = "CkQAAAAAAAAAAAAAAAAAAAAAAgZMzoZjhZmxsMAAgZmZxmZmNzAAjllBGwEMDbBG2GAAAmBAAAYmZmxAmZmZmZGMzMzAAmB",
+    TalentString = "CkQAAAAAAAAAAAAAAAAAAAAAAghZGNbmx2MzYWGAAwMzsMbzMz2YAAWWGYATwMIww2AAAgBAAgZGzwMbzMmBzMzMGmZmBAYA",
+    ImagePath = "Images/box_images/warlock_affliction_06.png",
     URL = "https://www.wowhead.com/guide/classes/warlock/affliction/talent-builds-pve-dps",
   },
   [280] = {
@@ -2520,6 +2799,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "7",
     ButtonLabel = "Copy Cleave",
     TalentString = "CkQAAAAAAAAAAAAAAAAAAAAAAgZMzoZjhZmxsMAAgZmZxmZmFzAAssMwAmgZYLww2AAAwMAAAYYmZmxAmZmZmZGMzMzAAmB",
+    ImagePath = "Images/box_images/warlock_affliction_07.png",
     URL = "https://www.wowhead.com/guide/classes/warlock/affliction/talent-builds-pve-dps",
   },
   [281] = {
@@ -2528,7 +2808,8 @@ Mythicbus_WowheadResults = {
     Role = "dps",
     RowIndex = "8",
     ButtonLabel = "Copy Delves",
-    TalentString = "CkQAAAAAAAAAAAAAAAAAAAAAAgZMzoZjhZmxsMAAgZmZxmZmNzAAjllBGwEMDbBG2GAAAmBAAAYmZmxAmZmZmZGMzMzAAmB",
+    TalentString = "CkQAAAAAAAAAAAAAAAAAAAAAAghZGNbmx2MzYWGAAwMzsMbzMz2YAAWWGYATwMIww2AAAgBAAgZGzwMbzMmBzMzMGmZmBAYA",
+    ImagePath = "Images/box_images/warlock_affliction_08.png",
     URL = "https://www.wowhead.com/guide/classes/warlock/affliction/talent-builds-pve-dps",
   },
   [282] = {
@@ -2538,6 +2819,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "1",
     ButtonLabel = "Copy Raid",
     TalentString = "CoQAAAAAAAAAAAAAAAAAAAAAAwMjZGNbMMzMmlBAAAAAAAMmBAgtRb0wiZmZsMLzMzwAAzMmZmZmBYMjZGAAgxMzMGGMjBA",
+    ImagePath = "Images/box_images/warlock_demonology_01.png",
     URL = "https://www.wowhead.com/guide/classes/warlock/demonology/talent-builds-pve-dps",
   },
   [283] = {
@@ -2547,6 +2829,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "2",
     ButtonLabel = "Copy Mythic+",
     TalentString = "CoQAAAAAAAAAAAAAAAAAAAAAAwMjZGNbMMzMmlBAAAAAAAMmBAgtRb0wixMjlxMmZMAwMzMMzMDwYGzMAAAjZmZMGsNzMA",
+    ImagePath = "Images/box_images/warlock_demonology_02.png",
     URL = "https://www.wowhead.com/guide/classes/warlock/demonology/talent-builds-pve-dps",
   },
   [284] = {
@@ -2556,6 +2839,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "3",
     ButtonLabel = "Copy Cleave",
     TalentString = "CoQAAAAAAAAAAAAAAAAAAAAAAwMjZGNbMMzMmlBAAAAAAAMmBAgtRb0wixMjlZbGzwAAzMzYmZmBYMjZGAAgxMzMGD2mxAA",
+    ImagePath = "Images/box_images/warlock_demonology_03.png",
     URL = "https://www.wowhead.com/guide/classes/warlock/demonology/talent-builds-pve-dps",
   },
   [285] = {
@@ -2565,6 +2849,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "4",
     ButtonLabel = "Copy Delves",
     TalentString = "CoQAAAAAAAAAAAAAAAAAAAAAAwMjZGNbMMzMmlBAAAAAAAMmBAgtRb0wixMjlxMmZMAwMzMMzMDwYGzMAAAjZmZMGsNzMA",
+    ImagePath = "Images/box_images/warlock_demonology_04.png",
     URL = "https://www.wowhead.com/guide/classes/warlock/demonology/talent-builds-pve-dps",
   },
   [286] = {
@@ -2574,6 +2859,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "5",
     ButtonLabel = "Copy Raid",
     TalentString = "CoQAAAAAAAAAAAAAAAAAAAAAAwMjZGNbMMzMmlBAAAAAAYsZgBAMDbhM2MzMjlZZmZGGAYmxMzMAmZMjZGAAgxMzMGGMjBA",
+    ImagePath = "Images/box_images/warlock_demonology_05.png",
     URL = "https://www.wowhead.com/guide/classes/warlock/demonology/talent-builds-pve-dps",
   },
   [287] = {
@@ -2583,6 +2869,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "6",
     ButtonLabel = "Copy Mythic+",
     TalentString = "CoQAAAAAAAAAAAAAAAAAAAAAAwMjZGNbMMzMmlBAAAAAAYsZgBAMDbhM2MmZsMmxMjBAmZmhZAMzYGzMAAAjZmZMGsNzMA",
+    ImagePath = "Images/box_images/warlock_demonology_06.png",
     URL = "https://www.wowhead.com/guide/classes/warlock/demonology/talent-builds-pve-dps",
   },
   [288] = {
@@ -2592,6 +2879,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "7",
     ButtonLabel = "Copy Cleave",
     TalentString = "CoQAAAAAAAAAAAAAAAAAAAAAAwMjZGNbMMzMmlBAAAAAAYsZgBAMDbhM2MmZsMbzYGGAYmZGzMAmZMjZGAAgxMzMGD2mxAA",
+    ImagePath = "Images/box_images/warlock_demonology_07.png",
     URL = "https://www.wowhead.com/guide/classes/warlock/demonology/talent-builds-pve-dps",
   },
   [289] = {
@@ -2601,6 +2889,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "8",
     ButtonLabel = "Copy Delves",
     TalentString = "CoQAAAAAAAAAAAAAAAAAAAAAAwMjZGNbMMzMmlBAAAAAAYsZgBAMDbhM2MmZsMmxMjBAmZmhZAMzYGzMAAAjZmZMGsNzMA",
+    ImagePath = "Images/box_images/warlock_demonology_08.png",
     URL = "https://www.wowhead.com/guide/classes/warlock/demonology/talent-builds-pve-dps",
   },
   [290] = {
@@ -2609,7 +2898,8 @@ Mythicbus_WowheadResults = {
     Role = "dps",
     RowIndex = "1",
     ButtonLabel = "Copy Raid",
-    TalentString = "CsQAAAAAAAAAAAAAAAAAAAAAAwMzMzoZjhZmxsMLMzMLzMjFzAAgxMmZmFwYGABsNsQjFGAAYAmBAmZAmZGjBAAgZmZGAAmB",
+    TalentString = "CsQAAAAAAAAAAAAAAAAAAAAAAwMjZGNbMMzMmlZhZmZZmZsYGAAMmxMzsAGzAIgthFaswAAADwMAwMDwYGjBAAgZmZGAAmB",
+    ImagePath = "Images/box_images/warlock_destruction_01.png",
     URL = "https://www.wowhead.com/guide/classes/warlock/destruction/talent-builds-pve-dps",
   },
   [291] = {
@@ -2618,7 +2908,8 @@ Mythicbus_WowheadResults = {
     Role = "dps",
     RowIndex = "2",
     ButtonLabel = "Copy Mythic+",
-    TalentString = "CsQAAAAAAAAAAAAAAAAAAAAAAwMjZGNbmxmZGzyshZmlZmZZZmBAAMjZmZBMmBQAbDL0YhBAAGwMAgZGgxMmZ2AAAMzMzAAwM",
+    TalentString = "CsQAAAAAAAAAAAAAAAAAAAAAAwMjZGNbM2MzYWmNMzsMzMLLzMAAgZMzMLgxMACYbYhGLMAAwAmBAMzAMmxMDAAAzMzAAgZA",
+    ImagePath = "Images/box_images/warlock_destruction_02.png",
     URL = "https://www.wowhead.com/guide/classes/warlock/destruction/talent-builds-pve-dps",
   },
   [292] = {
@@ -2627,7 +2918,8 @@ Mythicbus_WowheadResults = {
     Role = "dps",
     RowIndex = "3",
     ButtonLabel = "Copy Cleave",
-    TalentString = "CsQAAAAAAAAAAAAAAAAAAAAAAwMzMzoZjhZmxsMLjZmZZmZ2WMDAAYGzMzCYMDgA2GWoxCDAAMAGAYmBYmZMGAAAmZmZAAYG",
+    TalentString = "CsQAAAAAAAAAAAAAAAAAAAAAAwMjZGNbMMzMmlZZMzMLzMz2iZAAAzYmZWAjZAEw2wCNWYAAgBwAAzMAjZMGAAAmZmZAAYG",
+    ImagePath = "Images/box_images/warlock_destruction_03.png",
     URL = "https://www.wowhead.com/guide/classes/warlock/destruction/talent-builds-pve-dps",
   },
   [293] = {
@@ -2636,7 +2928,8 @@ Mythicbus_WowheadResults = {
     Role = "dps",
     RowIndex = "4",
     ButtonLabel = "Copy Council",
-    TalentString = "CsQAAAAAAAAAAAAAAAAAAAAAAwMjZGNbmxmZGzyshZmlZmZZZmBAAMjZmZBMmBQAbDL0YhBAAGwMAgZGgxMmZ2AAAMzMzAAwM",
+    TalentString = "CsQAAAAAAAAAAAAAAAAAAAAAAwMjZGNbM2MzYWmNMzsMzMLLzMAAgZMzMLgxMACYbYhGLMAAwAmBAMzAMmxMDAAAzMzAAgZA",
+    ImagePath = "Images/box_images/warlock_destruction_04.png",
     URL = "https://www.wowhead.com/guide/classes/warlock/destruction/talent-builds-pve-dps",
   },
   [294] = {
@@ -2645,7 +2938,8 @@ Mythicbus_WowheadResults = {
     Role = "dps",
     RowIndex = "5",
     ButtonLabel = "Copy Delves",
-    TalentString = "CsQAAAAAAAAAAAAAAAAAAAAAAwMzMzoZjhZmxsMLjZmZZmZ2WMDAAYGzMzCYMDgA2GWoxCDAAMAGAYmBYmZMGAAAmZmZAAYG",
+    TalentString = "CsQAAAAAAAAAAAAAAAAAAAAAAwMjZGNbMMzMmlZZMzMLzMz2iZAAAzYmZWAjZAEw2wCNWYAAgBwAAzMAjZMGAAAmZmZAAYG",
+    ImagePath = "Images/box_images/warlock_destruction_05.png",
     URL = "https://www.wowhead.com/guide/classes/warlock/destruction/talent-builds-pve-dps",
   },
   [295] = {
@@ -2654,7 +2948,8 @@ Mythicbus_WowheadResults = {
     Role = "dps",
     RowIndex = "6",
     ButtonLabel = "Copy Raid",
-    TalentString = "CsQAAAAAAAAAAAAAAAAAAAAAAwMzMzoZjhZmxsMLMzMLzMjFzAAgxMmZmFgBwohBwsFbMAAwAMDAgZGMzMGDAAAzMzMAAMD",
+    TalentString = "CsQAAAAAAAAAAAAAAAAAAAAAAwMjZGNbMMzMmlZhZmZZmZsYGAAMmxMzsAMgFjGGAzWsxAAADwMAAmZwYGjBAAgZmZGAAmB",
+    ImagePath = "Images/box_images/warlock_destruction_06.png",
     URL = "https://www.wowhead.com/guide/classes/warlock/destruction/talent-builds-pve-dps",
   },
   [296] = {
@@ -2663,7 +2958,8 @@ Mythicbus_WowheadResults = {
     Role = "dps",
     RowIndex = "7",
     ButtonLabel = "Copy Mythic+",
-    TalentString = "CsQAAAAAAAAAAAAAAAAAAAAAAwMjZGNbmxmZGzysZYmlZGLLmBAAY2mZmFgBwohBwsFbMAAwMGmBAgZGMmxMzGAAgZmZGAAmB",
+    TalentString = "CsQAAAAAAAAAAAAAAAAAAAAAAwMjZGNbM2MzYWmNDzsMzYZxMAAAz2MzsAMgFjGGAzWsxAAAzYYGAAmZwYGzMAAAMzMDAAmB",
+    ImagePath = "Images/box_images/warlock_destruction_07.png",
     URL = "https://www.wowhead.com/guide/classes/warlock/destruction/talent-builds-pve-dps",
   },
   [297] = {
@@ -2672,7 +2968,8 @@ Mythicbus_WowheadResults = {
     Role = "dps",
     RowIndex = "8",
     ButtonLabel = "Copy Cleave",
-    TalentString = "CsQAAAAAAAAAAAAAAAAAAAAAAwMzMzoZjhZmxsMLjZmZZmZ2WMDAAGzYmZWAGAjGGAzWsxAAADAAAmZwMzYMAAAMzMzAAwM",
+    TalentString = "CsQAAAAAAAAAAAAAAAAAAAAAAwMjZGNbMMzMmlZZMzMLzMz2iZAAwYGzMzCwAWMaYAMbxGDAAMAAAYmBjZMGAAAmZmZAAYG",
+    ImagePath = "Images/box_images/warlock_destruction_08.png",
     URL = "https://www.wowhead.com/guide/classes/warlock/destruction/talent-builds-pve-dps",
   },
   [298] = {
@@ -2681,7 +2978,8 @@ Mythicbus_WowheadResults = {
     Role = "dps",
     RowIndex = "9",
     ButtonLabel = "Copy Council",
-    TalentString = "CsQAAAAAAAAAAAAAAAAAAAAAAwMjZGNbmxmZGzysZYmlZGLLmBAAY2mZmFgBwohBwsFbMAAwMGmBAgZGMmxMzGAAgZmZGAAmB",
+    TalentString = "CsQAAAAAAAAAAAAAAAAAAAAAAwMjZGNbM2MzYWmNDzsMzYZxMAAAz2MzsAMgFjGGAzWsxAAAzYYGAAmZwYGzMAAAMzMDAAmB",
+    ImagePath = "Images/box_images/warlock_destruction_09.png",
     URL = "https://www.wowhead.com/guide/classes/warlock/destruction/talent-builds-pve-dps",
   },
   [299] = {
@@ -2690,7 +2988,8 @@ Mythicbus_WowheadResults = {
     Role = "dps",
     RowIndex = "10",
     ButtonLabel = "Copy Delves",
-    TalentString = "CsQAAAAAAAAAAAAAAAAAAAAAAwMzMzoZjhZmxsMLjZmZZmZ2WMDAAGzYmZWAGAjGGAzWsxAAADAAAmZwMzYMAAAMzMzAAwM",
+    TalentString = "CsQAAAAAAAAAAAAAAAAAAAAAAwMjZGNbMMzMmlZZMzMLzMz2iZAAwYGzMzCwAWMaYAMbxGDAAMAAAYmBjZMGAAAmZmZAAYG",
+    ImagePath = "Images/box_images/warlock_destruction_10.png",
     URL = "https://www.wowhead.com/guide/classes/warlock/destruction/talent-builds-pve-dps",
   },
   [300] = {
@@ -2700,6 +2999,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "1",
     ButtonLabel = "Copy Raid ST",
     TalentString = "CcEAAAAAAAAAAAAAAAAAAAAAAAzMzsMzYmZAAAAMMNMGGWmZmZGMmZAAAAAMzyMDIjhtBWADAmQmBbgZGMbjhlZWGgZGAGGA",
+    ImagePath = "Images/box_images/warrior_arms_01.png",
     URL = "https://www.wowhead.com/guide/classes/warrior/arms/talent-builds-pve-dps",
   },
   [301] = {
@@ -2709,6 +3009,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "2",
     ButtonLabel = "Copy Raid MT",
     TalentString = "CcEAAAAAAAAAAAAAAAAAAAAAAAzMzsMzYmZAAAAMMNMGGWmZmZGMmZAAAAAMWmZgtMG2GYBMAYCZGsBmZwsNGWmZbAmZAYYA",
+    ImagePath = "Images/box_images/warrior_arms_02.png",
     URL = "https://www.wowhead.com/guide/classes/warrior/arms/talent-builds-pve-dps",
   },
   [302] = {
@@ -2718,6 +3019,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "3",
     ButtonLabel = "Copy Mythic+",
     TalentString = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYGzAAAAMMNMGGbmxMzYmxMDAAAAgxiZgtMYbbgFwAmBhMD2AzMYMDz2MbDgZAYMD",
+    ImagePath = "Images/box_images/warrior_arms_03.png",
     URL = "https://www.wowhead.com/guide/classes/warrior/arms/talent-builds-pve-dps",
   },
   [303] = {
@@ -2727,6 +3029,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "4",
     ButtonLabel = "Copy Delving",
     TalentString = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYGzAAAAMMNMGGbmxMzYmxMDAAAAgxiZgtMYbbgFwAmBhMD2AzMYMDz2MbDgZAYMD",
+    ImagePath = "Images/box_images/warrior_arms_04.png",
     URL = "https://www.wowhead.com/guide/classes/warrior/arms/talent-builds-pve-dps",
   },
   [304] = {
@@ -2736,6 +3039,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "5",
     ButtonLabel = "Copy ST Raid",
     TalentString = "CcEAAAAAAAAAAAAAAAAAAAAAAAzMzsMzMzMDAAAghphBGWmZmZGMmZAAAAAMMzAyMAmxwGAmRoxgFwMjNz2ALzsMYmBAMMA",
+    ImagePath = "Images/box_images/warrior_arms_05.png",
     URL = "https://www.wowhead.com/guide/classes/warrior/arms/talent-builds-pve-dps",
   },
   [305] = {
@@ -2745,6 +3049,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "6",
     ButtonLabel = "Copy MT Raid",
     TalentString = "CcEAAAAAAAAAAAAAAAAAAAAAAAzMzsMzMzMDAAAghphBGWmZmZGMmZAAAAAMMzAbZGAzYYDAzI0YwCYmxmZbglZ2GMzAAGA",
+    ImagePath = "Images/box_images/warrior_arms_06.png",
     URL = "https://www.wowhead.com/guide/classes/warrior/arms/talent-builds-pve-dps",
   },
   [306] = {
@@ -2754,6 +3059,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "7",
     ButtonLabel = "Copy Mythic+",
     TalentString = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmxsMzMzYGAAAghphxwMWmxMzYGmZAAAAAM2MDIDAzYYBAzI0YwCwMY2GMbzsNYmBAMmB",
+    ImagePath = "Images/box_images/warrior_arms_07.png",
     URL = "https://www.wowhead.com/guide/classes/warrior/arms/talent-builds-pve-dps",
   },
   [307] = {
@@ -2763,6 +3069,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "8",
     ButtonLabel = "Copy Delving",
     TalentString = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmxsMzMzYGAAAghphxwMWmxMzYGmZAAAAAM2MDIDAzYYBAzI0YwCwMY2GMbzsNYmBAMmB",
+    ImagePath = "Images/box_images/warrior_arms_08.png",
     URL = "https://www.wowhead.com/guide/classes/warrior/arms/talent-builds-pve-dps",
   },
   [308] = {
@@ -2772,6 +3079,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "1",
     ButtonLabel = "Copy Raid ST",
     TalentString = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDDmZ2MzMzMDjZmZGzMzsMjZmZmZxYmBAAihtBWATAMBmhNgZGGGAAMzwYMMMA",
+    ImagePath = "Images/box_images/warrior_fury_01.png",
     URL = "https://www.wowhead.com/guide/classes/warrior/fury/talent-builds-pve-dps",
   },
   [309] = {
@@ -2781,6 +3089,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "2",
     ButtonLabel = "Copy Raid MT",
     TalentString = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDDmZ2MzMzMDjZmZGzYmlZMzMzMbmZmBAAihtBWATAMBmhNgZGGGAAMzwYMMMA",
+    ImagePath = "Images/box_images/warrior_fury_02.png",
     URL = "https://www.wowhead.com/guide/classes/warrior/fury/talent-builds-pve-dps",
   },
   [310] = {
@@ -2790,6 +3099,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "3",
     ButtonLabel = "Copy Mythic+",
     TalentString = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDjhZ2MzMzMjZMzMzYGzsMjxMzMbmZmBAAihtBWATAMBmhNgZGGGAAMzwYmBMA",
+    ImagePath = "Images/box_images/warrior_fury_03.png",
     URL = "https://www.wowhead.com/guide/classes/warrior/fury/talent-builds-pve-dps",
   },
   [311] = {
@@ -2799,6 +3109,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "4",
     ButtonLabel = "Copy Delving",
     TalentString = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDjhZ2MzMzMjZMzMzYGzsMjxMzMbmZmBAAihtBWATAMBmhNgZGGGAAMzwYmBMA",
+    ImagePath = "Images/box_images/warrior_fury_04.png",
     URL = "https://www.wowhead.com/guide/classes/warrior/fury/talent-builds-pve-dps",
   },
   [312] = {
@@ -2808,6 +3119,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "5",
     ButtonLabel = "Copy ST Raid",
     TalentString = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDDjZ2MzMzMDjZmZGzMzsMjxMzMLGzMAAQYgNAjGGQmFMsAYGmZbAwMDAjxMwA",
+    ImagePath = "Images/box_images/warrior_fury_05.png",
     URL = "https://www.wowhead.com/guide/classes/warrior/fury/talent-builds-pve-dps",
   },
   [313] = {
@@ -2817,6 +3129,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "6",
     ButtonLabel = "Copy MT Raid",
     TalentString = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDDjZ2MzMzMDjZmZGzYmlZMmZmZxMzMAAQYgNAjGGQmFMsAYGmZbAwMDAjZGwA",
+    ImagePath = "Images/box_images/warrior_fury_06.png",
     URL = "https://www.wowhead.com/guide/classes/warrior/fury/talent-builds-pve-dps",
   },
   [314] = {
@@ -2826,6 +3139,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "7",
     ButtonLabel = "Copy Mythic+",
     TalentString = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDjZMzmZMzYmZMzYGzYmlZmxYmZZMzMAAQYgNAjGGQmFMsAYGmxAgZGADzMDMA",
+    ImagePath = "Images/box_images/warrior_fury_07.png",
     URL = "https://www.wowhead.com/guide/classes/warrior/fury/talent-builds-pve-dps",
   },
   [315] = {
@@ -2835,6 +3149,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "8",
     ButtonLabel = "Copy Delving",
     TalentString = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDjZMzmZMzYmZMzYGzYmlZmxYmZZMzMAAQYgNAjGGQmFMsAYGmxAgZGADzMDMA",
+    ImagePath = "Images/box_images/warrior_fury_08.png",
     URL = "https://www.wowhead.com/guide/classes/warrior/fury/talent-builds-pve-dps",
   },
   [316] = {
@@ -2844,6 +3159,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "1",
     ButtonLabel = "Copy Raid",
     TalentString = "CkEAAAAAAAAAAAAAAAAAAAAAA02AAAzMDzMzMmZ2MzsMMGjYGDLzMzMDDzMAAAAYZAYGDwAglF0YGAjwsxYGzMY2GAMzAAwAA",
+    ImagePath = "Images/box_images/warrior_protection_01.png",
     URL = "https://www.wowhead.com/guide/classes/warrior/protection/talent-builds-pve-tank",
   },
   [317] = {
@@ -2853,6 +3169,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "2",
     ButtonLabel = "Copy Mythic+",
     TalentString = "CkEAAAAAAAAAAAAAAAAAAAAAAkBAAGzwMzMzMmtZmZZYMGxMGWmZmZGGmZAAAAwyYAmxAMAYZBNmBwIMbYMzMDmtBAzMAAMA",
+    ImagePath = "Images/box_images/warrior_protection_02.png",
     URL = "https://www.wowhead.com/guide/classes/warrior/protection/talent-builds-pve-tank",
   },
   [318] = {
@@ -2862,6 +3179,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "3",
     ButtonLabel = "Copy Delves",
     TalentString = "CkEAAAAAAAAAAAAAAAAAAAAAAkBAAGzwMzMzMmtZmZZYMGxMGWmZmZGGmZAAAAwyYAmxAMAYZBNmBwIMbYMzMDmtBAzMAAMA",
+    ImagePath = "Images/box_images/warrior_protection_03.png",
     URL = "https://www.wowhead.com/guide/classes/warrior/protection/talent-builds-pve-tank",
   },
   [319] = {
@@ -2871,6 +3189,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "4",
     ButtonLabel = "Copy Raid",
     TalentString = "CkEAAAAAAAAAAAAAAAAAAAAAA02AAAzMjZmZmxMzmZmlhxYEzYYZmZmZYYmBAAAALDAzAAwMG2IgZANMLMmxMDmtBAYmBAMA",
+    ImagePath = "Images/box_images/warrior_protection_04.png",
     URL = "https://www.wowhead.com/guide/classes/warrior/protection/talent-builds-pve-tank",
   },
   [320] = {
@@ -2880,6 +3199,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "5",
     ButtonLabel = "Copy Mythic+",
     TalentString = "CkEAAAAAAAAAAAAAAAAAAAAAA0yAAAjZMzMzMGzmZmlhxYEzYYZmZmZYYmBAAAALjBYGDAwMGWIgZANMLYMzMDmtBAYmBAMA",
+    ImagePath = "Images/box_images/warrior_protection_05.png",
     URL = "https://www.wowhead.com/guide/classes/warrior/protection/talent-builds-pve-tank",
   },
   [321] = {
@@ -2889,6 +3209,7 @@ Mythicbus_WowheadResults = {
     RowIndex = "6",
     ButtonLabel = "Copy Delves",
     TalentString = "CkEAAAAAAAAAAAAAAAAAAAAAA0yAAAjZMzMzMGzmZmlhxYEzYYZmZmZYYmBAAAALjBYGDAwMGWIgZANMLYMzMDmtBAYmBAMA",
+    ImagePath = "Images/box_images/warrior_protection_06.png",
     URL = "https://www.wowhead.com/guide/classes/warrior/protection/talent-builds-pve-tank",
   },
 }

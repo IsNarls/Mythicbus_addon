@@ -1,0 +1,1286 @@
+{
+  "death_knight_blood_01.png": {
+    "height": 87,
+    "width": 303
+  },
+  "death_knight_blood_02.png": {
+    "height": 87,
+    "width": 303
+  },
+  "death_knight_blood_03.png": {
+    "height": 87,
+    "width": 303
+  },
+  "death_knight_blood_04.png": {
+    "height": 87,
+    "width": 303
+  },
+  "death_knight_blood_05.png": {
+    "height": 62,
+    "width": 303
+  },
+  "death_knight_blood_06.png": {
+    "height": 62,
+    "width": 303
+  },
+  "death_knight_blood_07.png": {
+    "height": 62,
+    "width": 303
+  },
+  "death_knight_blood_08.png": {
+    "height": 62,
+    "width": 303
+  },
+  "death_knight_blood_09.png": {
+    "height": 62,
+    "width": 303
+  },
+  "death_knight_blood_10.png": {
+    "height": 38,
+    "width": 303
+  },
+  "death_knight_frost_01.png": {
+    "height": 62,
+    "width": 303
+  },
+  "death_knight_frost_02.png": {
+    "height": 62,
+    "width": 303
+  },
+  "death_knight_frost_03.png": {
+    "height": 38,
+    "width": 303
+  },
+  "death_knight_frost_04.png": {
+    "height": 87,
+    "width": 303
+  },
+  "death_knight_frost_05.png": {
+    "height": 62,
+    "width": 303
+  },
+  "death_knight_frost_06.png": {
+    "height": 62,
+    "width": 303
+  },
+  "death_knight_unholy_01.png": {
+    "height": 37,
+    "width": 598
+  },
+  "death_knight_unholy_02.png": {
+    "height": 37,
+    "width": 598
+  },
+  "death_knight_unholy_03.png": {
+    "height": 38,
+    "width": 598
+  },
+  "demon_hunter_havoc_01.png": {
+    "height": 87,
+    "width": 325
+  },
+  "demon_hunter_havoc_02.png": {
+    "height": 62,
+    "width": 325
+  },
+  "demon_hunter_havoc_03.png": {
+    "height": 112,
+    "width": 325
+  },
+  "demon_hunter_havoc_04.png": {
+    "height": 87,
+    "width": 325
+  },
+  "demon_hunter_havoc_05.png": {
+    "height": 87,
+    "width": 325
+  },
+  "demon_hunter_havoc_06.png": {
+    "height": 62,
+    "width": 325
+  },
+  "demon_hunter_havoc_07.png": {
+    "height": 87,
+    "width": 316
+  },
+  "demon_hunter_havoc_08.png": {
+    "height": 62,
+    "width": 316
+  },
+  "demon_hunter_havoc_09.png": {
+    "height": 87,
+    "width": 316
+  },
+  "demon_hunter_havoc_10.png": {
+    "height": 87,
+    "width": 316
+  },
+  "demon_hunter_havoc_11.png": {
+    "height": 62,
+    "width": 316
+  },
+  "demon_hunter_havoc_12.png": {
+    "height": 62,
+    "width": 316
+  },
+  "demon_hunter_vengeance_01.png": {
+    "height": 62,
+    "width": 303
+  },
+  "demon_hunter_vengeance_02.png": {
+    "height": 62,
+    "width": 303
+  },
+  "demon_hunter_vengeance_03.png": {
+    "height": 62,
+    "width": 303
+  },
+  "demon_hunter_vengeance_04.png": {
+    "height": 62,
+    "width": 303
+  },
+  "demon_hunter_vengeance_05.png": {
+    "height": 38,
+    "width": 303
+  },
+  "demon_hunter_vengeance_06.png": {
+    "height": 87,
+    "width": 303
+  },
+  "demon_hunter_vengeance_07.png": {
+    "height": 87,
+    "width": 303
+  },
+  "demon_hunter_vengeance_08.png": {
+    "height": 87,
+    "width": 303
+  },
+  "demon_hunter_vengeance_09.png": {
+    "height": 87,
+    "width": 303
+  },
+  "demon_hunter_vengeance_10.png": {
+    "height": 62,
+    "width": 303
+  },
+  "druid_balance_01.png": {
+    "height": 62,
+    "width": 618
+  },
+  "druid_balance_02.png": {
+    "height": 62,
+    "width": 618
+  },
+  "druid_balance_03.png": {
+    "height": 62,
+    "width": 618
+  },
+  "druid_balance_04.png": {
+    "height": 62,
+    "width": 618
+  },
+  "druid_balance_05.png": {
+    "height": 62,
+    "width": 618
+  },
+  "druid_feral_01.png": {
+    "height": 87,
+    "width": 303
+  },
+  "druid_feral_02.png": {
+    "height": 87,
+    "width": 303
+  },
+  "druid_feral_03.png": {
+    "height": 87,
+    "width": 303
+  },
+  "druid_feral_04.png": {
+    "height": 87,
+    "width": 303
+  },
+  "druid_feral_05.png": {
+    "height": 62,
+    "width": 303
+  },
+  "druid_feral_06.png": {
+    "height": 62,
+    "width": 303
+  },
+  "druid_feral_07.png": {
+    "height": 62,
+    "width": 303
+  },
+  "druid_feral_08.png": {
+    "height": 62,
+    "width": 303
+  },
+  "druid_feral_09.png": {
+    "height": 62,
+    "width": 303
+  },
+  "druid_feral_10.png": {
+    "height": 62,
+    "width": 303
+  },
+  "druid_guardian_01.png": {
+    "height": 62,
+    "width": 303
+  },
+  "druid_guardian_02.png": {
+    "height": 62,
+    "width": 303
+  },
+  "druid_guardian_03.png": {
+    "height": 62,
+    "width": 303
+  },
+  "druid_guardian_04.png": {
+    "height": 87,
+    "width": 303
+  },
+  "druid_guardian_05.png": {
+    "height": 62,
+    "width": 303
+  },
+  "druid_guardian_06.png": {
+    "height": 38,
+    "width": 303
+  },
+  "druid_restoration_01.png": {
+    "height": 62,
+    "width": 303
+  },
+  "druid_restoration_02.png": {
+    "height": 37,
+    "width": 303
+  },
+  "druid_restoration_03.png": {
+    "height": 38,
+    "width": 303
+  },
+  "druid_restoration_04.png": {
+    "height": 37,
+    "width": 303
+  },
+  "druid_restoration_05.png": {
+    "height": 62,
+    "width": 303
+  },
+  "druid_restoration_06.png": {
+    "height": 62,
+    "width": 303
+  },
+  "evoker_augmentation_01.png": {
+    "height": 62,
+    "width": 295
+  },
+  "evoker_augmentation_02.png": {
+    "height": 87,
+    "width": 295
+  },
+  "evoker_augmentation_03.png": {
+    "height": 62,
+    "width": 295
+  },
+  "evoker_augmentation_04.png": {
+    "height": 62,
+    "width": 295
+  },
+  "evoker_augmentation_05.png": {
+    "height": 38,
+    "width": 295
+  },
+  "evoker_augmentation_06.png": {
+    "height": 87,
+    "width": 313
+  },
+  "evoker_augmentation_07.png": {
+    "height": 62,
+    "width": 313
+  },
+  "evoker_augmentation_08.png": {
+    "height": 87,
+    "width": 313
+  },
+  "evoker_augmentation_09.png": {
+    "height": 87,
+    "width": 313
+  },
+  "evoker_augmentation_10.png": {
+    "height": 62,
+    "width": 313
+  },
+  "evoker_devastation_01.png": {
+    "height": 87,
+    "width": 293
+  },
+  "evoker_devastation_02.png": {
+    "height": 112,
+    "width": 293
+  },
+  "evoker_devastation_03.png": {
+    "height": 87,
+    "width": 293
+  },
+  "evoker_devastation_04.png": {
+    "height": 87,
+    "width": 293
+  },
+  "evoker_devastation_05.png": {
+    "height": 38,
+    "width": 293
+  },
+  "evoker_devastation_06.png": {
+    "height": 62,
+    "width": 313
+  },
+  "evoker_devastation_07.png": {
+    "height": 62,
+    "width": 313
+  },
+  "evoker_devastation_08.png": {
+    "height": 62,
+    "width": 313
+  },
+  "evoker_devastation_09.png": {
+    "height": 62,
+    "width": 313
+  },
+  "evoker_devastation_10.png": {
+    "height": 62,
+    "width": 313
+  },
+  "evoker_preservation_01.png": {
+    "height": 37,
+    "width": 303
+  },
+  "evoker_preservation_02.png": {
+    "height": 37,
+    "width": 303
+  },
+  "evoker_preservation_03.png": {
+    "height": 38,
+    "width": 303
+  },
+  "evoker_preservation_04.png": {
+    "height": 62,
+    "width": 303
+  },
+  "evoker_preservation_05.png": {
+    "height": 62,
+    "width": 303
+  },
+  "evoker_preservation_06.png": {
+    "height": 62,
+    "width": 303
+  },
+  "hunter_beast_mastery_01.png": {
+    "height": 87,
+    "width": 303
+  },
+  "hunter_beast_mastery_02.png": {
+    "height": 62,
+    "width": 303
+  },
+  "hunter_beast_mastery_03.png": {
+    "height": 62,
+    "width": 303
+  },
+  "hunter_beast_mastery_04.png": {
+    "height": 38,
+    "width": 303
+  },
+  "hunter_beast_mastery_05.png": {
+    "height": 62,
+    "width": 303
+  },
+  "hunter_beast_mastery_06.png": {
+    "height": 62,
+    "width": 303
+  },
+  "hunter_beast_mastery_07.png": {
+    "height": 87,
+    "width": 303
+  },
+  "hunter_beast_mastery_08.png": {
+    "height": 62,
+    "width": 303
+  },
+  "hunter_marksmanship_01.png": {
+    "height": 37,
+    "width": 612
+  },
+  "hunter_marksmanship_02.png": {
+    "height": 37,
+    "width": 612
+  },
+  "hunter_marksmanship_03.png": {
+    "height": 37,
+    "width": 612
+  },
+  "hunter_marksmanship_04.png": {
+    "height": 38,
+    "width": 612
+  },
+  "hunter_survival_01.png": {
+    "height": 87,
+    "width": 303
+  },
+  "hunter_survival_02.png": {
+    "height": 87,
+    "width": 303
+  },
+  "hunter_survival_03.png": {
+    "height": 87,
+    "width": 303
+  },
+  "hunter_survival_04.png": {
+    "height": 87,
+    "width": 303
+  },
+  "hunter_survival_05.png": {
+    "height": 62,
+    "width": 303
+  },
+  "hunter_survival_06.png": {
+    "height": 62,
+    "width": 303
+  },
+  "hunter_survival_07.png": {
+    "height": 62,
+    "width": 303
+  },
+  "hunter_survival_08.png": {
+    "height": 62,
+    "width": 303
+  },
+  "hunter_survival_09.png": {
+    "height": 62,
+    "width": 303
+  },
+  "hunter_survival_10.png": {
+    "height": 38,
+    "width": 303
+  },
+  "mage_arcane_01.png": {
+    "height": 62,
+    "width": 303
+  },
+  "mage_arcane_02.png": {
+    "height": 62,
+    "width": 303
+  },
+  "mage_arcane_03.png": {
+    "height": 62,
+    "width": 303
+  },
+  "mage_arcane_04.png": {
+    "height": 62,
+    "width": 303
+  },
+  "mage_arcane_05.png": {
+    "height": 62,
+    "width": 303
+  },
+  "mage_arcane_06.png": {
+    "height": 87,
+    "width": 303
+  },
+  "mage_arcane_07.png": {
+    "height": 87,
+    "width": 303
+  },
+  "mage_arcane_08.png": {
+    "height": 87,
+    "width": 303
+  },
+  "mage_arcane_09.png": {
+    "height": 87,
+    "width": 303
+  },
+  "mage_arcane_10.png": {
+    "height": 38,
+    "width": 303
+  },
+  "mage_fire_01.png": {
+    "height": 87,
+    "width": 303
+  },
+  "mage_fire_02.png": {
+    "height": 87,
+    "width": 303
+  },
+  "mage_fire_03.png": {
+    "height": 87,
+    "width": 303
+  },
+  "mage_fire_04.png": {
+    "height": 87,
+    "width": 303
+  },
+  "mage_fire_05.png": {
+    "height": 38,
+    "width": 303
+  },
+  "mage_fire_06.png": {
+    "height": 62,
+    "width": 303
+  },
+  "mage_fire_07.png": {
+    "height": 62,
+    "width": 303
+  },
+  "mage_fire_08.png": {
+    "height": 62,
+    "width": 303
+  },
+  "mage_fire_09.png": {
+    "height": 62,
+    "width": 303
+  },
+  "mage_fire_10.png": {
+    "height": 62,
+    "width": 303
+  },
+  "mage_frost_01.png": {
+    "height": 62,
+    "width": 303
+  },
+  "mage_frost_02.png": {
+    "height": 62,
+    "width": 303
+  },
+  "mage_frost_03.png": {
+    "height": 62,
+    "width": 303
+  },
+  "mage_frost_04.png": {
+    "height": 62,
+    "width": 303
+  },
+  "mage_frost_05.png": {
+    "height": 38,
+    "width": 303
+  },
+  "mage_frost_06.png": {
+    "height": 87,
+    "width": 303
+  },
+  "mage_frost_07.png": {
+    "height": 87,
+    "width": 303
+  },
+  "mage_frost_08.png": {
+    "height": 87,
+    "width": 303
+  },
+  "mage_frost_09.png": {
+    "height": 87,
+    "width": 303
+  },
+  "mage_frost_10.png": {
+    "height": 62,
+    "width": 303
+  },
+  "monk_brewmaster_01.png": {
+    "height": 112,
+    "width": 344
+  },
+  "monk_brewmaster_02.png": {
+    "height": 112,
+    "width": 344
+  },
+  "monk_brewmaster_03.png": {
+    "height": 87,
+    "width": 344
+  },
+  "monk_brewmaster_04.png": {
+    "height": 62,
+    "width": 344
+  },
+  "monk_brewmaster_05.png": {
+    "height": 87,
+    "width": 344
+  },
+  "monk_brewmaster_06.png": {
+    "height": 87,
+    "width": 344
+  },
+  "monk_brewmaster_07.png": {
+    "height": 87,
+    "width": 344
+  },
+  "monk_brewmaster_08.png": {
+    "height": 87,
+    "width": 334
+  },
+  "monk_brewmaster_09.png": {
+    "height": 87,
+    "width": 334
+  },
+  "monk_brewmaster_10.png": {
+    "height": 62,
+    "width": 334
+  },
+  "monk_brewmaster_11.png": {
+    "height": 87,
+    "width": 334
+  },
+  "monk_brewmaster_12.png": {
+    "height": 62,
+    "width": 334
+  },
+  "monk_brewmaster_13.png": {
+    "height": 87,
+    "width": 334
+  },
+  "monk_brewmaster_14.png": {
+    "height": 62,
+    "width": 334
+  },
+  "monk_mistweaver_01.png": {
+    "height": 62,
+    "width": 349
+  },
+  "monk_mistweaver_02.png": {
+    "height": 87,
+    "width": 349
+  },
+  "monk_mistweaver_03.png": {
+    "height": 87,
+    "width": 349
+  },
+  "monk_mistweaver_04.png": {
+    "height": 62,
+    "width": 349
+  },
+  "monk_mistweaver_05.png": {
+    "height": 37,
+    "width": 331
+  },
+  "monk_mistweaver_06.png": {
+    "height": 62,
+    "width": 331
+  },
+  "monk_mistweaver_07.png": {
+    "height": 87,
+    "width": 331
+  },
+  "monk_mistweaver_08.png": {
+    "height": 62,
+    "width": 331
+  },
+  "monk_windwalker_01.png": {
+    "height": 87,
+    "width": 303
+  },
+  "monk_windwalker_02.png": {
+    "height": 87,
+    "width": 303
+  },
+  "monk_windwalker_03.png": {
+    "height": 87,
+    "width": 303
+  },
+  "monk_windwalker_04.png": {
+    "height": 87,
+    "width": 303
+  },
+  "monk_windwalker_05.png": {
+    "height": 62,
+    "width": 303
+  },
+  "monk_windwalker_06.png": {
+    "height": 62,
+    "width": 303
+  },
+  "monk_windwalker_07.png": {
+    "height": 62,
+    "width": 303
+  },
+  "monk_windwalker_08.png": {
+    "height": 62,
+    "width": 303
+  },
+  "monk_windwalker_09.png": {
+    "height": 62,
+    "width": 303
+  },
+  "monk_windwalker_10.png": {
+    "height": 38,
+    "width": 303
+  },
+  "paladin_holy_01.png": {
+    "height": 62,
+    "width": 330
+  },
+  "paladin_holy_02.png": {
+    "height": 62,
+    "width": 330
+  },
+  "paladin_holy_03.png": {
+    "height": 38,
+    "width": 330
+  },
+  "paladin_holy_04.png": {
+    "height": 37,
+    "width": 330
+  },
+  "paladin_holy_05.png": {
+    "height": 37,
+    "width": 330
+  },
+  "paladin_holy_06.png": {
+    "height": 62,
+    "width": 330
+  },
+  "paladin_protection_01.png": {
+    "height": 62,
+    "width": 303
+  },
+  "paladin_protection_02.png": {
+    "height": 62,
+    "width": 303
+  },
+  "paladin_protection_03.png": {
+    "height": 62,
+    "width": 303
+  },
+  "paladin_protection_04.png": {
+    "height": 87,
+    "width": 303
+  },
+  "paladin_protection_05.png": {
+    "height": 62,
+    "width": 303
+  },
+  "paladin_protection_06.png": {
+    "height": 38,
+    "width": 303
+  },
+  "paladin_retribution_01.png": {
+    "height": 87,
+    "width": 303
+  },
+  "paladin_retribution_02.png": {
+    "height": 62,
+    "width": 303
+  },
+  "paladin_retribution_03.png": {
+    "height": 87,
+    "width": 303
+  },
+  "paladin_retribution_04.png": {
+    "height": 87,
+    "width": 303
+  },
+  "paladin_retribution_05.png": {
+    "height": 87,
+    "width": 303
+  },
+  "paladin_retribution_06.png": {
+    "height": 62,
+    "width": 303
+  },
+  "paladin_retribution_07.png": {
+    "height": 37,
+    "width": 303
+  },
+  "paladin_retribution_08.png": {
+    "height": 62,
+    "width": 303
+  },
+  "paladin_retribution_09.png": {
+    "height": 62,
+    "width": 303
+  },
+  "paladin_retribution_10.png": {
+    "height": 62,
+    "width": 303
+  },
+  "priest_discipline_01.png": {
+    "height": 37,
+    "width": 618
+  },
+  "priest_discipline_02.png": {
+    "height": 37,
+    "width": 618
+  },
+  "priest_discipline_03.png": {
+    "height": 37,
+    "width": 618
+  },
+  "priest_discipline_04.png": {
+    "height": 38,
+    "width": 618
+  },
+  "priest_holy_01.png": {
+    "height": 37,
+    "width": 618
+  },
+  "priest_holy_02.png": {
+    "height": 37,
+    "width": 618
+  },
+  "priest_holy_03.png": {
+    "height": 37,
+    "width": 618
+  },
+  "priest_holy_04.png": {
+    "height": 37,
+    "width": 618
+  },
+  "priest_holy_05.png": {
+    "height": 38,
+    "width": 618
+  },
+  "priest_shadow_01.png": {
+    "height": 62,
+    "width": 303
+  },
+  "priest_shadow_02.png": {
+    "height": 62,
+    "width": 303
+  },
+  "priest_shadow_03.png": {
+    "height": 62,
+    "width": 303
+  },
+  "priest_shadow_04.png": {
+    "height": 62,
+    "width": 303
+  },
+  "priest_shadow_05.png": {
+    "height": 38,
+    "width": 303
+  },
+  "priest_shadow_06.png": {
+    "height": 87,
+    "width": 303
+  },
+  "priest_shadow_07.png": {
+    "height": 87,
+    "width": 303
+  },
+  "priest_shadow_08.png": {
+    "height": 87,
+    "width": 303
+  },
+  "priest_shadow_09.png": {
+    "height": 87,
+    "width": 303
+  },
+  "priest_shadow_10.png": {
+    "height": 62,
+    "width": 303
+  },
+  "rogue_assassination_01.png": {
+    "height": 87,
+    "width": 303
+  },
+  "rogue_assassination_02.png": {
+    "height": 87,
+    "width": 303
+  },
+  "rogue_assassination_03.png": {
+    "height": 87,
+    "width": 303
+  },
+  "rogue_assassination_04.png": {
+    "height": 87,
+    "width": 303
+  },
+  "rogue_assassination_05.png": {
+    "height": 62,
+    "width": 303
+  },
+  "rogue_assassination_06.png": {
+    "height": 62,
+    "width": 303
+  },
+  "rogue_assassination_07.png": {
+    "height": 62,
+    "width": 303
+  },
+  "rogue_assassination_08.png": {
+    "height": 62,
+    "width": 303
+  },
+  "rogue_assassination_09.png": {
+    "height": 62,
+    "width": 303
+  },
+  "rogue_assassination_10.png": {
+    "height": 38,
+    "width": 303
+  },
+  "rogue_outlaw_01.png": {
+    "height": 62,
+    "width": 303
+  },
+  "rogue_outlaw_02.png": {
+    "height": 62,
+    "width": 303
+  },
+  "rogue_outlaw_03.png": {
+    "height": 62,
+    "width": 303
+  },
+  "rogue_outlaw_04.png": {
+    "height": 62,
+    "width": 303
+  },
+  "rogue_outlaw_05.png": {
+    "height": 38,
+    "width": 303
+  },
+  "rogue_outlaw_06.png": {
+    "height": 87,
+    "width": 303
+  },
+  "rogue_outlaw_07.png": {
+    "height": 87,
+    "width": 303
+  },
+  "rogue_outlaw_08.png": {
+    "height": 87,
+    "width": 303
+  },
+  "rogue_outlaw_09.png": {
+    "height": 87,
+    "width": 303
+  },
+  "rogue_outlaw_10.png": {
+    "height": 62,
+    "width": 303
+  },
+  "rogue_subtlety_01.png": {
+    "height": 87,
+    "width": 303
+  },
+  "rogue_subtlety_02.png": {
+    "height": 62,
+    "width": 303
+  },
+  "rogue_subtlety_03.png": {
+    "height": 62,
+    "width": 303
+  },
+  "rogue_subtlety_04.png": {
+    "height": 62,
+    "width": 303
+  },
+  "rogue_subtlety_05.png": {
+    "height": 62,
+    "width": 303
+  },
+  "rogue_subtlety_06.png": {
+    "height": 62,
+    "width": 303
+  },
+  "rogue_subtlety_07.png": {
+    "height": 87,
+    "width": 303
+  },
+  "rogue_subtlety_08.png": {
+    "height": 87,
+    "width": 303
+  },
+  "rogue_subtlety_09.png": {
+    "height": 87,
+    "width": 303
+  },
+  "rogue_subtlety_10.png": {
+    "height": 62,
+    "width": 303
+  },
+  "shaman_elemental_01.png": {
+    "height": 87,
+    "width": 303
+  },
+  "shaman_elemental_02.png": {
+    "height": 62,
+    "width": 303
+  },
+  "shaman_elemental_03.png": {
+    "height": 87,
+    "width": 303
+  },
+  "shaman_elemental_04.png": {
+    "height": 87,
+    "width": 303
+  },
+  "shaman_elemental_05.png": {
+    "height": 62,
+    "width": 303
+  },
+  "shaman_elemental_06.png": {
+    "height": 62,
+    "width": 303
+  },
+  "shaman_elemental_07.png": {
+    "height": 62,
+    "width": 303
+  },
+  "shaman_elemental_08.png": {
+    "height": 62,
+    "width": 303
+  },
+  "shaman_elemental_09.png": {
+    "height": 62,
+    "width": 303
+  },
+  "shaman_elemental_10.png": {
+    "height": 38,
+    "width": 303
+  },
+  "shaman_enhancement_01.png": {
+    "height": 62,
+    "width": 303
+  },
+  "shaman_enhancement_02.png": {
+    "height": 87,
+    "width": 303
+  },
+  "shaman_enhancement_03.png": {
+    "height": 62,
+    "width": 303
+  },
+  "shaman_enhancement_04.png": {
+    "height": 38,
+    "width": 303
+  },
+  "shaman_enhancement_05.png": {
+    "height": 87,
+    "width": 303
+  },
+  "shaman_enhancement_06.png": {
+    "height": 62,
+    "width": 303
+  },
+  "shaman_enhancement_07.png": {
+    "height": 87,
+    "width": 303
+  },
+  "shaman_enhancement_08.png": {
+    "height": 62,
+    "width": 303
+  },
+  "shaman_restoration_01.png": {
+    "height": 62,
+    "width": 303
+  },
+  "shaman_restoration_02.png": {
+    "height": 62,
+    "width": 303
+  },
+  "shaman_restoration_03.png": {
+    "height": 62,
+    "width": 303
+  },
+  "shaman_restoration_04.png": {
+    "height": 37,
+    "width": 303
+  },
+  "shaman_restoration_05.png": {
+    "height": 37,
+    "width": 303
+  },
+  "shaman_restoration_06.png": {
+    "height": 38,
+    "width": 303
+  },
+  "warlock_affliction_01.png": {
+    "height": 62,
+    "width": 303
+  },
+  "warlock_affliction_02.png": {
+    "height": 37,
+    "width": 303
+  },
+  "warlock_affliction_03.png": {
+    "height": 62,
+    "width": 303
+  },
+  "warlock_affliction_04.png": {
+    "height": 38,
+    "width": 303
+  },
+  "warlock_affliction_05.png": {
+    "height": 62,
+    "width": 303
+  },
+  "warlock_affliction_06.png": {
+    "height": 62,
+    "width": 303
+  },
+  "warlock_affliction_07.png": {
+    "height": 62,
+    "width": 303
+  },
+  "warlock_affliction_08.png": {
+    "height": 38,
+    "width": 303
+  },
+  "warlock_demonology_01.png": {
+    "height": 62,
+    "width": 303
+  },
+  "warlock_demonology_02.png": {
+    "height": 37,
+    "width": 303
+  },
+  "warlock_demonology_03.png": {
+    "height": 62,
+    "width": 303
+  },
+  "warlock_demonology_04.png": {
+    "height": 38,
+    "width": 303
+  },
+  "warlock_demonology_05.png": {
+    "height": 62,
+    "width": 303
+  },
+  "warlock_demonology_06.png": {
+    "height": 62,
+    "width": 303
+  },
+  "warlock_demonology_07.png": {
+    "height": 62,
+    "width": 303
+  },
+  "warlock_demonology_08.png": {
+    "height": 38,
+    "width": 303
+  },
+  "warlock_destruction_01.png": {
+    "height": 87,
+    "width": 303
+  },
+  "warlock_destruction_02.png": {
+    "height": 62,
+    "width": 303
+  },
+  "warlock_destruction_03.png": {
+    "height": 87,
+    "width": 303
+  },
+  "warlock_destruction_04.png": {
+    "height": 62,
+    "width": 303
+  },
+  "warlock_destruction_05.png": {
+    "height": 62,
+    "width": 303
+  },
+  "warlock_destruction_06.png": {
+    "height": 62,
+    "width": 303
+  },
+  "warlock_destruction_07.png": {
+    "height": 62,
+    "width": 303
+  },
+  "warlock_destruction_08.png": {
+    "height": 62,
+    "width": 303
+  },
+  "warlock_destruction_09.png": {
+    "height": 87,
+    "width": 303
+  },
+  "warlock_destruction_10.png": {
+    "height": 38,
+    "width": 303
+  },
+  "warrior_arms_01.png": {
+    "height": 62,
+    "width": 303
+  },
+  "warrior_arms_02.png": {
+    "height": 62,
+    "width": 303
+  },
+  "warrior_arms_03.png": {
+    "height": 37,
+    "width": 303
+  },
+  "warrior_arms_04.png": {
+    "height": 62,
+    "width": 303
+  },
+  "warrior_arms_05.png": {
+    "height": 37,
+    "width": 303
+  },
+  "warrior_arms_06.png": {
+    "height": 37,
+    "width": 303
+  },
+  "warrior_arms_07.png": {
+    "height": 87,
+    "width": 303
+  },
+  "warrior_arms_08.png": {
+    "height": 87,
+    "width": 303
+  },
+  "warrior_fury_01.png": {
+    "height": 62,
+    "width": 303
+  },
+  "warrior_fury_02.png": {
+    "height": 62,
+    "width": 303
+  },
+  "warrior_fury_03.png": {
+    "height": 37,
+    "width": 303
+  },
+  "warrior_fury_04.png": {
+    "height": 62,
+    "width": 303
+  },
+  "warrior_fury_05.png": {
+    "height": 37,
+    "width": 303
+  },
+  "warrior_fury_06.png": {
+    "height": 37,
+    "width": 303
+  },
+  "warrior_fury_07.png": {
+    "height": 87,
+    "width": 303
+  },
+  "warrior_fury_08.png": {
+    "height": 87,
+    "width": 303
+  },
+  "warrior_protection_01.png": {
+    "height": 87,
+    "width": 303
+  },
+  "warrior_protection_02.png": {
+    "height": 87,
+    "width": 303
+  },
+  "warrior_protection_03.png": {
+    "height": 62,
+    "width": 303
+  },
+  "warrior_protection_04.png": {
+    "height": 62,
+    "width": 303
+  },
+  "warrior_protection_05.png": {
+    "height": 62,
+    "width": 303
+  },
+  "warrior_protection_06.png": {
+    "height": 38,
+    "width": 303
+  }
+}

@@ -6,11 +6,11 @@ Automates pulling Wowhead talent builds, generating `Talents.lua`, and zipping t
 - Python 3.10+
 - Google Chrome (or Chromium)
 - ChromeDriver compatible with your Chrome version
-- Python packages: `selenium`
+- Python packages: `selenium`, `Pillow`
 
 Install deps:
 ```bash
-python -m pip install selenium
+python -m pip install selenium Pillow
 ```
 
 ## Files and Folders

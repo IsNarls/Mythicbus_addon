@@ -1,6 +1,7 @@
 import argparse
 import csv
 import os
+import re
 import time
 from pathlib import Path
 
@@ -18,6 +19,8 @@ SUPPORT_DIR = BASE_DIR / "Support_files"
 DEFAULT_INPUT_CSV = str(SUPPORT_DIR / "wowhead-class-spec-urls.csv")
 DEFAULT_OUTPUT_CSV = str(SUPPORT_DIR / "wowhead_table_results.csv")
 DEFAULT_TABLE_XPATH = "/html/body/div[6]/div/div[3]/div/div[3]/div[2]/div/div[2]/div[2]/div[9]/div"
+DEFAULT_IMAGE_DIR = str(SUPPORT_DIR / "box_images")
+DEFAULT_IMAGE_REL_DIR = "Images/box_images"
 
 COPY_PREFIX = "Copy"
 PAGE_LOAD_TIMEOUT = 35
@@ -29,10 +32,41 @@ HOOK_POLL_SLEEP = 0.05
 GET_RETRIES = 2
 GET_BACKOFF_SECONDS = (1.0, 2.5)
 URL_ATTEMPTS = 3
+OVERLAY_SWEEP_SLEEP = 0.08
 
 
 def ensure_support_dir():
     SUPPORT_DIR.mkdir(parents=True, exist_ok=True)
+
+
+def ensure_dir(path: str):
+    Path(path).mkdir(parents=True, exist_ok=True)
+
+
+def clear_dir(path: str):
+    p = Path(path)
+    if not p.exists():
+        return
+    for item in p.iterdir():
+        if item.is_file():
+            try:
+                item.unlink()
+            except Exception:
+                pass
+
+
+def safe_slug(value: str) -> str:
+    v = (value or "").strip().lower()
+    v = re.sub(r"[^a-z0-9]+", "_", v)
+    v = re.sub(r"_+", "_", v).strip("_")
+    return v or "unknown"
+
+
+def url_slug(url: str) -> str:
+    if not url:
+        return "unknown_url"
+    v = re.sub(r"^https?://", "", url.strip().lower())
+    return safe_slug(v)[:80]
 
 
 def sniff_url_column(rows, fieldnames):
@@ -218,6 +252,23 @@ def click_and_read(driver, btn):
     return ""
 
 
+def save_row_image(btn, out_dir: str, name_prefix: str, idx: int) -> str:
+    try:
+        row = btn.find_element(By.XPATH, "ancestor::tr[1]")
+    except Exception:
+        try:
+            row = btn.find_element(By.XPATH, "ancestor::div[1]")
+        except Exception:
+            return ""
+    filename = f"{name_prefix}_{idx:02d}.png"
+    path = Path(out_dir) / filename
+    try:
+        row.screenshot(str(path))
+        return filename
+    except Exception:
+        return ""
+
+
 def collect_table_buttons(driver, table_xpath, fallback=False):
     try:
         table = driver.find_element(By.XPATH, table_xpath)
@@ -298,17 +349,94 @@ def wait_for_table_or_guide(driver, table_xpath):
         pass
 
 
-def process_url(driver, url, table_xpath):
+def close_wowhead_overlays(driver):
+    close_selectors = [
+        "button[aria-label='Close']",
+        "button[title='Close']",
+        "[aria-label='close']",
+        "[data-testid='close']",
+        ".modal .close",
+        ".modal-close",
+        ".close-button",
+        ".closeBtn",
+        ".close-btn",
+        ".popup-close",
+        ".overlay-close",
+        "button#onetrust-reject-all-handler",
+        "button#onetrust-accept-btn-handler",
+        "button[aria-label='Reject all']",
+        "button[aria-label='Accept all']",
+    ]
+
+    for sel in close_selectors:
+        try:
+            els = driver.find_elements(By.CSS_SELECTOR, sel)
+        except Exception:
+            continue
+        for el in els[:3]:
+            try:
+                if el.is_displayed() and el.is_enabled():
+                    driver.execute_script("arguments[0].click();", el)
+                    time.sleep(OVERLAY_SWEEP_SLEEP)
+            except Exception:
+                continue
+
+    try:
+        removed = driver.execute_script(
+            """
+            const x = Math.floor(window.innerWidth/2);
+            const y = Math.floor(window.innerHeight/2);
+            const el = document.elementFromPoint(x, y);
+            if (!el) return "";
+            const guide = document.getElementById('guide-body');
+            if (guide && guide.contains(el)) return "";
+            let cur = el;
+            for (let i=0;i<8 && cur;i++){
+              const st = window.getComputedStyle(cur);
+              const zi = parseInt(st.zIndex || "0");
+              if (st && (st.position === 'fixed' || st.position === 'sticky') && zi > 50) {
+                cur.remove();
+                return "removed_fixed_overlay";
+              }
+              cur = cur.parentElement;
+            }
+            return "";
+            """
+        )
+        if removed:
+            time.sleep(OVERLAY_SWEEP_SLEEP)
+    except Exception:
+        pass
+
+
+def process_url(
+    driver,
+    url,
+    table_xpath,
+    meta=None,
+    save_images=False,
+    image_dir=None,
+    image_rel_dir=DEFAULT_IMAGE_REL_DIR,
+):
     ok = safe_get(driver, url)
     if not ok:
         return []
     wait_for_table_or_guide(driver, table_xpath)
     install_copy_hook(driver)
+    close_wowhead_overlays(driver)
     buttons = collect_table_buttons(driver, table_xpath, fallback=False)
     if not buttons:
         buttons = collect_buttons_fallback(driver)
+    meta = meta or {}
+    class_part = safe_slug(meta.get("Class", ""))
+    spec_part = safe_slug(meta.get("Spec", ""))
+    if class_part != "unknown" or spec_part != "unknown":
+        name_prefix = f"{class_part}_{spec_part}"
+    else:
+        name_prefix = url_slug(url)
     rows = []
     for idx, b in enumerate(buttons, start=1):
+        close_wowhead_overlays(driver)
         try:
             label = (b.text or "").strip()
         except Exception:
@@ -317,7 +445,12 @@ def process_url(driver, url, table_xpath):
             talent = click_and_read(driver, b)
         except Exception:
             talent = ""
-        rows.append((idx, label, talent))
+        image_rel = ""
+        if save_images and image_dir:
+            filename = save_row_image(b, image_dir, name_prefix, idx)
+            if filename:
+                image_rel = f"{image_rel_dir}/{filename}"
+        rows.append((idx, label, talent, image_rel))
     return rows
 
 
@@ -327,11 +460,18 @@ def main():
     parser.add_argument("--output-csv", default=DEFAULT_OUTPUT_CSV)
     parser.add_argument("--url", default="")
     parser.add_argument("--table-xpath", default=DEFAULT_TABLE_XPATH)
+    parser.add_argument("--image-dir", default=DEFAULT_IMAGE_DIR)
+    parser.add_argument("--image-rel-dir", default=DEFAULT_IMAGE_REL_DIR)
+    parser.add_argument("--save-box-images", action="store_true", default=True)
+    parser.add_argument("--no-save-box-images", action="store_false", dest="save_box_images")
     parser.add_argument("--headless", action="store_true", default=True)
     parser.add_argument("--no-headless", action="store_false", dest="headless")
     args = parser.parse_args()
 
     ensure_support_dir()
+    if args.save_box_images:
+        ensure_dir(args.image_dir)
+        clear_dir(args.image_dir)
 
     rows = []
     url_rows = []
@@ -355,7 +495,15 @@ def main():
             table_rows = []
             for attempt in range(1, URL_ATTEMPTS + 1):
                 try:
-                    table_rows = process_url(driver, url, args.table_xpath)
+                    table_rows = process_url(
+                        driver,
+                        url,
+                        args.table_xpath,
+                        meta=r,
+                        save_images=args.save_box_images,
+                        image_dir=args.image_dir,
+                        image_rel_dir=args.image_rel_dir,
+                    )
                 except WebDriverException:
                     try:
                         driver.quit()
@@ -367,7 +515,7 @@ def main():
                     table_rows = []
                 if table_rows:
                     break
-            for idx, label, talent in table_rows:
+            for idx, label, talent, image_rel in table_rows:
                 out_rows.append({
                     "Class": r.get("Class", ""),
                     "Spec": r.get("Spec", ""),
@@ -375,6 +523,7 @@ def main():
                     "RowIndex": idx,
                     "ButtonLabel": label,
                     "TalentString": talent,
+                    "ImagePath": image_rel,
                     "URL": url,
                 })
                 out_urls.add(url)
@@ -398,7 +547,16 @@ def main():
         except Exception:
             pass
 
-    fieldnames = ["Class", "Spec", "Role", "RowIndex", "ButtonLabel", "TalentString", "URL"]
+    fieldnames = [
+        "Class",
+        "Spec",
+        "Role",
+        "RowIndex",
+        "ButtonLabel",
+        "TalentString",
+        "ImagePath",
+        "URL",
+    ]
     with open(args.output_csv, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=fieldnames)
         w.writeheader()
