@@ -1,0 +1,108 @@
+Mythicbus Release Commands
+==========================
+
+Required Local Setup
+--------------------
+Put the GitHub token in .env:
+
+github_token=YOUR_GITHUB_TOKEN
+
+The token needs write access to the GitHub repository and these permissions:
+
+- Contents: Read and write
+- Workflows: Read and write
+
+
+Required GitHub Repository Secrets
+----------------------------------
+Set these in GitHub:
+
+Settings -> Secrets and variables -> Actions -> Repository secrets
+
+Use the repository that runs the workflow:
+
+https://github.com/IsNarls/Mythicbus_addon
+
+CURSEFORGE_TOKEN
+CURSEFORGE_PROJECT_ID
+DISCORD_TOKEN
+DISCORD_CHANNEL_ID
+
+These four values must be repository secrets, not repository variables.
+
+Optional GitHub repository variable:
+
+CURSEFORGE_GAME_VERSION_NAMES
+
+Default value if not set:
+
+12.1.0
+
+For multiple game versions, use comma-separated values:
+
+12.1.0,12.1.5
+
+
+Release Types
+-------------
+Beta build:
+
+- Any version tag containing "-beta"
+- CurseForge releaseType: beta
+- Example tag: v0.1.2-beta.1
+
+Final/public build:
+
+- Any normal version tag without "-beta"
+- CurseForge releaseType: release
+- Example tag: v0.1.2
+
+
+Full Beta Build
+---------------
+Runs talent collection, rebuilds addon files, commits, pushes, tags, uploads to
+CurseForge as beta, then sends a Discord bot message with the zip attached.
+
+python3 release_mythicbus.py 0.1.2-beta.1
+
+
+Beta Upload Without Talent Collection
+-------------------------------------
+Uses the current addon files, creates an empty release commit if needed, pushes,
+tags, uploads to CurseForge as beta, then sends Discord notification.
+
+python3 release_mythicbus.py 0.1.2-beta.1 --skip-build --allow-empty
+
+
+Full Final Release
+------------------
+Runs talent collection, rebuilds addon files, commits, pushes, tags, uploads to
+CurseForge as a public release, then sends Discord notification.
+
+python3 release_mythicbus.py 0.1.2
+
+
+Final Release Without Talent Collection
+---------------------------------------
+Uses the current addon files, creates an empty release commit if needed, pushes,
+tags, uploads to CurseForge as a public release, then sends Discord notification.
+
+python3 release_mythicbus.py 0.1.2 --skip-build --allow-empty
+
+
+Retry A Failed Push
+-------------------
+Use this when the local commit and tag already exist but the GitHub push failed.
+This does not rerun talent collection and does not create a new commit.
+
+python3 release_mythicbus.py 0.1.2-beta.1 --push-only
+
+
+Important Notes
+---------------
+- Use a new version every time. Do not reuse a tag already pushed to GitHub.
+- GitHub Actions cannot read local .env files. CurseForge and Discord values
+  must be set as GitHub repository secrets.
+- Discord notification is sent only after the CurseForge upload succeeds.
+- If CurseForge upload fails, check the GitHub Actions log for the HTTP code and
+  CurseForge response body.
