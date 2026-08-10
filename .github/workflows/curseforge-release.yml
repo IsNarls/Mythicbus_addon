@@ -77,6 +77,10 @@ jobs:
           DISCORD_CHANNEL_ID: ${{ secrets.DISCORD_CHANNEL_ID }}
         run: |
           failed=0
+          CURSEFORGE_TOKEN="$(printf '%s' "${CURSEFORGE_TOKEN}" | tr -d '[:space:]')"
+          CURSEFORGE_PROJECT_ID="$(printf '%s' "${CURSEFORGE_PROJECT_ID}" | tr -d '[:space:]')"
+          DISCORD_TOKEN="$(printf '%s' "${DISCORD_TOKEN}" | tr -d '[:space:]')"
+          DISCORD_CHANNEL_ID="$(printf '%s' "${DISCORD_CHANNEL_ID}" | tr -d '[:space:]')"
 
           for name in CURSEFORGE_TOKEN CURSEFORGE_PROJECT_ID DISCORD_TOKEN DISCORD_CHANNEL_ID; do
             if [ -z "${!name}" ]; then
@@ -102,6 +106,10 @@ jobs:
         run: |
           VERSION="${{ steps.version.outputs.version }}"
           export VERSION
+          CURSEFORGE_PROJECT_ID="$(printf '%s' "${CURSEFORGE_PROJECT_ID}" | tr -d '[:space:]')"
+          CURSEFORGE_TOKEN="$(printf '%s' "${CURSEFORGE_TOKEN}" | tr -d '[:space:]')"
+          export CURSEFORGE_PROJECT_ID
+          export CURSEFORGE_TOKEN
 
           if [ -z "${CURSEFORGE_TOKEN}" ] || [ -z "${CURSEFORGE_PROJECT_ID}" ]; then
             echo "CurseForge upload failed: CURSEFORGE_TOKEN or CURSEFORGE_PROJECT_ID secret is not set."
@@ -117,8 +125,8 @@ jobs:
           import urllib.error
 
           version = os.environ["VERSION"]
-          project_id = os.environ["CURSEFORGE_PROJECT_ID"]
-          token = os.environ["CURSEFORGE_TOKEN"]
+          project_id = os.environ["CURSEFORGE_PROJECT_ID"].strip()
+          token = os.environ["CURSEFORGE_TOKEN"].strip()
           zip_name = f"Mythicbus-{version}.zip"
           url = f"https://wow.curseforge.com/api/projects/{project_id}/upload-file"
 
@@ -183,6 +191,8 @@ jobs:
             echo "Discord notification skipped: DISCORD_TOKEN or DISCORD_CHANNEL_ID secret is not set."
             exit 0
           fi
+          DISCORD_TOKEN="$(printf '%s' "${DISCORD_TOKEN}" | tr -d '[:space:]')"
+          DISCORD_CHANNEL_ID="$(printf '%s' "${DISCORD_CHANNEL_ID}" | tr -d '[:space:]')"
 
           curl --fail-with-body \
             --request POST \
@@ -204,6 +214,8 @@ jobs:
             echo "Discord notification skipped: DISCORD_TOKEN or DISCORD_CHANNEL_ID secret is not set."
             exit 0
           fi
+          DISCORD_TOKEN="$(printf '%s' "${DISCORD_TOKEN}" | tr -d '[:space:]')"
+          DISCORD_CHANNEL_ID="$(printf '%s' "${DISCORD_CHANNEL_ID}" | tr -d '[:space:]')"
 
           curl --fail-with-body \
             --request POST \
