@@ -41,6 +41,15 @@ def get_output(args):
     return run(args, capture_output=True).stdout.strip()
 
 
+def sanitize_text(value, secrets):
+    text = str(value)
+    for secret in secrets:
+        if secret:
+            text = text.replace(secret, "<redacted>")
+            text = text.replace(quote(secret, safe=""), "<redacted>")
+    return text
+
+
 def get_github_token():
     env_values = load_env_file(BASE_DIR / ".env")
     return (
@@ -70,6 +79,18 @@ def make_authenticated_remote(remote_url, token):
     safe_token = quote(token, safe="")
     netloc = f"x-access-token:{safe_token}@{parsed.hostname}"
     return urlunparse(parsed._replace(netloc=netloc))
+
+
+def push_ref(push_url, refspec, token):
+    result = run(["git", "push", push_url, refspec], check=False, capture_output=True)
+    if result.returncode == 0:
+        if result.stdout:
+            print(result.stdout, end="")
+        if result.stderr:
+            print(result.stderr, end="", file=sys.stderr)
+        return
+    details = "\n".join(part for part in [result.stdout, result.stderr] if part)
+    raise RuntimeError(sanitize_text(f"git push {refspec} failed:\n{details}", [token]))
 
 
 def ensure_clean_index():
@@ -120,6 +141,11 @@ def parse_args():
         action="store_true",
         help="Show what would happen without committing, pushing, or tagging.",
     )
+    parser.add_argument(
+        "--push-only",
+        action="store_true",
+        help="Push the current HEAD and existing tag without building or committing.",
+    )
     return parser.parse_args()
 
 
@@ -137,7 +163,17 @@ def main():
 
     ensure_clean_index()
 
-    if not args.skip_build:
+    if args.push_only:
+        tag_exists = run(
+            ["git", "rev-parse", "-q", "--verify", f"refs/tags/{tag}"],
+            check=False,
+            capture_output=True,
+        )
+        if tag_exists.returncode != 0:
+            raise RuntimeError(f"Tag does not exist locally: {tag}")
+        if get_output(["git", "status", "--short"]):
+            raise RuntimeError("Working tree has changes. Commit or stash them before --push-only.")
+    elif not args.skip_build:
         build_cmd = [get_pipeline_python(), str(BASE_DIR / "run_mythicbus_pipeline.py")]
         if not args.with_local_discord_upload:
             build_cmd.append("--no-discord-upload")
@@ -147,34 +183,39 @@ def main():
         else:
             run(build_cmd)
 
-    tag_exists = run(["git", "rev-parse", "-q", "--verify", f"refs/tags/{tag}"], check=False)
-    if tag_exists.returncode == 0:
-        raise RuntimeError(f"Tag already exists locally: {tag}")
+    if not args.push_only:
+        tag_exists = run(
+            ["git", "rev-parse", "-q", "--verify", f"refs/tags/{tag}"],
+            check=False,
+            capture_output=True,
+        )
+        if tag_exists.returncode == 0:
+            raise RuntimeError(f"Tag already exists locally: {tag}")
 
-    changed = get_output(["git", "status", "--short"])
-    if not changed:
-        raise RuntimeError("No changes to release.")
+        changed = get_output(["git", "status", "--short"])
+        if not changed:
+            raise RuntimeError("No changes to release.")
 
-    print("Staging release paths...")
-    if args.dry_run:
-        print("\n".join(DEFAULT_RELEASE_PATHS))
-        return
+        print("Staging release paths...")
+        if args.dry_run:
+            print("\n".join(DEFAULT_RELEASE_PATHS))
+            return
 
-    run(["git", "add", "--", *DEFAULT_RELEASE_PATHS])
-    staged = get_output(["git", "diff", "--cached", "--name-only"])
-    if not staged:
-        raise RuntimeError("No release files were staged.")
+        run(["git", "add", "--", *DEFAULT_RELEASE_PATHS])
+        staged = get_output(["git", "diff", "--cached", "--name-only"])
+        if not staged:
+            raise RuntimeError("No release files were staged.")
 
-    message = args.message or f"Release Mythicbus {version}"
-    run(["git", "commit", "-m", message])
-    run(["git", "tag", tag])
+        message = args.message or f"Release Mythicbus {version}"
+        run(["git", "commit", "-m", message])
+        run(["git", "tag", tag])
 
     remote_url = get_output(["git", "remote", "get-url", "origin"])
     push_url = make_authenticated_remote(remote_url, token)
 
     print(f"Pushing {branch} and {tag} to origin...")
-    run(["git", "push", push_url, f"HEAD:{branch}"])
-    run(["git", "push", push_url, tag])
+    push_ref(push_url, f"HEAD:{branch}", token)
+    push_ref(push_url, tag, token)
     print(f"Release tag pushed: {tag}")
 
 

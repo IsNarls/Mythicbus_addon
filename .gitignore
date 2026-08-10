@@ -1,2 +1,4 @@
 Support_files/chrome_selenium_profile/
 .env
+__pycache__/
+cron.log
