@@ -127,6 +127,11 @@ def parse_args():
         help="Skip run_mythicbus_pipeline.py and release the current files.",
     )
     parser.add_argument(
+        "--allow-empty",
+        action="store_true",
+        help="Allow an empty release commit when there are no file changes.",
+    )
+    parser.add_argument(
         "--no-discord-upload",
         action="store_true",
         help="Deprecated; local Discord uploads are skipped by default.",
@@ -193,7 +198,7 @@ def main():
             raise RuntimeError(f"Tag already exists locally: {tag}")
 
         changed = get_output(["git", "status", "--short"])
-        if not changed:
+        if not changed and not args.allow_empty:
             raise RuntimeError("No changes to release.")
 
         print("Staging release paths...")
@@ -201,13 +206,17 @@ def main():
             print("\n".join(DEFAULT_RELEASE_PATHS))
             return
 
-        run(["git", "add", "--", *DEFAULT_RELEASE_PATHS])
+        if changed:
+            run(["git", "add", "--", *DEFAULT_RELEASE_PATHS])
         staged = get_output(["git", "diff", "--cached", "--name-only"])
-        if not staged:
+        if not staged and not args.allow_empty:
             raise RuntimeError("No release files were staged.")
 
         message = args.message or f"Release Mythicbus {version}"
-        run(["git", "commit", "-m", message])
+        commit_cmd = ["git", "commit", "-m", message]
+        if args.allow_empty:
+            commit_cmd.append("--allow-empty")
+        run(commit_cmd)
         run(["git", "tag", tag])
 
     remote_url = get_output(["git", "remote", "get-url", "origin"])
