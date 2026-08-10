@@ -107,14 +107,16 @@ jobs:
             exit 1
           fi
 
+          metadata_json="$(jq -c . metadata.json)"
+          echo "Prepared CurseForge metadata (${#metadata_json} bytes)."
+
           http_code="$(
-            metadata_json="$(jq -c . metadata.json)"
             curl --silent --show-error \
               --output curseforge-response.json \
               --write-out "%{http_code}" \
               --request POST \
               --header "X-Api-Token: ${CURSEFORGE_TOKEN}" \
-              --form "metadata=${metadata_json};type=application/json" \
+              --form-string "metadata=${metadata_json}" \
               --form "file=@Mythicbus-${VERSION}.zip;type=application/zip" \
               "https://wow.curseforge.com/api/projects/${CURSEFORGE_PROJECT_ID}/upload-file"
           )"
