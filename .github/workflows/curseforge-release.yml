@@ -101,32 +101,75 @@ jobs:
           CURSEFORGE_PROJECT_ID: ${{ secrets.CURSEFORGE_PROJECT_ID }}
         run: |
           VERSION="${{ steps.version.outputs.version }}"
+          export VERSION
 
           if [ -z "${CURSEFORGE_TOKEN}" ] || [ -z "${CURSEFORGE_PROJECT_ID}" ]; then
             echo "CurseForge upload failed: CURSEFORGE_TOKEN or CURSEFORGE_PROJECT_ID secret is not set."
             exit 1
           fi
 
-          metadata_json="$(jq -c . metadata.json)"
-          echo "Prepared CurseForge metadata (${#metadata_json} bytes)."
+          python3 - <<'PY'
+          import json
+          import os
+          import sys
+          import uuid
+          import urllib.request
+          import urllib.error
 
-          http_code="$(
-            curl --silent --show-error \
-              --output curseforge-response.json \
-              --write-out "%{http_code}" \
-              --request POST \
-              --header "X-Api-Token: ${CURSEFORGE_TOKEN}" \
-              --form-string "metadata=${metadata_json}" \
-              --form "file=@Mythicbus-${VERSION}.zip;type=application/zip" \
-              "https://wow.curseforge.com/api/projects/${CURSEFORGE_PROJECT_ID}/upload-file"
-          )"
+          version = os.environ["VERSION"]
+          project_id = os.environ["CURSEFORGE_PROJECT_ID"]
+          token = os.environ["CURSEFORGE_TOKEN"]
+          zip_name = f"Mythicbus-{version}.zip"
+          url = f"https://wow.curseforge.com/api/projects/{project_id}/upload-file"
 
-          cat curseforge-response.json
-          echo
-          if [ "${http_code}" -lt 200 ] || [ "${http_code}" -ge 300 ]; then
-            echo "CurseForge upload failed with HTTP ${http_code}."
-            exit 1
-          fi
+          with open("metadata.json", "r", encoding="utf-8") as handle:
+              metadata = json.load(handle)
+          metadata_json = json.dumps(metadata, separators=(",", ":"))
+          print(f"Prepared CurseForge metadata ({len(metadata_json)} bytes).")
+
+          with open(zip_name, "rb") as handle:
+              zip_bytes = handle.read()
+
+          boundary = f"----mythicbus-{uuid.uuid4().hex}"
+          chunks = [
+              f"--{boundary}\r\n".encode("ascii"),
+              b'Content-Disposition: form-data; name="metadata"\r\n',
+              b"Content-Type: application/json\r\n\r\n",
+              metadata_json.encode("utf-8"),
+              b"\r\n",
+              f"--{boundary}\r\n".encode("ascii"),
+              f'Content-Disposition: form-data; name="file"; filename="{zip_name}"\r\n'.encode("utf-8"),
+              b"Content-Type: application/zip\r\n\r\n",
+              zip_bytes,
+              b"\r\n",
+              f"--{boundary}--\r\n".encode("ascii"),
+          ]
+          body_bytes = b"".join(chunks)
+
+          request = urllib.request.Request(
+              url,
+              data=body_bytes,
+              method="POST",
+              headers={
+                  "X-Api-Token": token,
+                  "Content-Type": f"multipart/form-data; boundary={boundary}",
+                  "Content-Length": str(len(body_bytes)),
+              },
+          )
+
+          try:
+              with urllib.request.urlopen(request, timeout=180) as response:
+                  body = response.read().decode("utf-8", errors="replace")
+                  status = response.status
+          except urllib.error.HTTPError as exc:
+              body = exc.read().decode("utf-8", errors="replace")
+              status = exc.code
+
+          print(body)
+          if status < 200 or status >= 300:
+              print(f"CurseForge upload failed with HTTP {status}.")
+              sys.exit(1)
+          PY
 
       - name: Notify Discord success
         shell: bash
