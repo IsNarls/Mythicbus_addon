@@ -73,21 +73,19 @@ jobs:
       - name: Notify Discord
         shell: bash
         env:
-          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
+          DISCORD_CHANNEL_ID: ${{ secrets.DISCORD_CHANNEL_ID }}
         run: |
           VERSION="${{ steps.version.outputs.version }}"
 
-          if [ -z "${DISCORD_WEBHOOK_URL}" ]; then
-            echo "Discord notification skipped: DISCORD_WEBHOOK_URL secret is not set."
+          if [ -z "${DISCORD_TOKEN}" ] || [ -z "${DISCORD_CHANNEL_ID}" ]; then
+            echo "Discord notification skipped: DISCORD_TOKEN or DISCORD_CHANNEL_ID secret is not set."
             exit 0
           fi
 
-          jq -n \
-            --arg content "Mythicbus ${VERSION} uploaded successfully to CurseForge." \
-            '{content: $content}' > discord-message.json
-
           curl --fail-with-body \
             --request POST \
-            --header "Content-Type: application/json" \
-            --data @discord-message.json \
-            "${DISCORD_WEBHOOK_URL}"
+            --header "Authorization: Bot ${DISCORD_TOKEN}" \
+            --form "content=Mythicbus ${VERSION} uploaded successfully to CurseForge." \
+            --form "files[0]=@Mythicbus-${VERSION}.zip;type=application/zip" \
+            "https://discord.com/api/v10/channels/${DISCORD_CHANNEL_ID}/messages"
