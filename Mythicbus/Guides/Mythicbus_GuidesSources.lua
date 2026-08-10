@@ -1,43 +1,40 @@
 -- Guides/Mythicbus_GuidesSources.lua
--- Central source/credit map for each dungeon guide (Icy Veins URLs).
--- Keys MUST match the dungeonKey used in your GuidesData_*.lua files.
+-- Central source/credit map for each CURRENT season dungeon guide.
+-- Keys must match dungeonKey used in GuidesData_*.lua files.
 
 local ADDON, NS = ...
 
 NS.MBUS_GuideSources = {
-  -- The War Within dungeons
-  ["ARA_KARA_CITY_OF_ECHOES"] = {
+  ["MAGISTERS_TERRACE"] = {
     name = "Icy Veins",
-    url  = "https://www.icy-veins.com/wow/ara-kara-city-of-echoes-dungeon-guide",
+    url = "https://www.icy-veins.com/wow/magisters-terrace-dungeon-guide",
   },
-  ["THE_DAWNBREAKER"] = {
+  ["MAISARA_CAVERNS"] = {
     name = "Icy Veins",
-    url  = "https://www.icy-veins.com/wow/the-dawnbreaker-dungeon-guide",
+    url = "https://www.icy-veins.com/wow/maisara-caverns-dungeon-guide",
   },
-  ["ECO_DOME_ALDANI"] = {
+  ["NEXUS_POINT_XENAS"] = {
     name = "Icy Veins",
-    url  = "https://www.icy-veins.com/wow/eco-dome-aldani-dungeon-guide",
+    url = "https://www.icy-veins.com/wow/nexus-point-xenas-dungeon-guide",
   },
-  ["HALLS_OF_ATONEMENT_TWW"] = {
+  ["WINDRUNNER_SPIRE"] = {
     name = "Icy Veins",
-    url  = "https://www.icy-veins.com/wow/halls-of-atonement-dungeon-guide-tww",
+    url = "https://www.icy-veins.com/wow/windrunner-spire-dungeon-guide",
   },
-  ["OPERATION_FLOODGATE"] = {
+  ["ALGETHAR_ACADEMY"] = {
     name = "Icy Veins",
-    url  = "https://www.icy-veins.com/wow/operation-floodgate-dungeon-guide",
+    url = "https://www.icy-veins.com/wow/algethar-academy-dungeon-guide",
   },
-  ["PRIORY_OF_THE_SACRED_FLAME"] = {
+  ["SEAT_OF_THE_TRIUMVIRATE"] = {
     name = "Icy Veins",
-    url  = "https://www.icy-veins.com/wow/priory-of-the-sacred-flame-dungeon-guide",
+    url = "https://www.icy-veins.com/wow/seat-of-the-triumvirate-dungeon-guide",
   },
-
-  -- Tazavesh split dungeons
-  ["TAZAVESH_STREETS_OF_WONDER"] = {
+  ["SKYREACH"] = {
     name = "Icy Veins",
-    url  = "https://www.icy-veins.com/wow/tazavesh-streets-of-wonder-dungeon-guide",
+    url = "https://www.icy-veins.com/wow/skyreach-dungeon-guide",
   },
-  ["TAZAVESH_SOLEAHS_GAMBIT"] = {
+  ["PIT_OF_SARON"] = {
     name = "Icy Veins",
-    url  = "https://www.icy-veins.com/wow/tazavesh-so-leah-gambit-dungeon-guide",
+    url = "https://www.icy-veins.com/wow/pit-of-saron-dungeon-guide",
   },
 }

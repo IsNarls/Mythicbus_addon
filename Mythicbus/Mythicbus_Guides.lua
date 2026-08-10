@@ -92,6 +92,8 @@ end
 -- Copy-to-clipboard popup (safe way to "open" URLs in WoW)
 -- ======================
 local function MBUS_ShowCopyBox(title, text)
+  local safe_title = (title and tostring(title)) or "Copy"
+  local safe_text = (text and tostring(text)) or ""
   StaticPopupDialogs["MBUS_COPY_GUIDE_URL"] = StaticPopupDialogs["MBUS_COPY_GUIDE_URL"] or {
     text = "%s",
     button1 = OKAY,
@@ -102,13 +104,19 @@ local function MBUS_ShowCopyBox(title, text)
     hideOnEscape = true,
     preferredIndex = 3,
     OnShow = function(self, data)
-      self.text:SetText(data.title or "Copy")
-      self.editBox:SetText(data.text or "")
-      self.editBox:HighlightText()
-      self.editBox:SetFocus()
+      local text_region = self.text or self.Text
+      local edit_box = self.editBox or self.EditBox
+      if text_region then
+        text_region:SetText((data and data.title) or "Copy")
+      end
+      if edit_box then
+        edit_box:SetText((data and data.text) or "")
+        edit_box:HighlightText()
+        edit_box:SetFocus()
+      end
     end,
   }
-  StaticPopup_Show("MBUS_COPY_GUIDE_URL", nil, nil, { title = title, text = text })
+  StaticPopup_Show("MBUS_COPY_GUIDE_URL", safe_title, nil, { title = safe_title, text = safe_text })
 end
 
 -- ======================

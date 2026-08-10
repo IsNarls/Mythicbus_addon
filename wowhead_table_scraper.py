@@ -418,8 +418,10 @@ def process_url(
     image_dir=None,
     image_rel_dir=DEFAULT_IMAGE_REL_DIR,
 ):
+    print(f"[scrape] url={url}")
     ok = safe_get(driver, url)
     if not ok:
+        print(f"[scrape] url_failed={url}")
         return []
     wait_for_table_or_guide(driver, table_xpath)
     install_copy_hook(driver)
@@ -427,6 +429,7 @@ def process_url(
     buttons = collect_table_buttons(driver, table_xpath, fallback=False)
     if not buttons:
         buttons = collect_buttons_fallback(driver)
+    print(f"[scrape] buttons={len(buttons)}")
     meta = meta or {}
     class_part = safe_slug(meta.get("Class", ""))
     spec_part = safe_slug(meta.get("Spec", ""))
@@ -441,6 +444,8 @@ def process_url(
             label = (b.text or "").strip()
         except Exception:
             label = ""
+        if idx == 1 or idx % 5 == 0:
+            print(f"[scrape] row={idx} label={label[:40]}")
         try:
             talent = click_and_read(driver, b)
         except Exception:

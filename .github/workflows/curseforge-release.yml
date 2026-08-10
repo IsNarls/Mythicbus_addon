@@ -1,0 +1,93 @@
+name: Release Mythicbus to CurseForge
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: read
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Determine version
+        id: version
+        shell: bash
+        run: |
+          VERSION="${GITHUB_REF_NAME#v}"
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+
+      - name: Build addon ZIP
+        shell: bash
+        run: |
+          VERSION="${{ steps.version.outputs.version }}"
+          PACKAGE_ROOT="package/Mythicbus"
+
+          mkdir -p "$PACKAGE_ROOT"
+
+          rsync -av \
+            --exclude=".git/" \
+            --exclude="__pycache__/" \
+            Mythicbus/ "$PACKAGE_ROOT/"
+
+          cd package
+          zip -r "../Mythicbus-${VERSION}.zip" Mythicbus
+
+      - name: Create upload metadata
+        shell: bash
+        run: |
+          VERSION="${{ steps.version.outputs.version }}"
+
+          jq -n \
+            --arg changelog "Automated release ${VERSION}" \
+            --arg displayName "Mythicbus ${VERSION}" \
+            '{
+              changelog: $changelog,
+              changelogType: "markdown",
+              displayName: $displayName,
+              releaseType: "release",
+              gameVersionNames: ["Retail"]
+            }' > metadata.json
+
+      - name: Upload to CurseForge
+        shell: bash
+        env:
+          CURSEFORGE_TOKEN: ${{ secrets.CURSEFORGE_TOKEN }}
+          CURSEFORGE_PROJECT_ID: ${{ secrets.CURSEFORGE_PROJECT_ID }}
+        run: |
+          VERSION="${{ steps.version.outputs.version }}"
+
+          curl --fail-with-body \
+            --request POST \
+            --header "X-Api-Token: ${CURSEFORGE_TOKEN}" \
+            --form "metadata=<metadata.json;type=application/json" \
+            --form "file=@Mythicbus-${VERSION}.zip;type=application/zip" \
+            "https://wow.curseforge.com/api/projects/${CURSEFORGE_PROJECT_ID}/upload-file"
+
+      - name: Notify Discord
+        shell: bash
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: |
+          VERSION="${{ steps.version.outputs.version }}"
+
+          if [ -z "${DISCORD_WEBHOOK_URL}" ]; then
+            echo "Discord notification skipped: DISCORD_WEBHOOK_URL secret is not set."
+            exit 0
+          fi
+
+          jq -n \
+            --arg content "Mythicbus ${VERSION} uploaded successfully to CurseForge." \
+            '{content: $content}' > discord-message.json
+
+          curl --fail-with-body \
+            --request POST \
+            --header "Content-Type: application/json" \
+            --data @discord-message.json \
+            "${DISCORD_WEBHOOK_URL}"

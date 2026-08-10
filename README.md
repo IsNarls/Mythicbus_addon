@@ -13,6 +13,13 @@ Install deps:
 python -m pip install selenium Pillow
 ```
 
+Or using the repo venv + requirements:
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
 ## Files and Folders
 - `wowhead_table_scraper.py` -> scrapes Wowhead and writes `Support_files/wowhead_table_results.csv`
 - `Generate Lua Table.py` -> converts CSV to `Mythicbus/Talents.lua`
@@ -31,7 +38,50 @@ python run_mythicbus_pipeline.py --input-csv Support_files/wowhead-class-spec-ur
 python run_mythicbus_pipeline.py --output-csv Support_files/wowhead_table_results.csv
 python run_mythicbus_pipeline.py --output-lua Mythicbus/Talents.lua
 python run_mythicbus_pipeline.py --zip-path Mythicbus.zip
+python run_mythicbus_pipeline.py --discord-channel-id 1451759197677944906
+python run_mythicbus_pipeline.py --no-discord-upload
 ```
+
+## Release to CurseForge
+The GitHub Actions workflow uploads to CurseForge when a `v*` tag is pushed.
+To automate the local build, commit, push, and tag step, add a GitHub token to
+`.env`:
+
+```bash
+github_token=YOUR_GITHUB_TOKEN
+```
+
+Then run:
+
+```bash
+python release_mythicbus.py 0.1.1
+```
+
+This runs the addon pipeline, commits the generated files, pushes the current
+branch, and pushes `v0.1.1`. The pushed tag triggers the CurseForge workflow.
+If `.venv/bin/python` exists, the release script uses it for the addon pipeline
+so Selenium and Pillow do not need to be installed globally.
+The workflow sends a Discord success message after CurseForge accepts the upload
+when this GitHub repository secret is set:
+
+```bash
+DISCORD_WEBHOOK_URL
+```
+
+## Discord Upload
+After the zip is built, the pipeline can post it to Discord as a bot attachment.
+
+Create a `.env` file in the repo root:
+```bash
+discord_token=YOUR_BOT_TOKEN
+discord_channel_id=1451759197677944906
+```
+
+Notes:
+- `discord_token` is required for upload.
+- `discord_channel_id` is optional; default is `1451759197677944906`.
+- You can override channel at runtime with `--discord-channel-id`.
+- Use `--no-discord-upload` to skip Discord posting.
 
 ## Cron (Debian Example)
 Edit crontab:

@@ -184,10 +184,28 @@ local function MBUS_CreateGuildButton()
   btn:SetSize(90, 22)
   btn:SetPoint("TOPLEFT", CommunitiesFrame, "TOPLEFT", 40, 28)
   btn:SetScript("OnClick", function()
-    if MythicbusFrame:IsShown() then
-      MythicbusFrame:Hide()
+    local qf = _G.MythicbusFrame
+    local bf = _G.MythicbusBountiesFrame
+    local tf = _G.MythicbusTalentsFrame
+    local gf = _G.MythicbusGuidesFrame
+    local anyShown = (qf and qf:IsShown()) or (bf and bf:IsShown()) or (tf and tf:IsShown()) or (gf and gf:IsShown())
+
+    if anyShown then
+      if qf then qf:Hide() end
+      if bf then bf:Hide() end
+      if tf then tf:Hide() end
+      if gf then gf:Hide() end
+      return
+    end
+
+    if NS.ShowQueue then
+      NS.ShowQueue()
     else
-      MythicbusFrame:Show()
+      if qf then
+        qf:Show()
+        qf:Raise()
+        if PanelTemplates_SetTab then PanelTemplates_SetTab(qf, 1) end
+      end
       if NS.RefreshUI then NS.RefreshUI() end
     end
   end)
@@ -238,9 +256,17 @@ frame.roleButtons[3] = makeRoleCheck(frame, "roleicon-tiny-dps",    "D", 3)
 
 -- ====== Delves list (editable) ======
 local MBUS_DELVES = {
-  "Fungal Folly", "Earthcrawl Mines", "Nightfall Sanctum",
-  "The Sinkhole", "Kriegval's Rest", "The Underkeep",
-  "Skittering Breach", "The Dread Pit",
+  "The Shadow Enclave",
+  "Collegiate Calamity",
+  "Parhelion Plaza",
+  "The Darkway",
+  "Twilight Crypts",
+  "Atal'Aman",
+  "The Grudge Pit",
+  "The Gulf of Memory",
+  "Sunkiller Sanctum",
+  "Shadowguard Point",
+  "Torment's Rise",
 }
 
 -- ===== Preferred Level (0, +2..+20 explicitly) =====
@@ -272,36 +298,106 @@ end)
 local preferredMapID = 0                 -- for DUNGEON choice
 local preferredActivityKind = "ANY_DUNGEON" -- "ANY_DUNGEON","ANY_DELVE","DUNGEON","DELVE"
 local preferredDelveName = nil
+local preferredDungeonCode = nil
+local preferredDungeonName = nil
 
 -- seasonal dungeon list
 local seasonMaps, mapRetryTicker = {}, nil
+local CURRENT_SEASON_DUNGEONS = {
+  { code = "MAG", name = "Magister's Terrace" },
+  { code = "MAI", name = "Maisara Caverns" },
+  { code = "NPX", name = "Nexus-Point Xenas" },
+  { code = "WRS", name = "Windrunner Spire" },
+  { code = "ALG", name = "Algeth'ar Academy" },
+  { code = "SOT", name = "Seat of the Triumvirate" },
+  { code = "SKY", name = "Skyreach" },
+  { code = "POS", name = "Pit of Saron" },
+}
+
+local function normalizeDungeonName(name)
+  local s = tostring(name or ""):lower()
+  s = s:gsub("[^%w%s]", " ")
+  s = s:gsub("%s+", " ")
+  s = s:gsub("^%s+", ""):gsub("%s+$", "")
+  return s
+end
+
+local DUNGEON_NAME_BY_CODE = {}
+for _, entry in ipairs(CURRENT_SEASON_DUNGEONS) do
+  DUNGEON_NAME_BY_CODE[entry.code] = entry.name
+end
+
+local function dungeonNameByCode(code)
+  return DUNGEON_NAME_BY_CODE[tostring(code or "")] or nil
+end
+
 local function uniqPush(dst, id, name)
   if not id or id==0 then return end
   for _,v in ipairs(dst) do if v.id==id then return end end
   table.insert(dst, {id=id, name=name or tostring(id)})
 end
-local function refreshSeasonMaps()
-  wipe(seasonMaps)
+
+local function collectAllChallengeMaps()
+  local allMaps = {}
   local ids = (C_ChallengeMode and C_ChallengeMode.GetMapTable and C_ChallengeMode.GetMapTable()) or {}
-  for _,id in ipairs(ids) do uniqPush(seasonMaps, id, C_ChallengeMode.GetMapUIInfo and C_ChallengeMode.GetMapUIInfo(id) or nil) end
-  if #seasonMaps==0 and C_MythicPlus and C_MythicPlus.GetMapTable then
+  for _,id in ipairs(ids) do uniqPush(allMaps, id, C_ChallengeMode.GetMapUIInfo and C_ChallengeMode.GetMapUIInfo(id) or nil) end
+  if #allMaps==0 and C_MythicPlus and C_MythicPlus.GetMapTable then
     local mids = C_MythicPlus.GetMapTable() or {}
-    for _,id in ipairs(mids) do uniqPush(seasonMaps, id, C_MythicPlus.GetMapUIInfo and C_MythicPlus.GetMapUIInfo(id) or nil) end
+    for _,id in ipairs(mids) do uniqPush(allMaps, id, C_MythicPlus.GetMapUIInfo and C_MythicPlus.GetMapUIInfo(id) or nil) end
   end
-  if #seasonMaps==0 and C_MythicPlus and C_MythicPlus.GetRunHistory then
+  if #allMaps==0 and C_MythicPlus and C_MythicPlus.GetRunHistory then
     local hist = C_MythicPlus.GetRunHistory(false,true) or {}
     for _, run in ipairs(hist) do
-      uniqPush(seasonMaps, run.mapChallengeModeID, C_ChallengeMode.GetMapUIInfo and C_ChallengeMode.GetMapUIInfo(run.mapChallengeModeID) or nil)
+      uniqPush(allMaps, run.mapChallengeModeID, C_ChallengeMode.GetMapUIInfo and C_ChallengeMode.GetMapUIInfo(run.mapChallengeModeID) or nil)
     end
   end
-  for _,m in ipairs(seasonMaps) do
+  for _,m in ipairs(allMaps) do
     if not m.name or m.name=="" then
       local info = C_MythicPlus and C_MythicPlus.GetMapInfo and C_MythicPlus.GetMapInfo(m.id)
       m.name = (info and info.name) or (C_Map and C_Map.GetMapInfo and (C_Map.GetMapInfo(m.id) or {}).name) or tostring(m.id)
     end
   end
-  table.sort(seasonMaps, function(a,b) return (a.name or "") < (b.name or "") end)
+  return allMaps
 end
+
+local function refreshSeasonMaps()
+  local allMaps = collectAllChallengeMaps()
+
+  wipe(seasonMaps)
+  local mapByName = {}
+  for _,m in ipairs(allMaps) do
+    local key = normalizeDungeonName(m.name)
+    if key ~= "" and not mapByName[key] then
+      mapByName[key] = m
+    end
+  end
+
+  -- Hardcoded current season roster; map each known name to its live map ID when available.
+  for _,entry in ipairs(CURRENT_SEASON_DUNGEONS) do
+    local name = entry.name
+    local key = normalizeDungeonName(name)
+    local m = mapByName[key]
+    if m and m.id and m.id > 0 then
+      seasonMaps[#seasonMaps + 1] = { id = m.id, name = m.name or name }
+    end
+  end
+
+end
+
+local function resolveSeasonDungeonMapIDByName(dungeonName)
+  local target = normalizeDungeonName(dungeonName)
+  if target == "" then return nil end
+  local allMaps = collectAllChallengeMaps()
+  if #allMaps == 0 then return nil end
+
+  -- Exact normalized name match first.
+  for _, m in ipairs(allMaps) do
+    if normalizeDungeonName(m.name) == target then return m.id end
+  end
+
+  return nil
+end
+
 local function ensureMapsSoon()
   if #seasonMaps>0 or mapRetryTicker then return end
   local tries=0
@@ -324,7 +420,7 @@ local function setActivityDisplay()
   elseif preferredActivityKind == "ANY_DELVE" then
     UIDropDownMenu_SetText(dungeonDD, "Any Delve")
   elseif preferredActivityKind == "DUNGEON" then
-    UIDropDownMenu_SetText(dungeonDD, mapName(preferredMapID))
+    UIDropDownMenu_SetText(dungeonDD, preferredDungeonName or dungeonNameByCode(preferredDungeonCode) or "Dungeon")
   elseif preferredActivityKind == "DELVE" then
     UIDropDownMenu_SetText(dungeonDD, (preferredDelveName or "Delve"))
   end
@@ -339,12 +435,12 @@ dLbl:SetPoint("LEFT", dungeonDD, "RIGHT", -8, 2)
 dLbl:SetText("Preferred Activity")
 
 UIDropDownMenu_Initialize(dungeonDD, function(self, level)
-  if #seasonMaps==0 then refreshSeasonMaps() end
-
   local function chooseAnyDungeon()
     preferredActivityKind = "ANY_DUNGEON"
     preferredMapID = 0
     preferredDelveName = nil
+    preferredDungeonCode = nil
+    preferredDungeonName = nil
     setActivityDisplay()
     CloseDropDownMenus()
   end
@@ -352,12 +448,16 @@ UIDropDownMenu_Initialize(dungeonDD, function(self, level)
     preferredActivityKind = "ANY_DELVE"
     preferredMapID = 0
     preferredDelveName = nil
+    preferredDungeonCode = nil
+    preferredDungeonName = nil
     setActivityDisplay()
     CloseDropDownMenus()
   end
-  local function chooseDungeon(id)
+  local function chooseDungeon(code, name)
     preferredActivityKind = "DUNGEON"
-    preferredMapID = id
+    preferredMapID = 0
+    preferredDungeonCode = code
+    preferredDungeonName = name
     preferredDelveName = nil
     setActivityDisplay()
     CloseDropDownMenus()
@@ -365,6 +465,8 @@ UIDropDownMenu_Initialize(dungeonDD, function(self, level)
   local function chooseDelve(name)
     preferredActivityKind = "DELVE"
     preferredMapID = 0
+    preferredDungeonCode = nil
+    preferredDungeonName = nil
     preferredDelveName = name
     setActivityDisplay()
     CloseDropDownMenus()
@@ -404,23 +506,17 @@ UIDropDownMenu_Initialize(dungeonDD, function(self, level)
     UIDropDownMenu_AddButton(info, level)
   end
 
-  if #seasonMaps==0 then
-    local owned = C_MythicPlus.GetOwnedKeystoneMapID and C_MythicPlus.GetOwnedKeystoneMapID() or 0
-    if owned and owned>0 then
-      local info = UIDropDownMenu_CreateInfo()
-      info.text = "Use My Key: "..mapName(owned)
-      info.checked = (preferredActivityKind=="DUNGEON" and preferredMapID==owned)
-      info.func = function() chooseDungeon(owned) end
-      UIDropDownMenu_AddButton(info, level)
-    end
-  else
-    for _,m in ipairs(seasonMaps) do
-      local info = UIDropDownMenu_CreateInfo()
-      info.text = m.name
-      info.checked = (preferredActivityKind=="DUNGEON" and preferredMapID==m.id)
-      info.func = function() chooseDungeon(m.id) end
-      UIDropDownMenu_AddButton(info, level)
-    end
+  for _,entry in ipairs(CURRENT_SEASON_DUNGEONS) do
+    local info = UIDropDownMenu_CreateInfo()
+    info.text = entry.name
+    info.checked = (
+      preferredActivityKind=="DUNGEON" and (
+        preferredDungeonCode == entry.code or
+        normalizeDungeonName(preferredDungeonName) == normalizeDungeonName(entry.name)
+      )
+    )
+    info.func = function() chooseDungeon(entry.code, entry.name) end
+    UIDropDownMenu_AddButton(info, level)
   end
 
   -- Delves header
@@ -450,24 +546,27 @@ local function CreateActionButtons()
   q:SetScript("OnClick", function()
     local letters = "" ; if wantT then letters=letters.."T" end; if wantH then letters=letters.."H" end; if wantD then letters=letters.."D" end
     if letters == "" then UIErrorsFrame:AddMessage("Select at least one role (Tank/Healer/DPS).", 1, 0.2, 0.2, 1.0); return end
+    if preferredActivityKind=="DUNGEON" and (not preferredDungeonCode or preferredDungeonCode=="") then
+      UIErrorsFrame:AddMessage("Pick a specific dungeon from the list.", 1, 0.2, 0.2, 1.0)
+      return
+    end
     local minv,maxv = preferredLevel or 0, preferredLevel or 0
 
-    -- Only pass a mapID when a specific *dungeon* is chosen; otherwise leave blank
+    -- No map IDs needed for selected dungeons; matching uses fixed dungeon codes.
     local maps = ""
-    if preferredActivityKind=="DUNGEON" and preferredMapID and preferredMapID>0 then
-      maps = tostring(preferredMapID)
-    end
 
     -- Save your local choice so your row shows proper text in the table
     MythicbusDB.selfPrefs = MythicbusDB.selfPrefs or {}
     MythicbusDB.selfPrefs[PLAYER_NAME or "player"] = {
       kind  = preferredActivityKind,
       mapID = preferredMapID,
+      dungeonCode = preferredDungeonCode,
+      dungeon = preferredDungeonName,
       delve = preferredDelveName,
     }
 
      -- ✅ Send kind/delve through to core.lua
-    NS.QueueMe(letters, minv, maxv, maps, preferredActivityKind, preferredDelveName)
+    NS.QueueMe(letters, minv, maxv, maps, preferredActivityKind, preferredDelveName, preferredDungeonCode, preferredDungeonName)
   end)
   local l = CreateFrame("Button", "MBUS_LeaveButton", frame, "UIPanelButtonTemplate")
   l:SetText("Leave"); l:SetSize(100, 28); l:SetPoint("LEFT", q, "RIGHT", 10, 0); l:SetScript("OnClick", function() NS.LeaveQueue() end)
@@ -586,8 +685,8 @@ function NS.RefreshUI()
         prefText = "Any Dungeon"
       elseif q.kind == "ANY_DELVE" then
         prefText = "Any Delve"
-      elseif q.kind == "DUNGEON" and q.targetMaps and #q.targetMaps > 0 then
-        prefText = mapName(q.targetMaps[1]) or "Any"
+      elseif q.kind == "DUNGEON" then
+        prefText = q.dungeon or dungeonNameByCode(q.dungeonCode) or ((q.targetMaps and #q.targetMaps > 0) and mapName(q.targetMaps[1]) or "Any")
       elseif q.kind == "DELVE" then
         prefText = q.delve or "Delve"
       -- Fallback: numeric map id only (legacy senders)
@@ -600,8 +699,8 @@ function NS.RefreshUI()
         local k = selfPrefs.kind
         if k == "ANY_DUNGEON" then      prefText = "Any Dungeon"
         elseif k == "ANY_DELVE" then    prefText = "Any Delve"
-        elseif k == "DUNGEON" and selfPrefs.mapID and selfPrefs.mapID > 0 then
-          prefText = mapName(selfPrefs.mapID)
+        elseif k == "DUNGEON" then
+          prefText = selfPrefs.dungeon or dungeonNameByCode(selfPrefs.dungeonCode) or ((selfPrefs.mapID and selfPrefs.mapID > 0) and mapName(selfPrefs.mapID) or "Dungeon")
         elseif k == "DELVE" then        prefText = selfPrefs.delve or "Delve"
         end
       end
@@ -628,7 +727,6 @@ end
 
 -- ===== Lifecycle =====
 frame:SetScript("OnShow", function()
-  refreshSeasonMaps(); ensureMapsSoon()
   if not frame.qButton then CreateActionButtons() end
   if not tableBuilt then BuildTable() end
   UIDropDownMenu_SetText(levelDD, (preferredLevel == 0) and "0" or ("+"..preferredLevel))
@@ -671,6 +769,26 @@ MythicbusDB = MythicbusDB or {}
 local LDB  = LibStub and LibStub("LibDataBroker-1.1", true)
 local LDBI = LibStub and LibStub("LibDBIcon-1.0", true)
 
+local function MBUS_MinimapHoverFadeEnabled()
+  if MythicbusDB.minimapHoverFade == nil then
+    MythicbusDB.minimapHoverFade = true
+  end
+  return MythicbusDB.minimapHoverFade
+end
+
+local function MBUS_ApplyMinimapHoverFade(btn)
+  if not btn then return end
+  if not MBUS_MinimapHoverFadeEnabled() then
+    btn:SetAlpha(1)
+    return
+  end
+  if (btn.IsMouseOver and btn:IsMouseOver()) or (Minimap and Minimap.IsMouseOver and Minimap:IsMouseOver()) then
+    btn:SetAlpha(1)
+  else
+    btn:SetAlpha(0)
+  end
+end
+
 if LDB and LDBI then
   MythicbusDB.minimap = MythicbusDB.minimap or { hide = false, minimapPos = 220 }
 
@@ -684,7 +802,8 @@ if LDB and LDBI then
           if SlashCmdList and SlashCmdList.MBUSUI then SlashCmdList.MBUSUI() end
         end
       else -- Right-click
-        if NS and NS.ShowBounties then NS.ShowBounties()
+        if NS and NS.ShowRanks then NS.ShowRanks()
+        elseif NS and NS.ShowBounties then NS.ShowBounties()
         else
           if MythicbusFrame and MythicbusFrame:IsShown() then MythicbusFrame:Hide() else
             if SlashCmdList and SlashCmdList.MBUSUI then SlashCmdList.MBUSUI() end
@@ -695,24 +814,53 @@ if LDB and LDBI then
     OnTooltipShow = function(tt)
       tt:AddLine("|cff00ff88Mythicbus|r")
       tt:AddLine("|cffffffffLeft-Click:|r Toggle Queue")
-      tt:AddLine("|cffffffffRight-Click:|r Bounties")
+      tt:AddLine("|cffffffffRight-Click:|r Ranks")
       tt:AddLine(" ")
       tt:AddLine("|cffffffff/mbusmini|r to hide/show")
     end
   })
 
   LDBI:Register("Mythicbus", dataobj, MythicbusDB.minimap)
+  local minimapBtn = LDBI.GetMinimapButton and LDBI:GetMinimapButton("Mythicbus")
+  if minimapBtn then
+    if not minimapBtn._mbusHoverFadeHooked then
+      minimapBtn:HookScript("OnEnter", function(self) self:SetAlpha(1) end)
+      minimapBtn:HookScript("OnLeave", function(self) MBUS_ApplyMinimapHoverFade(self) end)
+      minimapBtn._mbusHoverFadeHooked = true
+    end
+    if Minimap and not Minimap._mbusHoverFadeHookedLDB then
+      Minimap:HookScript("OnEnter", function() MBUS_ApplyMinimapHoverFade(minimapBtn) end)
+      Minimap:HookScript("OnLeave", function() MBUS_ApplyMinimapHoverFade(minimapBtn) end)
+      Minimap._mbusHoverFadeHookedLDB = true
+    end
+    MBUS_ApplyMinimapHoverFade(minimapBtn)
+  end
 
-  function NS.ShowMinimapIcon() MythicbusDB.minimap.hide=false; LDBI:Show("Mythicbus") end
+  function NS.ShowMinimapIcon()
+    MythicbusDB.minimap.hide=false
+    LDBI:Show("Mythicbus")
+    local b = LDBI.GetMinimapButton and LDBI:GetMinimapButton("Mythicbus")
+    MBUS_ApplyMinimapHoverFade(b)
+  end
   function NS.HideMinimapIcon() MythicbusDB.minimap.hide=true;  LDBI:Hide("Mythicbus") end
   function NS.ToggleMinimapIcon()
     if MythicbusDB.minimap.hide then NS.ShowMinimapIcon() else NS.HideMinimapIcon() end
+  end
+  function NS.ToggleMinimapHoverFade()
+    MythicbusDB.minimapHoverFade = not MBUS_MinimapHoverFadeEnabled()
+    local b = LDBI.GetMinimapButton and LDBI:GetMinimapButton("Mythicbus")
+    MBUS_ApplyMinimapHoverFade(b)
   end
 
   SLASH_MBUSMINI1 = "/mbusmini"
   SlashCmdList.MBUSMINI = function()
     NS.ToggleMinimapIcon()
     print(("Mythicbus minimap icon: %s"):format(MythicbusDB.minimap.hide and "|cffff5555hidden|r" or "|cff55ff55shown|r"))
+  end
+  SLASH_MBUSMINIHO1 = "/mbusminihover"
+  SlashCmdList.MBUSMINIHO = function()
+    NS.ToggleMinimapHoverFade()
+    print(("Mythicbus minimap icon hover fade: %s"):format(MBUS_MinimapHoverFadeEnabled() and "|cff55ff55enabled|r" or "|cffff5555disabled|r"))
   end
 else
   -- Fallback: simple API minimap button (no libs)
@@ -734,22 +882,35 @@ else
     icon:SetPoint("CENTER", 0, 0)
     btn.icon = icon
 
+    local function EnsureMinimapFallback()
+      if not MythicbusDB then MythicbusDB = {} end
+      if not MythicbusDB.minimapFallback then
+        MythicbusDB.minimapFallback = { hide=false, angle = 210 }
+      end
+      return MythicbusDB.minimapFallback
+    end
+
     local function UpdatePos()
-      local ang = math.rad(MythicbusDB.minimapFallback.angle or 210)
+      local fallback = EnsureMinimapFallback()
+      local ang = math.rad(fallback.angle or 210)
       local x = math.cos(ang) * 80
       local y = math.sin(ang) * 80
+      btn:ClearAllPoints()
       btn:SetPoint("CENTER", Minimap, "CENTER", x, y)
-      
     end
 
     btn:SetScript("OnEnter", function(self)
+      self:SetAlpha(1)
       GameTooltip:SetOwner(self, "ANCHOR_LEFT")
       GameTooltip:AddLine("|cff00ff88Mythicbus|r")
       GameTooltip:AddLine("|cffffffffLeft-Click:|r Toggle Queue")
       GameTooltip:AddLine("|cffffffffRight-Click:|r Ranks")
       GameTooltip:Show()
     end)
-    btn:SetScript("OnLeave", function() GameTooltip:Hide() end)
+    btn:SetScript("OnLeave", function(self)
+      GameTooltip:Hide()
+      MBUS_ApplyMinimapHoverFade(self)
+    end)
 
     btn:SetScript("OnClick", function(_, button)
       if button == "LeftButton" then
@@ -757,34 +918,60 @@ else
           if SlashCmdList and SlashCmdList.MBUSUI then SlashCmdList.MBUSUI() end
         end
       else
-        if NS and NS.ShowBounties then NS.ShowBounties()
+        if NS and NS.ShowRanks then NS.ShowRanks()
+        elseif NS and NS.ShowBounties then NS.ShowBounties()
         elseif SlashCmdList and SlashCmdList.MBUSUI then SlashCmdList.MBUSUI() end
       end
     end)
 
     btn:RegisterForDrag("LeftButton")
-    btn:SetMovable(true)
-    btn:SetScript("OnDragStart", function(self) self:StartMoving() end)
+    btn:SetScript("OnDragStart", function(self)
+      self:SetScript("OnUpdate", function()
+        local mx, my = Minimap:GetCenter()
+        local cx, cy = GetCursorPosition()
+        local scale = UIParent:GetEffectiveScale() or 1
+        cx, cy = cx / scale, cy / scale
+        local ang = math.deg(math.atan2(cy - my, cx - mx))
+        local fallback = EnsureMinimapFallback()
+        fallback.angle = ang
+        UpdatePos()
+      end)
+    end)
     btn:SetScript("OnDragStop", function(self)
-      self:StopMovingOrSizing()
-      local mx, my = Minimap:GetCenter()
-      local bx, by = self:GetCenter()
-      local ang = math.deg(math.atan2(by - my, bx - mx))
-      MythicbusDB.minimapFallback.angle = ang
+      self:SetScript("OnUpdate", nil)
       UpdatePos()
     end)
 
     UpdatePos()
-    if MythicbusDB.minimapFallback.hide then btn:Hide() else btn:Show() end
+    if Minimap and not Minimap._mbusHoverFadeHookedFallback then
+      Minimap:HookScript("OnEnter", function() MBUS_ApplyMinimapHoverFade(btn) end)
+      Minimap:HookScript("OnLeave", function() MBUS_ApplyMinimapHoverFade(btn) end)
+      Minimap._mbusHoverFadeHookedFallback = true
+    end
+    if EnsureMinimapFallback().hide then btn:Hide() else btn:Show() end
+    MBUS_ApplyMinimapHoverFade(btn)
 
-    function NS.ShowMinimapIcon() MythicbusDB.minimapFallback.hide=false; btn:Show() end
-    function NS.HideMinimapIcon() MythicbusDB.minimapFallback.hide=true;  btn:Hide() end
+    function NS.ShowMinimapIcon()
+      EnsureMinimapFallback().hide=false
+      btn:Show()
+      MBUS_ApplyMinimapHoverFade(btn)
+    end
+    function NS.HideMinimapIcon() EnsureMinimapFallback().hide=true;  btn:Hide() end
     function NS.ToggleMinimapIcon() if btn:IsShown() then NS.HideMinimapIcon() else NS.ShowMinimapIcon() end end
+    function NS.ToggleMinimapHoverFade()
+      MythicbusDB.minimapHoverFade = not MBUS_MinimapHoverFadeEnabled()
+      MBUS_ApplyMinimapHoverFade(btn)
+    end
 
     SLASH_MBUSMINI1 = "/mbusmini"
     SlashCmdList.MBUSMINI = function()
       NS.ToggleMinimapIcon()
       print(("Mythicbus minimap icon (fallback): %s"):format((btn:IsShown() and "|cff55ff55shown|r") or "|cffff5555hidden|r"))
+    end
+    SLASH_MBUSMINIHO1 = "/mbusminihover"
+    SlashCmdList.MBUSMINIHO = function()
+      NS.ToggleMinimapHoverFade()
+      print(("Mythicbus minimap icon hover fade: %s"):format(MBUS_MinimapHoverFadeEnabled() and "|cff55ff55enabled|r" or "|cffff5555disabled|r"))
     end
   end
 
