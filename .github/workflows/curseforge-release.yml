@@ -186,20 +186,31 @@ jobs:
           DISCORD_CHANNEL_ID: ${{ secrets.DISCORD_CHANNEL_ID }}
         run: |
           VERSION="${{ steps.version.outputs.version }}"
+          DISCORD_TOKEN="$(printf '%s' "${DISCORD_TOKEN}" | tr -d '[:space:]')"
+          DISCORD_CHANNEL_ID="$(printf '%s' "${DISCORD_CHANNEL_ID}" | tr -d '[:space:]')"
 
           if [ -z "${DISCORD_TOKEN}" ] || [ -z "${DISCORD_CHANNEL_ID}" ]; then
             echo "Discord notification skipped: DISCORD_TOKEN or DISCORD_CHANNEL_ID secret is not set."
             exit 0
           fi
-          DISCORD_TOKEN="$(printf '%s' "${DISCORD_TOKEN}" | tr -d '[:space:]')"
-          DISCORD_CHANNEL_ID="$(printf '%s' "${DISCORD_CHANNEL_ID}" | tr -d '[:space:]')"
 
-          curl --fail-with-body \
-            --request POST \
-            --header "Authorization: Bot ${DISCORD_TOKEN}" \
-            --form "content=Mythicbus ${VERSION} uploaded successfully to CurseForge." \
-            --form "files[0]=@Mythicbus-${VERSION}.zip;type=application/zip" \
-            "https://discord.com/api/v10/channels/${DISCORD_CHANNEL_ID}/messages"
+          http_code="$(
+            curl --silent --show-error \
+              --output discord-response.json \
+              --write-out "%{http_code}" \
+              --request POST \
+              --header "Authorization: Bot ${DISCORD_TOKEN}" \
+              --form "content=Mythicbus ${VERSION} uploaded successfully to CurseForge." \
+              --form "files[0]=@Mythicbus-${VERSION}.zip;type=application/zip" \
+              "https://discord.com/api/v10/channels/${DISCORD_CHANNEL_ID}/messages"
+          )"
+
+          cat discord-response.json
+          echo
+          if [ "${http_code}" -lt 200 ] || [ "${http_code}" -ge 300 ]; then
+            echo "Discord notification failed with HTTP ${http_code}."
+            exit 1
+          fi
 
       - name: Notify Discord failure
         if: failure()
@@ -209,13 +220,13 @@ jobs:
           DISCORD_CHANNEL_ID: ${{ secrets.DISCORD_CHANNEL_ID }}
         run: |
           VERSION="${{ steps.version.outputs.version }}"
+          DISCORD_TOKEN="$(printf '%s' "${DISCORD_TOKEN}" | tr -d '[:space:]')"
+          DISCORD_CHANNEL_ID="$(printf '%s' "${DISCORD_CHANNEL_ID}" | tr -d '[:space:]')"
 
           if [ -z "${DISCORD_TOKEN}" ] || [ -z "${DISCORD_CHANNEL_ID}" ]; then
             echo "Discord notification skipped: DISCORD_TOKEN or DISCORD_CHANNEL_ID secret is not set."
             exit 0
           fi
-          DISCORD_TOKEN="$(printf '%s' "${DISCORD_TOKEN}" | tr -d '[:space:]')"
-          DISCORD_CHANNEL_ID="$(printf '%s' "${DISCORD_CHANNEL_ID}" | tr -d '[:space:]')"
 
           curl --fail-with-body \
             --request POST \
