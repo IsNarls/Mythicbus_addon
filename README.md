@@ -62,11 +62,18 @@ branch, and pushes `v0.1.1`. The pushed tag triggers the CurseForge workflow.
 If `.venv/bin/python` exists, the release script uses it for the addon pipeline
 so Selenium and Pillow do not need to be installed globally.
 
-To test GitHub push plus the CurseForge workflow without running talent
-collection, use a new version tag:
+To upload a CurseForge beta build without running talent collection, use a
+`-beta` version tag:
 
 ```bash
-python release_mythicbus.py 0.1.1-test.2 --skip-build --allow-empty
+python release_mythicbus.py 0.1.2-beta.1 --skip-build --allow-empty
+```
+
+Tags containing `-beta` upload to CurseForge with `releaseType: "beta"`.
+Normal tags upload with `releaseType: "release"`, for example:
+
+```bash
+python release_mythicbus.py 0.1.2 --skip-build --allow-empty
 ```
 
 The workflow sends a Discord bot message with the addon zip attached after

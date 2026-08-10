@@ -21,7 +21,12 @@ jobs:
         shell: bash
         run: |
           VERSION="${GITHUB_REF_NAME#v}"
+          RELEASE_TYPE="release"
+          if [[ "${VERSION}" == *"-beta"* ]]; then
+            RELEASE_TYPE="beta"
+          fi
           echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+          echo "release_type=$RELEASE_TYPE" >> "$GITHUB_OUTPUT"
 
       - name: Build addon ZIP
         shell: bash
@@ -45,17 +50,19 @@ jobs:
           CURSEFORGE_GAME_VERSION_NAMES: ${{ vars.CURSEFORGE_GAME_VERSION_NAMES }}
         run: |
           VERSION="${{ steps.version.outputs.version }}"
+          RELEASE_TYPE="${{ steps.version.outputs.release_type }}"
           GAME_VERSION_NAMES="${CURSEFORGE_GAME_VERSION_NAMES:-12.1.0}"
 
           jq -n \
             --arg changelog "Automated release ${VERSION}" \
             --arg displayName "Mythicbus ${VERSION}" \
+            --arg releaseType "${RELEASE_TYPE}" \
             --arg gameVersionNames "${GAME_VERSION_NAMES}" \
             '{
               changelog: $changelog,
               changelogType: "markdown",
               displayName: $displayName,
-              releaseType: "release",
+              releaseType: $releaseType,
               gameVersionNames: ($gameVersionNames | split(",") | map(gsub("^\\s+|\\s+$"; "")))
             }' > metadata.json
 
