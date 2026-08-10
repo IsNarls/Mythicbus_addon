@@ -66,7 +66,7 @@ To test GitHub push plus the CurseForge workflow without running talent
 collection, use a new version tag:
 
 ```bash
-python release_mythicbus.py 0.1.1-test.1 --skip-build --allow-empty
+python release_mythicbus.py 0.1.1-test.2 --skip-build --allow-empty
 ```
 
 The workflow sends a Discord bot message with the addon zip attached after
@@ -76,6 +76,16 @@ CurseForge accepts the upload when these GitHub repository secrets are set:
 DISCORD_TOKEN
 DISCORD_CHANNEL_ID
 ```
+
+The CurseForge upload defaults to `gameVersionNames: ["12.1.0"]`. To override
+that without changing the workflow, set this GitHub repository variable:
+
+```bash
+CURSEFORGE_GAME_VERSION_NAMES
+```
+
+Use a comma-separated value for multiple supported versions, for example
+`12.1.0,12.1.5`.
 
 ## Discord Upload
 After the zip is built, the pipeline can post it to Discord as a bot attachment.

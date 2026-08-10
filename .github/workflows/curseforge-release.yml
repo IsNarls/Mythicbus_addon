@@ -41,19 +41,25 @@ jobs:
 
       - name: Create upload metadata
         shell: bash
+        env:
+          CURSEFORGE_GAME_VERSION_NAMES: ${{ vars.CURSEFORGE_GAME_VERSION_NAMES }}
         run: |
           VERSION="${{ steps.version.outputs.version }}"
+          GAME_VERSION_NAMES="${CURSEFORGE_GAME_VERSION_NAMES:-12.1.0}"
 
           jq -n \
             --arg changelog "Automated release ${VERSION}" \
             --arg displayName "Mythicbus ${VERSION}" \
+            --arg gameVersionNames "${GAME_VERSION_NAMES}" \
             '{
               changelog: $changelog,
               changelogType: "markdown",
               displayName: $displayName,
               releaseType: "release",
-              gameVersionNames: ["Retail"]
+              gameVersionNames: ($gameVersionNames | split(",") | map(gsub("^\\s+|\\s+$"; "")))
             }' > metadata.json
+
+          jq . metadata.json
 
       - name: Upload to CurseForge
         shell: bash
@@ -63,14 +69,30 @@ jobs:
         run: |
           VERSION="${{ steps.version.outputs.version }}"
 
-          curl --fail-with-body \
-            --request POST \
-            --header "X-Api-Token: ${CURSEFORGE_TOKEN}" \
-            --form "metadata=<metadata.json;type=application/json" \
-            --form "file=@Mythicbus-${VERSION}.zip;type=application/zip" \
-            "https://wow.curseforge.com/api/projects/${CURSEFORGE_PROJECT_ID}/upload-file"
+          if [ -z "${CURSEFORGE_TOKEN}" ] || [ -z "${CURSEFORGE_PROJECT_ID}" ]; then
+            echo "CurseForge upload failed: CURSEFORGE_TOKEN or CURSEFORGE_PROJECT_ID secret is not set."
+            exit 1
+          fi
 
-      - name: Notify Discord
+          http_code="$(
+            curl --silent --show-error \
+              --output curseforge-response.json \
+              --write-out "%{http_code}" \
+              --request POST \
+              --header "X-Api-Token: ${CURSEFORGE_TOKEN}" \
+              --form "metadata=<metadata.json;type=application/json" \
+              --form "file=@Mythicbus-${VERSION}.zip;type=application/zip" \
+              "https://wow.curseforge.com/api/projects/${CURSEFORGE_PROJECT_ID}/upload-file"
+          )"
+
+          cat curseforge-response.json
+          echo
+          if [ "${http_code}" -lt 200 ] || [ "${http_code}" -ge 300 ]; then
+            echo "CurseForge upload failed with HTTP ${http_code}."
+            exit 1
+          fi
+
+      - name: Notify Discord success
         shell: bash
         env:
           DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
@@ -88,4 +110,24 @@ jobs:
             --header "Authorization: Bot ${DISCORD_TOKEN}" \
             --form "content=Mythicbus ${VERSION} uploaded successfully to CurseForge." \
             --form "files[0]=@Mythicbus-${VERSION}.zip;type=application/zip" \
+            "https://discord.com/api/v10/channels/${DISCORD_CHANNEL_ID}/messages"
+
+      - name: Notify Discord failure
+        if: failure()
+        shell: bash
+        env:
+          DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
+          DISCORD_CHANNEL_ID: ${{ secrets.DISCORD_CHANNEL_ID }}
+        run: |
+          VERSION="${{ steps.version.outputs.version }}"
+
+          if [ -z "${DISCORD_TOKEN}" ] || [ -z "${DISCORD_CHANNEL_ID}" ]; then
+            echo "Discord notification skipped: DISCORD_TOKEN or DISCORD_CHANNEL_ID secret is not set."
+            exit 0
+          fi
+
+          curl --fail-with-body \
+            --request POST \
+            --header "Authorization: Bot ${DISCORD_TOKEN}" \
+            --form "content=Mythicbus ${VERSION} release workflow failed before the CurseForge upload/notification completed." \
             "https://discord.com/api/v10/channels/${DISCORD_CHANNEL_ID}/messages"
