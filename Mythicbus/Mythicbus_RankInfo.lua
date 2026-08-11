@@ -26,6 +26,28 @@ local RANKS = {
   { name="Bussin",           min=3400, max=999999, repairs=250 }, -- 3400+
 }
 
+local CURRENT_SEASON_DUNGEONS = {
+  { code = "MAG", name = "Magisters' Terrace", aliases = { "Magister's Terrace", "Magisters Terrace" } },
+  { code = "MAI", name = "Maisara Caverns" },
+  { code = "NPX", name = "Nexus-Point Xenas" },
+  { code = "WRS", name = "Windrunner Spire" },
+  { code = "ALG", name = "Algeth'ar Academy" },
+  { code = "SOT", name = "Seat of the Triumvirate" },
+  { code = "SKY", name = "Skyreach" },
+  { code = "POS", name = "Pit of Saron" },
+}
+
+local RANK_IMAGE_PATH = "Interface/AddOns/" .. ADDON .. "/Images/Rank Images/%d.tga"
+local RANK_IMAGE_ASPECT = 0.75
+local RING_ICON_SIZE = 68
+local CARD_ICON_SIZE = 84
+local PIP_SIZE = 42
+local RANK_ICON_PADDING = 2
+local ILVL_KEY_FLOOR = 240
+local ILVL_KEY_CEILING = 295
+local ILVL_MIN_KEY = 2
+local ILVL_MAX_KEY = 20
+
 local function Clamp(n, a, b)
   if n < a then return a end
   if n > b then return b end
@@ -33,6 +55,73 @@ local function Clamp(n, a, b)
 end
 
 local function FormatGold(g) return ("%dg repairs"):format(tonumber(g) or 0) end
+
+local function GetPlayerEquippedItemLevel()
+  if GetAverageItemLevel then
+    local avg, equipped = GetAverageItemLevel()
+    return tonumber(equipped or avg) or 0
+  end
+  return 0
+end
+
+local function GetItemLevelSuggestedKeyLevel()
+  local ilvl = GetPlayerEquippedItemLevel()
+  if ilvl <= 0 then return ILVL_MIN_KEY, ilvl end
+  if ilvl <= ILVL_KEY_FLOOR then return ILVL_MIN_KEY, ilvl end
+  if ilvl >= ILVL_KEY_CEILING then return ILVL_MAX_KEY, ilvl end
+
+  local pct = (ilvl - ILVL_KEY_FLOOR) / (ILVL_KEY_CEILING - ILVL_KEY_FLOOR)
+  local key = ILVL_MIN_KEY + (pct * (ILVL_MAX_KEY - ILVL_MIN_KEY))
+  return Clamp(math.floor(key + 0.5), ILVL_MIN_KEY, ILVL_MAX_KEY), ilvl
+end
+
+local function GetItemLevelCatchupStep(suggestedKeyLevel)
+  suggestedKeyLevel = tonumber(suggestedKeyLevel) or ILVL_MIN_KEY
+  local keyRange = math.max(0, suggestedKeyLevel - ILVL_MIN_KEY)
+  return Clamp(math.floor(keyRange * 0.4), 2, 8)
+end
+
+local function NormalizeDungeonName(name)
+  local s = tostring(name or ""):lower()
+  s = s:gsub("'", "")
+  s = s:gsub("[^%w%s]", " ")
+  s = s:gsub("%s+", " ")
+  s = s:gsub("^%s+", ""):gsub("%s+$", "")
+  if s == "magister s terrace" then s = "magisters terrace" end
+  return s
+end
+
+local function GetRankImagePath(rankIndex)
+  rankIndex = Clamp(tonumber(rankIndex) or 1, 1, NUM_RANKS)
+  if rankIndex == 4 then
+    rankIndex = 6
+  elseif rankIndex == 6 then
+    rankIndex = 4
+  end
+  return RANK_IMAGE_PATH:format(rankIndex)
+end
+
+local function SetRankIcon(slot, rankIndex)
+  if not (slot and slot.tex) then return end
+  slot.tex:SetTexture(GetRankImagePath(rankIndex))
+  slot.tex:SetTexCoord(0, 1, 0, 1)
+  slot.tex:Show()
+end
+
+local function FitRankTexture(slot, padding)
+  if not (slot and slot.tex) then return end
+  padding = padding or RANK_ICON_PADDING
+  local slotW, slotH = slot:GetSize()
+  local h = math.max(1, (slotH or 0) - (padding * 2))
+  local w = math.min(math.floor(h * RANK_IMAGE_ASPECT), math.max(1, (slotW or 0) - (padding * 2)))
+  slot.tex:ClearAllPoints()
+  slot.tex:SetSize(w, h)
+  slot.tex:SetPoint("CENTER")
+end
+
+local function GetRankSlotWidth(height)
+  return math.floor((height - (RANK_ICON_PADDING * 2)) * RANK_IMAGE_ASPECT) + (RANK_ICON_PADDING * 2)
+end
 
 local function GetRankIndexForRating(rating)
   local idx = 1
@@ -55,6 +144,287 @@ local function GetPlayerMPlusRating()
     if type(score) == "number" then return score end
   end
   return 0
+end
+
+local function ReadNumericField(tbl, keys)
+  if type(tbl) ~= "table" then return nil end
+  for _, key in ipairs(keys) do
+    local v = tbl[key]
+    if type(v) == "number" then return v end
+    if type(v) == "table" then
+      local nested = ReadNumericField(v, { "score", "amount", "value", "level", "challengeLevel" })
+      if nested then return nested end
+    end
+  end
+  return nil
+end
+
+local function ReadBooleanField(tbl, keys)
+  if type(tbl) ~= "table" then return nil end
+  for _, key in ipairs(keys) do
+    local v = tbl[key]
+    if type(v) == "boolean" then return v end
+    if type(v) == "number" then return v ~= 0 end
+    if type(v) == "table" then
+      local nested = ReadBooleanField(v, { "completedInTime", "inTime", "timed", "isTimed", "overTime", "isOverTime" })
+      if nested ~= nil then return nested end
+    end
+  end
+  return nil
+end
+
+local function RunInfoIsTimed(info)
+  if type(info) ~= "table" then return false end
+
+  local overTime = ReadBooleanField(info, { "overTime", "isOverTime", "wasOverTime" })
+  if overTime ~= nil then return not overTime end
+
+  local timed = ReadBooleanField(info, { "completedInTime", "inTime", "timed", "isTimed", "onTime" })
+  if timed ~= nil then return timed end
+
+  return false
+end
+
+local function GetChallengeMapName(mapID)
+  if not mapID or mapID == 0 then return nil end
+  local name
+  if C_ChallengeMode and C_ChallengeMode.GetMapUIInfo then
+    name = C_ChallengeMode.GetMapUIInfo(mapID)
+  end
+  if (not name or name == "") and C_MythicPlus and C_MythicPlus.GetMapInfo then
+    local info = C_MythicPlus.GetMapInfo(mapID)
+    name = info and info.name
+  end
+  if (not name or name == "") and C_MythicPlus and C_MythicPlus.GetMapUIInfo then
+    name = C_MythicPlus.GetMapUIInfo(mapID)
+  end
+  return (name and name ~= "") and name or nil
+end
+
+local function CollectChallengeMapsByName()
+  local byName = {}
+  local ids = {}
+
+  if C_ChallengeMode and C_ChallengeMode.GetMapTable then
+    ids = C_ChallengeMode.GetMapTable() or {}
+  elseif C_MythicPlus and C_MythicPlus.GetMapTable then
+    ids = C_MythicPlus.GetMapTable() or {}
+  end
+
+  for _, mapID in ipairs(ids) do
+    local name = GetChallengeMapName(mapID)
+    local key = NormalizeDungeonName(name)
+    if key ~= "" and not byName[key] then
+      byName[key] = { id = mapID, name = name }
+    end
+  end
+
+  return byName
+end
+
+local function GetSeasonDungeonMaps()
+  local byName = CollectChallengeMapsByName()
+  local maps = {}
+
+  for _, dungeon in ipairs(CURRENT_SEASON_DUNGEONS) do
+    local found = byName[NormalizeDungeonName(dungeon.name)]
+    if not found then
+      for _, alias in ipairs(dungeon.aliases or {}) do
+        found = byName[NormalizeDungeonName(alias)]
+        if found then break end
+      end
+    end
+    maps[#maps + 1] = {
+      id = found and found.id or nil,
+      name = (found and found.name) or dungeon.name,
+    }
+  end
+
+  return maps
+end
+
+local function EstimateBarelyTimedKeyScore(level)
+  level = tonumber(level) or 0
+  if level <= 0 then return 0 end
+
+  local baseScores = { 0, 40, 45, 55, 60, 65, 75, 80, 85, 100 }
+  if level <= 10 then
+    return baseScores[level] or 0
+  end
+
+  return baseScores[10] + ((level - 10) * 5)
+end
+
+local function ApplyBestRun(bestByMap, mapID, level, score)
+  mapID = tonumber(mapID) or 0
+  level = tonumber(level) or 0
+  score = tonumber(score) or 0
+  if mapID == 0 or (level == 0 and score == 0) then return end
+
+  local current = bestByMap[mapID]
+  if not current or level > (current.level or 0) or score > (current.score or 0) then
+    bestByMap[mapID] = {
+      level = math.max(level, current and (current.level or 0) or 0),
+      score = math.max(score, current and (current.score or 0) or 0),
+    }
+  end
+end
+
+local function ApplyTimedRunInfo(bestByMap, mapID, info)
+  if type(info) ~= "table" then return end
+  if not RunInfoIsTimed(info) then return end
+  local level = ReadNumericField(info, { "bestRunLevel", "level", "mythicLevel", "challengeLevel", "keystoneLevel", "bestLevel" })
+  local score = ReadNumericField(info, { "mapScore", "score", "rating", "overAllScore", "overallScore" })
+  ApplyBestRun(bestByMap, mapID, level, score)
+end
+
+local function CollectTimedBestRunsByMap()
+  local bestByMap = {}
+
+  if C_PlayerInfo and C_PlayerInfo.GetPlayerMythicPlusRatingSummary then
+    local summary = C_PlayerInfo.GetPlayerMythicPlusRatingSummary("player")
+    for _, run in ipairs((summary and summary.runs) or {}) do
+      if RunInfoIsTimed(run) then
+        local mapID = ReadNumericField(run, { "challengeModeID", "mapChallengeModeID", "mapID", "id" })
+        local level = ReadNumericField(run, { "bestRunLevel", "level", "mythicLevel", "challengeLevel" })
+        local score = ReadNumericField(run, { "mapScore", "score", "rating" })
+        ApplyBestRun(bestByMap, mapID, level, score)
+      end
+    end
+  end
+
+  if C_MythicPlus and C_MythicPlus.GetSeasonBestForMap then
+    for _, dungeon in ipairs(GetSeasonDungeonMaps()) do
+      if dungeon.id then
+        local ok, bestTimed = pcall(C_MythicPlus.GetSeasonBestForMap, dungeon.id)
+        if ok then
+          ApplyBestRun(bestByMap, dungeon.id,
+            ReadNumericField(bestTimed, { "bestRunLevel", "level", "mythicLevel", "challengeLevel", "keystoneLevel", "bestLevel" }),
+            ReadNumericField(bestTimed, { "mapScore", "score", "rating", "overAllScore", "overallScore" })
+          )
+        end
+      end
+    end
+  end
+
+  if C_MythicPlus and C_MythicPlus.GetSeasonBestAffixScoreInfoForMap then
+    for _, dungeon in ipairs(GetSeasonDungeonMaps()) do
+      if dungeon.id then
+        local ok, info = pcall(C_MythicPlus.GetSeasonBestAffixScoreInfoForMap, dungeon.id)
+        if not ok then info = nil end
+        if RunInfoIsTimed(info) then
+          ApplyBestRun(bestByMap, dungeon.id,
+            ReadNumericField(info, { "level", "bestRunLevel", "mythicLevel", "challengeLevel" }),
+            ReadNumericField(info, { "score", "mapScore", "rating" })
+          )
+        end
+
+        for _, affixInfo in ipairs((type(info) == "table" and info.affixScoreInfo) or {}) do
+          if RunInfoIsTimed(affixInfo) then
+            ApplyBestRun(bestByMap, dungeon.id,
+              ReadNumericField(affixInfo, { "level", "bestRunLevel", "mythicLevel", "challengeLevel" }),
+              ReadNumericField(affixInfo, { "score", "mapScore", "rating" })
+            )
+          end
+        end
+      end
+    end
+  end
+
+  return bestByMap
+end
+
+local function GetSuggestedNextKey()
+  local bestByMap = CollectTimedBestRunsByMap()
+  local dungeons = {}
+  local hasAnyResolvedMap = false
+  local highestLevel = 0
+  local ilvlSuggestedKey, playerItemLevel = GetItemLevelSuggestedKeyLevel()
+
+  for _, dungeon in ipairs(GetSeasonDungeonMaps()) do
+    if dungeon.id then
+      hasAnyResolvedMap = true
+
+      local best = bestByMap[dungeon.id]
+      local currentLevel = best and (best.level or 0) or 0
+      local currentScore = EstimateBarelyTimedKeyScore(currentLevel)
+
+      dungeons[#dungeons + 1] = {
+        mapID = dungeon.id,
+        name = dungeon.name,
+        currentLevel = currentLevel,
+        currentScore = currentScore,
+        hasMapID = true,
+      }
+
+      if currentLevel > highestLevel then
+        highestLevel = currentLevel
+      end
+    end
+  end
+
+  if not hasAnyResolvedMap or #dungeons == 0 then return nil end
+
+  local ladderTarget = math.max(ILVL_MIN_KEY, math.min(math.max(highestLevel, ILVL_MIN_KEY), ilvlSuggestedKey))
+  local lowest
+  for _, dungeon in ipairs(dungeons) do
+    if dungeon.currentLevel < ladderTarget then
+      if not lowest then
+        lowest = dungeon
+      elseif dungeon.currentLevel < lowest.currentLevel then
+        lowest = dungeon
+      elseif dungeon.currentLevel == lowest.currentLevel and dungeon.name < lowest.name then
+        lowest = dungeon
+      end
+    end
+  end
+
+  local suggestion = lowest
+  local targetLevel
+  local mode
+
+  if suggestion then
+    local catchupStep = GetItemLevelCatchupStep(ilvlSuggestedKey)
+    targetLevel = math.max(ILVL_MIN_KEY, math.min(suggestion.currentLevel + catchupStep, ladderTarget))
+    mode = "equalize"
+  else
+    MythicbusDB.rankSuggestion = MythicbusDB.rankSuggestion or {}
+    local cache = MythicbusDB.rankSuggestion
+    if cache.equalizedLevel ~= ladderTarget or cache.ilvlSuggestedKey ~= ilvlSuggestedKey or not cache.name then
+      local pick = dungeons[math.random(#dungeons)]
+      cache.equalizedLevel = ladderTarget
+      cache.ilvlSuggestedKey = ilvlSuggestedKey
+      cache.name = pick and pick.name or nil
+    end
+
+    for _, dungeon in ipairs(dungeons) do
+      if dungeon.name == cache.name then
+        suggestion = dungeon
+        break
+      end
+    end
+
+    suggestion = suggestion or dungeons[1]
+    if ilvlSuggestedKey >= ILVL_MAX_KEY and highestLevel >= ILVL_MAX_KEY then
+      targetLevel = highestLevel + 1
+    else
+      targetLevel = math.max(ILVL_MIN_KEY, math.min(ladderTarget + 1, ilvlSuggestedKey))
+    end
+    mode = "push"
+  end
+
+  if not suggestion then return nil end
+
+  local projectedScore = EstimateBarelyTimedKeyScore(targetLevel)
+  suggestion.targetLevel = targetLevel
+  suggestion.highestLevel = highestLevel
+  suggestion.ladderTarget = ladderTarget
+  suggestion.ilvlSuggestedKey = ilvlSuggestedKey
+  suggestion.playerItemLevel = playerItemLevel
+  suggestion.gain = math.max(0, projectedScore - (suggestion.currentScore or 0))
+  suggestion.mode = mode
+
+  return suggestion
 end
 
 -- ======================
@@ -125,7 +495,7 @@ end
 
 local function MakeIconSlot(parent, size)
   local slot = CreateFrame("Frame", nil, parent, "BackdropTemplate")
-  slot:SetSize(size, size)
+  slot:SetSize(GetRankSlotWidth(size), size)
   slot:SetBackdrop({
     bgFile   = "Interface/Buttons/UI-Quickslot2",
     edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
@@ -135,14 +505,14 @@ local function MakeIconSlot(parent, size)
   slot:SetBackdropBorderColor(0.7,0.6,0.2,0.8)
 
   slot.tex = slot:CreateTexture(nil, "ARTWORK")
-  slot.tex:SetAllPoints()
+  FitRankTexture(slot)
   slot.tex:Hide()
   return slot
 end
 
 local function MakeRankPip(parent, i)
   local b = CreateFrame("Button", nil, parent, "BackdropTemplate")
-  b:SetSize(26, 26)
+  b:SetSize(GetRankSlotWidth(PIP_SIZE), PIP_SIZE)
   b:SetBackdrop({
     bgFile   = "Interface/Buttons/UI-Quickslot2",
     edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
@@ -155,9 +525,16 @@ local function MakeRankPip(parent, i)
   b.txt:SetPoint("CENTER", 0, 0)
   b.txt:SetText(tostring(i))
 
+  b.tex = b:CreateTexture(nil, "ARTWORK")
+  FitRankTexture(b)
+  b.tex:SetTexture(GetRankImagePath(i))
+  b.tex:SetTexCoord(0, 1, 0, 1)
+
+  b.txt:Hide()
+
   b.check = b:CreateTexture(nil, "OVERLAY")
   b.check:SetTexture("Interface/Buttons/UI-CheckBox-Check")
-  b.check:SetSize(18, 18)
+  b.check:SetSize(20, 20)
   b.check:SetPoint("BOTTOMRIGHT", 4, -4)
   b.check:Hide()
 
@@ -188,11 +565,11 @@ local function MakeRankSummaryCard(parent, titleText)
   c.header:SetPoint("TOPLEFT", 14, -10)
   c.header:SetText(titleText or "Rank")
 
-  c.iconSlot = MakeIconSlot(c, 44)
+  c.iconSlot = MakeIconSlot(c, CARD_ICON_SIZE)
   c.iconSlot:SetPoint("TOPLEFT", 14, -36)
 
   c.rankName = c:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
-  c.rankName:SetPoint("TOPLEFT", c.iconSlot, "TOPRIGHT", 12, -2)
+  c.rankName:SetPoint("TOPLEFT", c.iconSlot, "TOPRIGHT", 12, -6)
   c.rankName:SetJustifyH("LEFT")
 
   c.repairs = c:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
@@ -216,6 +593,107 @@ local function MakeRankSummaryCard(parent, titleText)
   return c
 end
 
+StaticPopupDialogs["MBUS_COPY_SUGGESTED_KEY"] = StaticPopupDialogs["MBUS_COPY_SUGGESTED_KEY"] or {
+  text = "Copy suggested key",
+  button1 = OKAY,
+  hasEditBox = true,
+  editBoxWidth = 260,
+  whileDead = true,
+  hideOnEscape = true,
+  OnShow = function(self)
+    local editBox = self.editBox or self.EditBox
+    if editBox then
+      editBox:SetText(self.data or "")
+      editBox:HighlightText()
+      editBox:SetFocus()
+    end
+  end,
+}
+
+local function OpenPremadeDungeonGroups()
+  pcall(LoadAddOn, "Blizzard_GroupFinder")
+
+  if PVEFrame_ShowFrame then
+    PVEFrame_ShowFrame("GroupFinderFrame")
+  elseif ToggleLFDParentFrame then
+    ToggleLFDParentFrame()
+  elseif PVEFrame then
+    PVEFrame:Show()
+  end
+
+  if GroupFinderFrame_ShowGroupFrame and LFGListPVEStub then
+    pcall(GroupFinderFrame_ShowGroupFrame, LFGListPVEStub)
+  end
+end
+
+local function GetSuggestionCopyText(suggestion)
+  if not suggestion then return "" end
+  return ("+%d %s"):format(tonumber(suggestion.targetLevel) or 0, suggestion.name or "")
+end
+
+local function CopySuggestedKey(suggestion)
+  local text = GetSuggestionCopyText(suggestion)
+  if text == "" then return end
+  StaticPopup_Show("MBUS_COPY_SUGGESTED_KEY", nil, nil, text)
+end
+
+local function MakeSuggestionPanel(parent)
+  local p = MakePanelBox(parent, 600, 54)
+
+  p.header = p:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+  p.header:SetPoint("TOPLEFT", 14, -8)
+  p.header:SetText("Suggested Next Key")
+
+  p.keyText = p:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
+  p.keyText:SetPoint("TOPLEFT", 14, -26)
+  p.keyText:SetWidth(230)
+  p.keyText:SetJustifyH("LEFT")
+  p.keyText:SetText("Loading...")
+
+  p.gainText = p:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
+  p.gainText:SetPoint("TOPLEFT", 300, -28)
+  p.gainText:SetWidth(300)
+  p.gainText:SetJustifyH("LEFT")
+  p.gainText:SetText("")
+
+  p.findButton = CreateFrame("Button", nil, p, "UIPanelButtonTemplate")
+  p.findButton:SetSize(28, 24)
+  p.findButton:SetPoint("TOPRIGHT", -14, -25)
+  p.findButton:SetText("")
+  p.findButton:SetScript("OnClick", OpenPremadeDungeonGroups)
+  p.findButton:SetScript("OnEnter", function(self)
+    GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+    GameTooltip:AddLine("Find Groups")
+    GameTooltip:AddLine("Open Premade Groups for Dungeons & Raids.", 1, 1, 1, true)
+    GameTooltip:Show()
+  end)
+  p.findButton:SetScript("OnLeave", function() GameTooltip:Hide() end)
+
+  p.findButton.icon = p.findButton:CreateTexture(nil, "ARTWORK")
+  p.findButton.icon:SetSize(18, 18)
+  p.findButton.icon:SetPoint("CENTER")
+  if not p.findButton.icon.SetAtlas or not pcall(p.findButton.icon.SetAtlas, p.findButton.icon, "groupfinder-eye-frame") then
+    p.findButton.icon:SetTexture("Interface\\LFGFrame\\LFG-Eye")
+  end
+
+  p.copyButton = CreateFrame("Button", nil, p, "UIPanelButtonTemplate")
+  p.copyButton:SetSize(44, 22)
+  p.copyButton:SetPoint("LEFT", p.keyText, "RIGHT", 4, -1)
+  p.copyButton:SetText("Copy")
+  p.copyButton:SetScript("OnClick", function(self)
+    CopySuggestedKey(self:GetParent().suggestion)
+  end)
+  p.copyButton:SetScript("OnEnter", function(self)
+    GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+    GameTooltip:AddLine("Copy Suggested Key")
+    GameTooltip:AddLine("Open a copy box for the suggested dungeon and level.", 1, 1, 1, true)
+    GameTooltip:Show()
+  end)
+  p.copyButton:SetScript("OnLeave", function() GameTooltip:Hide() end)
+
+  return p
+end
+
 local function LayoutBigCards()
   if not (BFrame and BFrame.progressBar and BFrame.cardsArea) then return end
 
@@ -234,6 +712,12 @@ local function LayoutBigCards()
   BFrame.currentCard:SetPoint("TOPLEFT", BFrame.cardsArea, "TOPLEFT", 0, 0)
   BFrame.nextCard:SetPoint("TOPRIGHT",  BFrame.cardsArea, "TOPRIGHT", 0, 0)
   BFrame.midArrow:SetPoint("CENTER", BFrame.cardsArea, "CENTER", 0, -10)
+
+  if BFrame.suggestionPanel then
+    BFrame.suggestionPanel:SetWidth(w)
+    BFrame.suggestionPanel:ClearAllPoints()
+    BFrame.suggestionPanel:SetPoint("TOPLEFT", BFrame.cardsArea, "TOPLEFT", 0, -182)
+  end
 end
 
 local function EnsureRankWindow()
@@ -250,7 +734,7 @@ local function EnsureRankWindow()
   if parent and parent:GetWidth() then
     MirrorFromParent(parent, BFrame)
   else
-    BFrame:SetSize(560, 460)
+    BFrame:SetSize(560, 540)
     BFrame:SetPoint("CENTER")
   end
 
@@ -267,15 +751,15 @@ local function EnsureRankWindow()
   BFrame.rankLabel:SetPoint("TOP", 0, -10)
   BFrame.rankLabel:SetText("Guild Rank")
 
-  BFrame.ringIconSlot = MakeIconSlot(BFrame.rankRing, 32)
-  BFrame.ringIconSlot:SetPoint("LEFT", 14, 0)
+  BFrame.ringIconSlot = MakeIconSlot(BFrame.rankRing, RING_ICON_SIZE)
+  BFrame.ringIconSlot:SetPoint("LEFT", 12, -2)
 
   BFrame.rankNum = BFrame.rankRing:CreateFontString(nil, "OVERLAY", "GameFontNormalHuge")
-  BFrame.rankNum:SetPoint("CENTER", 12, -6)
+  BFrame.rankNum:SetPoint("CENTER", 24, -6)
   BFrame.rankNum:SetText("1")
 
   BFrame.rankFrac = BFrame.rankRing:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
-  BFrame.rankFrac:SetPoint("CENTER", 70, -10)
+  BFrame.rankFrac:SetPoint("CENTER", 78, -10)
   BFrame.rankFrac:SetText("1/6")
 
   BFrame.rankName = BFrame.rankRing:CreateFontString(nil, "OVERLAY", "GameFontNormal")
@@ -309,6 +793,7 @@ local function EnsureRankWindow()
 
   BFrame.currentCard = MakeRankSummaryCard(BFrame.cardsArea, "Current Rank")
   BFrame.nextCard    = MakeRankSummaryCard(BFrame.cardsArea, "Next Rank")
+  BFrame.suggestionPanel = MakeSuggestionPanel(BFrame.cardsArea)
 
   -- Arrow between cards
   BFrame.midArrow = CreateFrame("Frame", nil, BFrame.cardsArea)
@@ -357,7 +842,35 @@ local function EnsureRankWindow()
   return BFrame
 end
 
+local function FillSuggestionPanel(panel)
+  if not panel then return end
+
+  local suggestion = GetSuggestedNextKey()
+  if not suggestion then
+    panel.suggestion = nil
+    panel.keyText:SetText("No season dungeon data yet")
+    panel.gainText:SetText("")
+    if panel.findButton then panel.findButton:Disable() end
+    if panel.copyButton then panel.copyButton:Disable() end
+    return
+  end
+
+  panel.suggestion = suggestion
+  panel.keyText:SetText(("+%d %s"):format(suggestion.targetLevel, suggestion.name))
+  if panel.copyButton then
+    local x = math.min((panel.keyText:GetStringWidth() or 0) + 8, 232)
+    panel.copyButton:ClearAllPoints()
+    panel.copyButton:SetPoint("LEFT", panel.keyText, "LEFT", x, -1)
+  end
+
+  panel.gainText:SetText(("Estimated Minium increase +%d score"):format(math.floor((suggestion.gain or 0) + 0.5)))
+  if panel.findButton then panel.findButton:Enable() end
+  if panel.copyButton then panel.copyButton:Enable() end
+end
+
 local function FillCurrentCard(card, r, rating)
+  SetRankIcon(card.iconSlot, GetRankIndexForRating(rating))
+
   card.rankName:SetText(r.name or "Unknown")
   card.repairs:SetText(FormatGold(r.repairs))
 
@@ -381,6 +894,8 @@ end
 
 local function FillNextCard(card, nextRank, currentRank, rating)
   if not nextRank then
+    SetRankIcon(card.iconSlot, NUM_RANKS)
+
     card.rankName:SetText("Max Rank")
     card.repairs:SetText("")
     card.range:SetText("")
@@ -391,6 +906,8 @@ local function FillNextCard(card, nextRank, currentRank, rating)
     card.bar:SetStatusBarColor(0.2, 0.85, 0.2)
     return
   end
+
+  SetRankIcon(card.iconSlot, GetRankIndexForRating(nextRank.min))
 
   card.rankName:SetText(nextRank.name or "Unknown")
   card.repairs:SetText(FormatGold(nextRank.repairs))
@@ -433,6 +950,7 @@ function updateBountiesUI()
   end
 
   -- Top ring
+  SetRankIcon(BFrame.ringIconSlot, rankIdx)
   BFrame.rankNum:SetText(tostring(rankIdx))
   BFrame.rankFrac:SetText(("%d/%d"):format(rankIdx, NUM_RANKS))
   BFrame.rankName:SetText(rank.name or "Unknown")
@@ -461,6 +979,7 @@ function updateBountiesUI()
   -- Cards
   FillCurrentCard(BFrame.currentCard, rank, rating)
   FillNextCard(BFrame.nextCard, nextRank, rank, rating)
+  FillSuggestionPanel(BFrame.suggestionPanel)
 
   -- Arrow hide at max
   if nextRank then
