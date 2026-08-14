@@ -60,28 +60,36 @@
     "width": 598
   },
   "demon_hunter_devourer_01.png": {
-    "height": 73,
-    "width": 283
+    "height": 98,
+    "width": 291
   },
   "demon_hunter_devourer_02.png": {
-    "height": 98,
-    "width": 283
+    "height": 123,
+    "width": 291
   },
   "demon_hunter_devourer_03.png": {
-    "height": 73,
-    "width": 283
+    "height": 123,
+    "width": 291
   },
   "demon_hunter_devourer_04.png": {
-    "height": 48,
-    "width": 283
+    "height": 123,
+    "width": 291
   },
   "demon_hunter_devourer_05.png": {
     "height": 73,
-    "width": 283
+    "width": 291
   },
   "demon_hunter_devourer_06.png": {
-    "height": 48,
-    "width": 283
+    "height": 73,
+    "width": 291
+  },
+  "demon_hunter_devourer_07.png": {
+    "height": 73,
+    "width": 291
+  },
+  "demon_hunter_devourer_08.png": {
+    "height": 73,
+    "width": 291
   },
   "demon_hunter_havoc_01.png": {
     "height": 48,
