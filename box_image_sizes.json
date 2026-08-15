@@ -1,15 +1,15 @@
 {
   "death_knight_blood_01.png": {
     "height": 48,
-    "width": 294
+    "width": 309
   },
   "death_knight_blood_02.png": {
     "height": 73,
-    "width": 294
+    "width": 309
   },
   "death_knight_blood_03.png": {
     "height": 73,
-    "width": 294
+    "width": 309
   },
   "death_knight_blood_04.png": {
     "height": 73,
@@ -25,27 +25,27 @@
   },
   "death_knight_frost_01.png": {
     "height": 48,
-    "width": 283
+    "width": 309
   },
   "death_knight_frost_02.png": {
-    "height": 98,
-    "width": 283
+    "height": 73,
+    "width": 309
   },
   "death_knight_frost_03.png": {
     "height": 73,
-    "width": 283
+    "width": 309
   },
   "death_knight_frost_04.png": {
     "height": 73,
-    "width": 283
+    "width": 284
   },
   "death_knight_frost_05.png": {
     "height": 73,
-    "width": 283
+    "width": 284
   },
   "death_knight_frost_06.png": {
     "height": 48,
-    "width": 283
+    "width": 284
   },
   "death_knight_unholy_01.png": {
     "height": 48,
@@ -77,19 +77,19 @@
   },
   "demon_hunter_devourer_05.png": {
     "height": 73,
-    "width": 291
+    "width": 293
   },
   "demon_hunter_devourer_06.png": {
     "height": 73,
-    "width": 291
+    "width": 293
   },
   "demon_hunter_devourer_07.png": {
     "height": 73,
-    "width": 291
+    "width": 293
   },
   "demon_hunter_devourer_08.png": {
     "height": 73,
-    "width": 291
+    "width": 293
   },
   "demon_hunter_havoc_01.png": {
     "height": 48,
@@ -180,28 +180,28 @@
     "width": 283
   },
   "druid_feral_01.png": {
-    "height": 73,
-    "width": 283
+    "height": 98,
+    "width": 272
   },
   "druid_feral_02.png": {
     "height": 73,
-    "width": 283
+    "width": 272
   },
   "druid_feral_03.png": {
-    "height": 48,
-    "width": 283
+    "height": 73,
+    "width": 272
   },
   "druid_feral_04.png": {
     "height": 48,
-    "width": 283
+    "width": 294
   },
   "druid_feral_05.png": {
-    "height": 98,
-    "width": 283
+    "height": 73,
+    "width": 294
   },
   "druid_feral_06.png": {
     "height": 73,
-    "width": 283
+    "width": 294
   },
   "druid_guardian_01.png": {
     "height": 98,
@@ -253,75 +253,75 @@
   },
   "evoker_augmentation_01.png": {
     "height": 73,
-    "width": 295
+    "width": 330
   },
   "evoker_augmentation_02.png": {
     "height": 48,
-    "width": 295
+    "width": 330
   },
   "evoker_augmentation_03.png": {
     "height": 48,
-    "width": 295
+    "width": 330
   },
   "evoker_augmentation_04.png": {
     "height": 48,
-    "width": 313
+    "width": 348
   },
   "evoker_augmentation_05.png": {
     "height": 73,
-    "width": 313
+    "width": 348
   },
   "evoker_augmentation_06.png": {
     "height": 73,
-    "width": 313
+    "width": 348
   },
   "evoker_devastation_01.png": {
-    "height": 73,
-    "width": 313
+    "height": 48,
+    "width": 348
   },
   "evoker_devastation_02.png": {
     "height": 73,
-    "width": 313
+    "width": 348
   },
   "evoker_devastation_03.png": {
     "height": 73,
-    "width": 313
+    "width": 348
   },
   "evoker_devastation_04.png": {
     "height": 48,
-    "width": 269
+    "width": 298
   },
   "evoker_devastation_05.png": {
-    "height": 73,
-    "width": 269
+    "height": 48,
+    "width": 298
   },
   "evoker_devastation_06.png": {
-    "height": 73,
-    "width": 269
+    "height": 48,
+    "width": 298
   },
   "evoker_preservation_01.png": {
     "height": 73,
-    "width": 316
+    "width": 301
   },
   "evoker_preservation_02.png": {
     "height": 73,
-    "width": 316
+    "width": 301
   },
   "evoker_preservation_03.png": {
     "height": 73,
-    "width": 316
+    "width": 301
   },
   "evoker_preservation_04.png": {
     "height": 48,
-    "width": 316
+    "width": 330
   },
   "evoker_preservation_05.png": {
     "height": 48,
-    "width": 316
+    "width": 330
   },
   "evoker_preservation_06.png": {
     "height": 73,
-    "width": 316
+    "width": 330
   },
   "hunter_beast_mastery_01.png": {
     "height": 73,
@@ -417,15 +417,15 @@
   },
   "mage_arcane_01.png": {
     "height": 48,
-    "width": 272
+    "width": 296
   },
   "mage_arcane_02.png": {
-    "height": 73,
-    "width": 272
+    "height": 48,
+    "width": 296
   },
   "mage_arcane_03.png": {
-    "height": 73,
-    "width": 272
+    "height": 48,
+    "width": 296
   },
   "mage_arcane_04.png": {
     "height": 73,
@@ -464,16 +464,16 @@
     "width": 284
   },
   "mage_frost_01.png": {
-    "height": 98,
-    "width": 284
+    "height": 73,
+    "width": 296
   },
   "mage_frost_02.png": {
-    "height": 73,
-    "width": 284
+    "height": 48,
+    "width": 296
   },
   "mage_frost_03.png": {
     "height": 73,
-    "width": 284
+    "width": 296
   },
   "mage_frost_04.png": {
     "height": 98,
@@ -657,23 +657,23 @@
   },
   "priest_discipline_01.png": {
     "height": 48,
-    "width": 283
+    "width": 277
   },
   "priest_discipline_02.png": {
     "height": 98,
-    "width": 283
+    "width": 277
   },
   "priest_discipline_03.png": {
     "height": 73,
-    "width": 283
+    "width": 289
   },
   "priest_discipline_04.png": {
     "height": 73,
-    "width": 283
+    "width": 289
   },
   "priest_discipline_05.png": {
     "height": 48,
-    "width": 283
+    "width": 289
   },
   "priest_holy_01.png": {
     "height": 73,
@@ -785,27 +785,27 @@
   },
   "rogue_subtlety_01.png": {
     "height": 73,
-    "width": 294
+    "width": 308
   },
   "rogue_subtlety_02.png": {
     "height": 73,
-    "width": 294
+    "width": 308
   },
   "rogue_subtlety_03.png": {
     "height": 73,
-    "width": 294
+    "width": 308
   },
   "rogue_subtlety_04.png": {
     "height": 48,
-    "width": 272
+    "width": 269
   },
   "rogue_subtlety_05.png": {
     "height": 73,
-    "width": 272
+    "width": 269
   },
   "rogue_subtlety_06.png": {
     "height": 73,
-    "width": 272
+    "width": 269
   },
   "shaman_elemental_01.png": {
     "height": 73,
@@ -821,15 +821,15 @@
   },
   "shaman_elemental_04.png": {
     "height": 48,
-    "width": 277
+    "width": 312
   },
   "shaman_elemental_05.png": {
-    "height": 73,
-    "width": 277
+    "height": 48,
+    "width": 312
   },
   "shaman_elemental_06.png": {
-    "height": 73,
-    "width": 277
+    "height": 48,
+    "width": 312
   },
   "shaman_enhancement_01.png": {
     "height": 98,
