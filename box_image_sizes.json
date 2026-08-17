@@ -464,28 +464,36 @@
     "width": 284
   },
   "mage_frost_01.png": {
-    "height": 73,
-    "width": 296
+    "height": 98,
+    "width": 306
   },
   "mage_frost_02.png": {
-    "height": 48,
-    "width": 296
+    "height": 148,
+    "width": 306
   },
   "mage_frost_03.png": {
     "height": 73,
-    "width": 296
+    "width": 306
   },
   "mage_frost_04.png": {
-    "height": 98,
-    "width": 294
+    "height": 73,
+    "width": 306
   },
   "mage_frost_05.png": {
-    "height": 73,
-    "width": 294
+    "height": 48,
+    "width": 315
   },
   "mage_frost_06.png": {
+    "height": 148,
+    "width": 315
+  },
+  "mage_frost_07.png": {
+    "height": 73,
+    "width": 315
+  },
+  "mage_frost_08.png": {
     "height": 48,
-    "width": 294
+    "width": 315
   },
   "monk_brewmaster_01.png": {
     "height": 73,
