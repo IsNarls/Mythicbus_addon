@@ -1758,7 +1758,7 @@ Mythicbus_WowheadResults = {
     Role = "healer",
     RowIndex = "5",
     ButtonLabel = "Copy Mythic+",
-    TalentString = "CEQAAAAAAAAAAAAAAAAAAAAAAwYAAAAAAAbGzYWGzMmZMMDsMzMzAAAAYMzyMMzMzYbGzMAmpAYmFMEGz2AMGYxMzAQzYmHwYwMAzMDYA",
+    TalentString = "CEQAAAAAAAAAAAAAAAAAAAAAAwYAAAAAAAMzMmlxMjZGDzALzMzMAAAAGzsMDzMzM2mxMDgZKAmZBDhxsNAjBWMzMA0Mm5BMGMDwMzAGA",
     ImagePath = "Images/box_images/priest_holy_05.png",
     URL = "https://www.wowhead.com/guide/classes/priest/holy/talent-builds-pve-healer",
   },
