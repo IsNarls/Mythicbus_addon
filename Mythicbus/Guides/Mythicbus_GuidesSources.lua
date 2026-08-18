@@ -5,36 +5,36 @@
 local ADDON, NS = ...
 
 NS.MBUS_GuideSources = {
-  ["MAGISTERS_TERRACE"] = {
+  ["ALTAR_OF_FANGS"] = {
     name = "Icy Veins",
-    url = "https://www.icy-veins.com/wow/magisters-terrace-dungeon-guide",
+    url = "https://www.icy-veins.com/wow/altar-of-fangs-dungeon-guide",
   },
-  ["MAISARA_CAVERNS"] = {
+  ["BLINDING_VALE"] = {
     name = "Icy Veins",
-    url = "https://www.icy-veins.com/wow/maisara-caverns-dungeon-guide",
+    url = "https://www.icy-veins.com/wow/blinding-vale-dungeon-guide",
   },
-  ["NEXUS_POINT_XENAS"] = {
+  ["DEN_OF_NALORAKK"] = {
     name = "Icy Veins",
-    url = "https://www.icy-veins.com/wow/nexus-point-xenas-dungeon-guide",
+    url = "https://www.icy-veins.com/wow/den-of-nalorakk-dungeon-guide",
   },
-  ["WINDRUNNER_SPIRE"] = {
+  ["KINGS_REST"] = {
     name = "Icy Veins",
-    url = "https://www.icy-veins.com/wow/windrunner-spire-dungeon-guide",
+    url = "https://www.icy-veins.com/wow/kings-rest-dungeon-guide",
   },
-  ["ALGETHAR_ACADEMY"] = {
+  ["MURDER_ROW"] = {
     name = "Icy Veins",
-    url = "https://www.icy-veins.com/wow/algethar-academy-dungeon-guide",
+    url = "https://www.icy-veins.com/wow/murder-row-dungeon-guide",
   },
-  ["SEAT_OF_THE_TRIUMVIRATE"] = {
+  ["RUBY_LIFE_POOLS"] = {
     name = "Icy Veins",
-    url = "https://www.icy-veins.com/wow/seat-of-the-triumvirate-dungeon-guide",
+    url = "https://www.icy-veins.com/wow/ruby-life-pools-dungeon-guide",
   },
-  ["SKYREACH"] = {
+  ["TEMPLE_OF_SETHRALISS"] = {
     name = "Icy Veins",
-    url = "https://www.icy-veins.com/wow/skyreach-dungeon-guide",
+    url = "https://www.icy-veins.com/wow/temple-of-sethraliss-dungeon-guide",
   },
-  ["PIT_OF_SARON"] = {
+  ["VOIDSCAR_ARENA"] = {
     name = "Icy Veins",
-    url = "https://www.icy-veins.com/wow/pit-of-saron-dungeon-guide",
+    url = "https://www.icy-veins.com/wow/voidscar-arena-dungeon-guide",
   },
 }
