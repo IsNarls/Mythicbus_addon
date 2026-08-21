@@ -17,14 +17,14 @@ Mythicbus_Talents.lua
 # ======================
 Guides\Mythicbus_GuidesDB.lua
 
-Guides\Mythicbus_GuidesData_MagistersTerrace.lua
-Guides\Mythicbus_GuidesData_MaisaraCaverns.lua
-Guides\Mythicbus_GuidesData_NexusPointXenas.lua
-Guides\Mythicbus_GuidesData_WindrunnerSpire.lua
-Guides\Mythicbus_GuidesData_AlgetharAcademy.lua
-Guides\Mythicbus_GuidesData_SeatOfTheTriumvirate.lua
-Guides\Mythicbus_GuidesData_Skyreach.lua
-Guides\Mythicbus_GuidesData_PitOfSaron.lua
+Guides\Mythicbus_GuidesData_AltarOfFangs.lua
+Guides\Mythicbus_GuidesData_BlindingVale.lua
+Guides\Mythicbus_GuidesData_DenOfNalorakk.lua
+Guides\Mythicbus_GuidesData_KingsRest.lua
+Guides\Mythicbus_GuidesData_MurderRow.lua
+Guides\Mythicbus_GuidesData_RubyLifePools.lua
+Guides\Mythicbus_GuidesData_TempleOfSethraliss.lua
+Guides\Mythicbus_GuidesData_VoidscarArena.lua
 Guides\Mythicbus_GuidesSources.lua
 
 # Guides UI LAST (so it can read the DB)
