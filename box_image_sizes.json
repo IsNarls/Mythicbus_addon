@@ -92,7 +92,7 @@
     "width": 293
   },
   "demon_hunter_havoc_01.png": {
-    "height": 48,
+    "height": 73,
     "width": 294
   },
   "demon_hunter_havoc_02.png": {
@@ -104,7 +104,7 @@
     "width": 294
   },
   "demon_hunter_havoc_04.png": {
-    "height": 98,
+    "height": 48,
     "width": 272
   },
   "demon_hunter_havoc_05.png": {
@@ -844,15 +844,15 @@
     "width": 316
   },
   "shaman_enhancement_02.png": {
-    "height": 73,
+    "height": 98,
     "width": 316
   },
   "shaman_enhancement_03.png": {
-    "height": 48,
+    "height": 73,
     "width": 316
   },
   "shaman_enhancement_04.png": {
-    "height": 73,
+    "height": 48,
     "width": 316
   },
   "shaman_enhancement_05.png": {
@@ -860,6 +860,14 @@
     "width": 316
   },
   "shaman_enhancement_06.png": {
+    "height": 73,
+    "width": 316
+  },
+  "shaman_enhancement_07.png": {
+    "height": 73,
+    "width": 316
+  },
+  "shaman_enhancement_08.png": {
     "height": 73,
     "width": 316
   },

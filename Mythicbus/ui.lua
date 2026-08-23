@@ -304,18 +304,19 @@ local preferredDungeonName = nil
 -- seasonal dungeon list
 local seasonMaps, mapRetryTicker = {}, nil
 local CURRENT_SEASON_DUNGEONS = {
-  { code = "MAG", name = "Magister's Terrace" },
-  { code = "MAI", name = "Maisara Caverns" },
-  { code = "NPX", name = "Nexus-Point Xenas" },
-  { code = "WRS", name = "Windrunner Spire" },
-  { code = "ALG", name = "Algeth'ar Academy" },
-  { code = "SOT", name = "Seat of the Triumvirate" },
-  { code = "SKY", name = "Skyreach" },
-  { code = "POS", name = "Pit of Saron" },
+  { code = "AOF", name = "Altar of Fangs" },
+  { code = "BLV", name = "The Blinding Vale", aliases = { "Blinding Vale" } },
+  { code = "DON", name = "Den of Nalorakk" },
+  { code = "KR",  name = "King's Rest", aliases = { "Kings Rest" } },
+  { code = "MR",  name = "Murder Row" },
+  { code = "RLP", name = "Ruby Life Pools" },
+  { code = "TOS", name = "Temple of Sethraliss" },
+  { code = "VSA", name = "Voidscar Arena" },
 }
 
 local function normalizeDungeonName(name)
   local s = tostring(name or ""):lower()
+  s = s:gsub("'", "")
   s = s:gsub("[^%w%s]", " ")
   s = s:gsub("%s+", " ")
   s = s:gsub("^%s+", ""):gsub("%s+$", "")
@@ -374,11 +375,15 @@ local function refreshSeasonMaps()
 
   -- Hardcoded current season roster; map each known name to its live map ID when available.
   for _,entry in ipairs(CURRENT_SEASON_DUNGEONS) do
-    local name = entry.name
-    local key = normalizeDungeonName(name)
-    local m = mapByName[key]
+    local m = mapByName[normalizeDungeonName(entry.name)]
+    if not m then
+      for _, alias in ipairs(entry.aliases or {}) do
+        m = mapByName[normalizeDungeonName(alias)]
+        if m then break end
+      end
+    end
     if m and m.id and m.id > 0 then
-      seasonMaps[#seasonMaps + 1] = { id = m.id, name = m.name or name }
+      seasonMaps[#seasonMaps + 1] = { id = m.id, name = m.name or entry.name }
     end
   end
 

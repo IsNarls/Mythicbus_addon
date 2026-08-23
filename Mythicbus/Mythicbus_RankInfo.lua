@@ -27,14 +27,14 @@ local RANKS = {
 }
 
 local CURRENT_SEASON_DUNGEONS = {
-  { code = "MAG", name = "Magisters' Terrace", aliases = { "Magister's Terrace", "Magisters Terrace" } },
-  { code = "MAI", name = "Maisara Caverns" },
-  { code = "NPX", name = "Nexus-Point Xenas" },
-  { code = "WRS", name = "Windrunner Spire" },
-  { code = "ALG", name = "Algeth'ar Academy" },
-  { code = "SOT", name = "Seat of the Triumvirate" },
-  { code = "SKY", name = "Skyreach" },
-  { code = "POS", name = "Pit of Saron" },
+  { code = "AOF", name = "Altar of Fangs" },
+  { code = "BLV", name = "The Blinding Vale", aliases = { "Blinding Vale" } },
+  { code = "DON", name = "Den of Nalorakk" },
+  { code = "KR",  name = "King's Rest", aliases = { "Kings Rest" } },
+  { code = "MR",  name = "Murder Row" },
+  { code = "RLP", name = "Ruby Life Pools" },
+  { code = "TOS", name = "Temple of Sethraliss" },
+  { code = "VSA", name = "Voidscar Arena" },
 }
 
 local RANK_IMAGE_PATH = "Interface/AddOns/" .. ADDON .. "/Images/Rank Images/%d.tga"

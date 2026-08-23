@@ -158,7 +158,7 @@ Mythicbus_WowheadResults = {
     Role = "dps",
     RowIndex = "1",
     ButtonLabel = "Copy Raid",
-    TalentString = "CEkAAAAAAAAAAAAAAAAAAAAAAYmZGzMzmxMzMmZmMmZAAAAAAAzyDMmtZYmBzMWmZMDzMGzyALzmZMMbaaMzMG2AAAAAAAAYmBDAAAAD",
+    TalentString = "CEkAAAAAAAAAAAAAAAAAAAAAAYmZGzMzmxMzMmZmMmZAAAAAAAzyDMmtZYmBzMWmZMDzMGzyALziZMMbaaMzMG2AAAAAAAAYmBDAAAAD",
     ImagePath = "Images/box_images/demon_hunter_havoc_01.png",
     URL = "https://www.wowhead.com/guide/classes/demon-hunter/havoc/talent-builds-pve-dps",
   },
@@ -878,7 +878,7 @@ Mythicbus_WowheadResults = {
     Role = "dps",
     RowIndex = "1",
     ButtonLabel = "Copy Single Target",
-    TalentString = "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGzYZAMD2AAAAAAAAAzYGzssNjZmxM4BMNjBjtlZmZmZmZmZhZWGMDAAYMzMGAz0GDDwGzsNjB",
+    TalentString = "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGzYZAMD2AAAAAAAAAzYmZmFzYmZMDGTzYwYbZmZmZmZmZWwsMYGAAwYmZMAmptNYA2YmtZMA",
     ImagePath = "Images/box_images/hunter_marksmanship_01.png",
     URL = "https://www.wowhead.com/guide/classes/hunter/marksmanship/talent-builds-pve-dps",
   },
@@ -888,7 +888,7 @@ Mythicbus_WowheadResults = {
     Role = "dps",
     RowIndex = "2",
     ButtonLabel = "Copy Raid AoE/Cleave",
-    TalentString = "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGzYZAMD2AAAAAAAAAzYGzssNjZmxM4BMNjBz2mZmZmZmZmZhZWGmBAAYMzMGAz0GDDwGzsNjB",
+    TalentString = "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGzYZAMD2AAAAAAAAAzYmZmFzYmZMDGTzYwstZmZmZmZmZWwsMMDAAwYmZMAmptNYA2YmtZMA",
     ImagePath = "Images/box_images/hunter_marksmanship_02.png",
     URL = "https://www.wowhead.com/guide/classes/hunter/marksmanship/talent-builds-pve-dps",
   },
@@ -898,7 +898,7 @@ Mythicbus_WowheadResults = {
     Role = "dps",
     RowIndex = "3",
     ButtonLabel = "Copy Mythic+",
-    TalentString = "C4PAAAAAAAAAAAAAAAAAAAAAAwGMwMGzYZAMD2AAAAAAAAAzYmZGbzYmZMDLjpZMYW2WmZmZmZmZmFmZZYGAAAPwYMAMTbgBYjZ2mxA",
+    TalentString = "C4PAAAAAAAAAAAAAAAAAAAAAAwGMwMGzYZAMD2AAAAAAAAAzYmZGbzYmZMDLjpZMYW22mZmZmZmZmFmZZYGAAAPwYMAMTbgBYjZ2mxA",
     ImagePath = "Images/box_images/hunter_marksmanship_03.png",
     URL = "https://www.wowhead.com/guide/classes/hunter/marksmanship/talent-builds-pve-dps",
   },
@@ -918,7 +918,7 @@ Mythicbus_WowheadResults = {
     Role = "dps",
     RowIndex = "5",
     ButtonLabel = "Copy Single Target",
-    TalentString = "C4PAAAAAAAAAAAAAAAAAAAAAAYzsMwAmgZYbAzCAAAAAAAAYGzYmltZMzMmBPgpZMYstMzMzMzMzMLMzygBAAYMzMmZmBEGGgNmZbGD",
+    TalentString = "C4PAAAAAAAAAAAAAAAAAAAAAAYzsMwAmgZYbAzCAAAAAAAAYGzMzsYGzMjZwYaGDGbLzMzMzMzMzCmlBDAAwYmZMzMDIbwAsxMbzYA",
     ImagePath = "Images/box_images/hunter_marksmanship_05.png",
     URL = "https://www.wowhead.com/guide/classes/hunter/marksmanship/talent-builds-pve-dps",
   },
@@ -2117,8 +2117,8 @@ Mythicbus_WowheadResults = {
     Spec = "Enhancement",
     Role = "dps",
     RowIndex = "2",
-    ButtonLabel = "Copy Mythic+",
-    TalentString = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDbkFYGGawCAzyMmxYZxYjZmtxyMzMzgFmBAYGGzMMTgZGMYMA",
+    ButtonLabel = "Copy Cleave",
+    TalentString = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDbkFYGGawCAzyMmZGLLzAzMbsMzMzwwYGAgZYMzYmJwMDGMGA",
     ImagePath = "Images/box_images/shaman_enhancement_02.png",
     URL = "https://www.wowhead.com/guide/classes/shaman/enhancement/talent-builds-pve-dps",
   },
@@ -2127,8 +2127,8 @@ Mythicbus_WowheadResults = {
     Spec = "Enhancement",
     Role = "dps",
     RowIndex = "3",
-    ButtonLabel = "Copy Delves",
-    TalentString = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDbkNYGGawCAzyMmxYZZGYmxYxMzMjxCzAAMDjZGzMBmZwgxA",
+    ButtonLabel = "Copy Mythic+",
+    TalentString = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDbkFYGGawCAzyMmxYZxYjZmtxyMzMzgFmBAYGGzMMTgZGMYMA",
     ImagePath = "Images/box_images/shaman_enhancement_03.png",
     URL = "https://www.wowhead.com/guide/classes/shaman/enhancement/talent-builds-pve-dps",
   },
@@ -2137,8 +2137,8 @@ Mythicbus_WowheadResults = {
     Spec = "Enhancement",
     Role = "dps",
     RowIndex = "4",
-    ButtonLabel = "Copy Raid",
-    TalentString = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzMzMzMzMzMzMzYGAAAAAAAAAsAbwMW0YbAMTwGAzyMmZGLLzAzMbsMzMzwwYGAADwYmJmZAgxA",
+    ButtonLabel = "Copy Delves",
+    TalentString = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDbkNYGGawCAzyMmxYZZGYmxYxMzMjxCzAAMDjZGzMBmZwgxA",
     ImagePath = "Images/box_images/shaman_enhancement_04.png",
     URL = "https://www.wowhead.com/guide/classes/shaman/enhancement/talent-builds-pve-dps",
   },
@@ -2147,8 +2147,8 @@ Mythicbus_WowheadResults = {
     Spec = "Enhancement",
     Role = "dps",
     RowIndex = "5",
-    ButtonLabel = "Copy Mythic+",
-    TalentString = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzMjZmZmZmZmZGzAAAAAAAAAgFYDmxiGbDgZC2AYWmxMGLLGbMzsNWm5BmZGsMmBAAYMmRMzAMYMA",
+    ButtonLabel = "Copy Raid",
+    TalentString = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzMzMzMzMzMzMzYGAAAAAAAAAsAbwMW0YbAMTwGAzyMmZGLLzAzMbsMzMzwwYGAADwYmJmZAgxA",
     ImagePath = "Images/box_images/shaman_enhancement_05.png",
     URL = "https://www.wowhead.com/guide/classes/shaman/enhancement/talent-builds-pve-dps",
   },
@@ -2157,12 +2157,32 @@ Mythicbus_WowheadResults = {
     Spec = "Enhancement",
     Role = "dps",
     RowIndex = "6",
-    ButtonLabel = "Copy Delves",
-    TalentString = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMjZmZmZmZmZmZGzAAAAAAAAAgFYDmxiGbDgZC2AYWmxMGLLzAzMGLmZmZMWYGAAgxYmJmZAGMGA",
+    ButtonLabel = "Copy Cleave",
+    TalentString = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzMzMzMzMzMzMzYGAAAAAAAAAsAbwMW0YbAMTwGAzyMmZGLLzAzMbsMzMzwwYGAAgxYmJmZAgxA",
     ImagePath = "Images/box_images/shaman_enhancement_06.png",
     URL = "https://www.wowhead.com/guide/classes/shaman/enhancement/talent-builds-pve-dps",
   },
   [217] = {
+    Class = "Shaman",
+    Spec = "Enhancement",
+    Role = "dps",
+    RowIndex = "7",
+    ButtonLabel = "Copy Mythic+",
+    TalentString = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzMjZmZmZmZmZGzAAAAAAAAAgFYDmxiGbDgZC2AYWmxMGLLGbMzsNWm5BmZGsMmBAAYMmRMzAMYMA",
+    ImagePath = "Images/box_images/shaman_enhancement_07.png",
+    URL = "https://www.wowhead.com/guide/classes/shaman/enhancement/talent-builds-pve-dps",
+  },
+  [218] = {
+    Class = "Shaman",
+    Spec = "Enhancement",
+    Role = "dps",
+    RowIndex = "8",
+    ButtonLabel = "Copy Delves",
+    TalentString = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMjZmZmZmZmZmZGzAAAAAAAAAgFYDmxiGbDgZC2AYWmxMGLLzAzMGLmZmZMWYGAAgxYmJmZAGMGA",
+    ImagePath = "Images/box_images/shaman_enhancement_08.png",
+    URL = "https://www.wowhead.com/guide/classes/shaman/enhancement/talent-builds-pve-dps",
+  },
+  [219] = {
     Class = "Shaman",
     Spec = "Restoration",
     Role = "healer",
@@ -2172,7 +2192,7 @@ Mythicbus_WowheadResults = {
     ImagePath = "Images/box_images/shaman_restoration_01.png",
     URL = "https://www.wowhead.com/guide/classes/shaman/restoration/talent-builds-pve-healer",
   },
-  [218] = {
+  [220] = {
     Class = "Shaman",
     Spec = "Restoration",
     Role = "healer",
@@ -2182,7 +2202,7 @@ Mythicbus_WowheadResults = {
     ImagePath = "Images/box_images/shaman_restoration_02.png",
     URL = "https://www.wowhead.com/guide/classes/shaman/restoration/talent-builds-pve-healer",
   },
-  [219] = {
+  [221] = {
     Class = "Shaman",
     Spec = "Restoration",
     Role = "healer",
@@ -2192,7 +2212,7 @@ Mythicbus_WowheadResults = {
     ImagePath = "Images/box_images/shaman_restoration_03.png",
     URL = "https://www.wowhead.com/guide/classes/shaman/restoration/talent-builds-pve-healer",
   },
-  [220] = {
+  [222] = {
     Class = "Shaman",
     Spec = "Restoration",
     Role = "healer",
@@ -2202,7 +2222,7 @@ Mythicbus_WowheadResults = {
     ImagePath = "Images/box_images/shaman_restoration_04.png",
     URL = "https://www.wowhead.com/guide/classes/shaman/restoration/talent-builds-pve-healer",
   },
-  [221] = {
+  [223] = {
     Class = "Shaman",
     Spec = "Restoration",
     Role = "healer",
@@ -2212,7 +2232,7 @@ Mythicbus_WowheadResults = {
     ImagePath = "Images/box_images/shaman_restoration_05.png",
     URL = "https://www.wowhead.com/guide/classes/shaman/restoration/talent-builds-pve-healer",
   },
-  [222] = {
+  [224] = {
     Class = "Shaman",
     Spec = "Restoration",
     Role = "healer",
@@ -2222,7 +2242,7 @@ Mythicbus_WowheadResults = {
     ImagePath = "Images/box_images/shaman_restoration_06.png",
     URL = "https://www.wowhead.com/guide/classes/shaman/restoration/talent-builds-pve-healer",
   },
-  [223] = {
+  [225] = {
     Class = "Warlock",
     Spec = "Affliction",
     Role = "dps",
@@ -2232,7 +2252,7 @@ Mythicbus_WowheadResults = {
     ImagePath = "Images/box_images/warlock_affliction_01.png",
     URL = "https://www.wowhead.com/guide/classes/warlock/affliction/talent-builds-pve-dps",
   },
-  [224] = {
+  [226] = {
     Class = "Warlock",
     Spec = "Affliction",
     Role = "dps",
@@ -2242,7 +2262,7 @@ Mythicbus_WowheadResults = {
     ImagePath = "Images/box_images/warlock_affliction_02.png",
     URL = "https://www.wowhead.com/guide/classes/warlock/affliction/talent-builds-pve-dps",
   },
-  [225] = {
+  [227] = {
     Class = "Warlock",
     Spec = "Affliction",
     Role = "dps",
@@ -2252,7 +2272,7 @@ Mythicbus_WowheadResults = {
     ImagePath = "Images/box_images/warlock_affliction_03.png",
     URL = "https://www.wowhead.com/guide/classes/warlock/affliction/talent-builds-pve-dps",
   },
-  [226] = {
+  [228] = {
     Class = "Warlock",
     Spec = "Affliction",
     Role = "dps",
@@ -2262,7 +2282,7 @@ Mythicbus_WowheadResults = {
     ImagePath = "Images/box_images/warlock_affliction_04.png",
     URL = "https://www.wowhead.com/guide/classes/warlock/affliction/talent-builds-pve-dps",
   },
-  [227] = {
+  [229] = {
     Class = "Warlock",
     Spec = "Affliction",
     Role = "dps",
@@ -2272,7 +2292,7 @@ Mythicbus_WowheadResults = {
     ImagePath = "Images/box_images/warlock_affliction_05.png",
     URL = "https://www.wowhead.com/guide/classes/warlock/affliction/talent-builds-pve-dps",
   },
-  [228] = {
+  [230] = {
     Class = "Warlock",
     Spec = "Affliction",
     Role = "dps",
@@ -2282,7 +2302,7 @@ Mythicbus_WowheadResults = {
     ImagePath = "Images/box_images/warlock_affliction_06.png",
     URL = "https://www.wowhead.com/guide/classes/warlock/affliction/talent-builds-pve-dps",
   },
-  [229] = {
+  [231] = {
     Class = "Warlock",
     Spec = "Affliction",
     Role = "dps",
@@ -2292,7 +2312,7 @@ Mythicbus_WowheadResults = {
     ImagePath = "Images/box_images/warlock_affliction_07.png",
     URL = "https://www.wowhead.com/guide/classes/warlock/affliction/talent-builds-pve-dps",
   },
-  [230] = {
+  [232] = {
     Class = "Warlock",
     Spec = "Affliction",
     Role = "dps",
@@ -2302,7 +2322,7 @@ Mythicbus_WowheadResults = {
     ImagePath = "Images/box_images/warlock_affliction_08.png",
     URL = "https://www.wowhead.com/guide/classes/warlock/affliction/talent-builds-pve-dps",
   },
-  [231] = {
+  [233] = {
     Class = "Warlock",
     Spec = "Demonology",
     Role = "dps",
@@ -2312,7 +2332,7 @@ Mythicbus_WowheadResults = {
     ImagePath = "Images/box_images/warlock_demonology_01.png",
     URL = "https://www.wowhead.com/guide/classes/warlock/demonology/talent-builds-pve-dps",
   },
-  [232] = {
+  [234] = {
     Class = "Warlock",
     Spec = "Demonology",
     Role = "dps",
@@ -2322,7 +2342,7 @@ Mythicbus_WowheadResults = {
     ImagePath = "Images/box_images/warlock_demonology_02.png",
     URL = "https://www.wowhead.com/guide/classes/warlock/demonology/talent-builds-pve-dps",
   },
-  [233] = {
+  [235] = {
     Class = "Warlock",
     Spec = "Demonology",
     Role = "dps",
@@ -2332,7 +2352,7 @@ Mythicbus_WowheadResults = {
     ImagePath = "Images/box_images/warlock_demonology_03.png",
     URL = "https://www.wowhead.com/guide/classes/warlock/demonology/talent-builds-pve-dps",
   },
-  [234] = {
+  [236] = {
     Class = "Warlock",
     Spec = "Demonology",
     Role = "dps",
@@ -2342,7 +2362,7 @@ Mythicbus_WowheadResults = {
     ImagePath = "Images/box_images/warlock_demonology_04.png",
     URL = "https://www.wowhead.com/guide/classes/warlock/demonology/talent-builds-pve-dps",
   },
-  [235] = {
+  [237] = {
     Class = "Warlock",
     Spec = "Demonology",
     Role = "dps",
@@ -2352,7 +2372,7 @@ Mythicbus_WowheadResults = {
     ImagePath = "Images/box_images/warlock_demonology_05.png",
     URL = "https://www.wowhead.com/guide/classes/warlock/demonology/talent-builds-pve-dps",
   },
-  [236] = {
+  [238] = {
     Class = "Warlock",
     Spec = "Demonology",
     Role = "dps",
@@ -2362,7 +2382,7 @@ Mythicbus_WowheadResults = {
     ImagePath = "Images/box_images/warlock_demonology_06.png",
     URL = "https://www.wowhead.com/guide/classes/warlock/demonology/talent-builds-pve-dps",
   },
-  [237] = {
+  [239] = {
     Class = "Warlock",
     Spec = "Demonology",
     Role = "dps",
@@ -2372,7 +2392,7 @@ Mythicbus_WowheadResults = {
     ImagePath = "Images/box_images/warlock_demonology_07.png",
     URL = "https://www.wowhead.com/guide/classes/warlock/demonology/talent-builds-pve-dps",
   },
-  [238] = {
+  [240] = {
     Class = "Warlock",
     Spec = "Demonology",
     Role = "dps",
@@ -2382,7 +2402,7 @@ Mythicbus_WowheadResults = {
     ImagePath = "Images/box_images/warlock_demonology_08.png",
     URL = "https://www.wowhead.com/guide/classes/warlock/demonology/talent-builds-pve-dps",
   },
-  [239] = {
+  [241] = {
     Class = "Warlock",
     Spec = "Destruction",
     Role = "dps",
@@ -2392,7 +2412,7 @@ Mythicbus_WowheadResults = {
     ImagePath = "Images/box_images/warlock_destruction_01.png",
     URL = "https://www.wowhead.com/guide/classes/warlock/destruction/talent-builds-pve-dps",
   },
-  [240] = {
+  [242] = {
     Class = "Warlock",
     Spec = "Destruction",
     Role = "dps",
@@ -2402,7 +2422,7 @@ Mythicbus_WowheadResults = {
     ImagePath = "Images/box_images/warlock_destruction_02.png",
     URL = "https://www.wowhead.com/guide/classes/warlock/destruction/talent-builds-pve-dps",
   },
-  [241] = {
+  [243] = {
     Class = "Warlock",
     Spec = "Destruction",
     Role = "dps",
@@ -2412,7 +2432,7 @@ Mythicbus_WowheadResults = {
     ImagePath = "Images/box_images/warlock_destruction_03.png",
     URL = "https://www.wowhead.com/guide/classes/warlock/destruction/talent-builds-pve-dps",
   },
-  [242] = {
+  [244] = {
     Class = "Warlock",
     Spec = "Destruction",
     Role = "dps",
@@ -2422,7 +2442,7 @@ Mythicbus_WowheadResults = {
     ImagePath = "Images/box_images/warlock_destruction_04.png",
     URL = "https://www.wowhead.com/guide/classes/warlock/destruction/talent-builds-pve-dps",
   },
-  [243] = {
+  [245] = {
     Class = "Warlock",
     Spec = "Destruction",
     Role = "dps",
@@ -2432,7 +2452,7 @@ Mythicbus_WowheadResults = {
     ImagePath = "Images/box_images/warlock_destruction_05.png",
     URL = "https://www.wowhead.com/guide/classes/warlock/destruction/talent-builds-pve-dps",
   },
-  [244] = {
+  [246] = {
     Class = "Warlock",
     Spec = "Destruction",
     Role = "dps",
@@ -2442,7 +2462,7 @@ Mythicbus_WowheadResults = {
     ImagePath = "Images/box_images/warlock_destruction_06.png",
     URL = "https://www.wowhead.com/guide/classes/warlock/destruction/talent-builds-pve-dps",
   },
-  [245] = {
+  [247] = {
     Class = "Warlock",
     Spec = "Destruction",
     Role = "dps",
@@ -2452,7 +2472,7 @@ Mythicbus_WowheadResults = {
     ImagePath = "Images/box_images/warlock_destruction_07.png",
     URL = "https://www.wowhead.com/guide/classes/warlock/destruction/talent-builds-pve-dps",
   },
-  [246] = {
+  [248] = {
     Class = "Warlock",
     Spec = "Destruction",
     Role = "dps",
@@ -2462,7 +2482,7 @@ Mythicbus_WowheadResults = {
     ImagePath = "Images/box_images/warlock_destruction_08.png",
     URL = "https://www.wowhead.com/guide/classes/warlock/destruction/talent-builds-pve-dps",
   },
-  [247] = {
+  [249] = {
     Class = "Warlock",
     Spec = "Destruction",
     Role = "dps",
@@ -2472,7 +2492,7 @@ Mythicbus_WowheadResults = {
     ImagePath = "Images/box_images/warlock_destruction_09.png",
     URL = "https://www.wowhead.com/guide/classes/warlock/destruction/talent-builds-pve-dps",
   },
-  [248] = {
+  [250] = {
     Class = "Warlock",
     Spec = "Destruction",
     Role = "dps",
@@ -2482,7 +2502,7 @@ Mythicbus_WowheadResults = {
     ImagePath = "Images/box_images/warlock_destruction_10.png",
     URL = "https://www.wowhead.com/guide/classes/warlock/destruction/talent-builds-pve-dps",
   },
-  [249] = {
+  [251] = {
     Class = "Warrior",
     Spec = "Arms",
     Role = "dps",
@@ -2492,7 +2512,7 @@ Mythicbus_WowheadResults = {
     ImagePath = "Images/box_images/warrior_arms_01.png",
     URL = "https://www.wowhead.com/guide/classes/warrior/arms/talent-builds-pve-dps",
   },
-  [250] = {
+  [252] = {
     Class = "Warrior",
     Spec = "Arms",
     Role = "dps",
@@ -2502,7 +2522,7 @@ Mythicbus_WowheadResults = {
     ImagePath = "Images/box_images/warrior_arms_02.png",
     URL = "https://www.wowhead.com/guide/classes/warrior/arms/talent-builds-pve-dps",
   },
-  [251] = {
+  [253] = {
     Class = "Warrior",
     Spec = "Arms",
     Role = "dps",
@@ -2512,7 +2532,7 @@ Mythicbus_WowheadResults = {
     ImagePath = "Images/box_images/warrior_arms_03.png",
     URL = "https://www.wowhead.com/guide/classes/warrior/arms/talent-builds-pve-dps",
   },
-  [252] = {
+  [254] = {
     Class = "Warrior",
     Spec = "Arms",
     Role = "dps",
@@ -2522,7 +2542,7 @@ Mythicbus_WowheadResults = {
     ImagePath = "Images/box_images/warrior_arms_04.png",
     URL = "https://www.wowhead.com/guide/classes/warrior/arms/talent-builds-pve-dps",
   },
-  [253] = {
+  [255] = {
     Class = "Warrior",
     Spec = "Arms",
     Role = "dps",
@@ -2532,7 +2552,7 @@ Mythicbus_WowheadResults = {
     ImagePath = "Images/box_images/warrior_arms_05.png",
     URL = "https://www.wowhead.com/guide/classes/warrior/arms/talent-builds-pve-dps",
   },
-  [254] = {
+  [256] = {
     Class = "Warrior",
     Spec = "Arms",
     Role = "dps",
@@ -2542,7 +2562,7 @@ Mythicbus_WowheadResults = {
     ImagePath = "Images/box_images/warrior_arms_06.png",
     URL = "https://www.wowhead.com/guide/classes/warrior/arms/talent-builds-pve-dps",
   },
-  [255] = {
+  [257] = {
     Class = "Warrior",
     Spec = "Arms",
     Role = "dps",
@@ -2552,7 +2572,7 @@ Mythicbus_WowheadResults = {
     ImagePath = "Images/box_images/warrior_arms_07.png",
     URL = "https://www.wowhead.com/guide/classes/warrior/arms/talent-builds-pve-dps",
   },
-  [256] = {
+  [258] = {
     Class = "Warrior",
     Spec = "Arms",
     Role = "dps",
@@ -2562,7 +2582,7 @@ Mythicbus_WowheadResults = {
     ImagePath = "Images/box_images/warrior_arms_08.png",
     URL = "https://www.wowhead.com/guide/classes/warrior/arms/talent-builds-pve-dps",
   },
-  [257] = {
+  [259] = {
     Class = "Warrior",
     Spec = "Fury",
     Role = "dps",
@@ -2572,7 +2592,7 @@ Mythicbus_WowheadResults = {
     ImagePath = "Images/box_images/warrior_fury_01.png",
     URL = "https://www.wowhead.com/guide/classes/warrior/fury/talent-builds-pve-dps",
   },
-  [258] = {
+  [260] = {
     Class = "Warrior",
     Spec = "Fury",
     Role = "dps",
@@ -2582,7 +2602,7 @@ Mythicbus_WowheadResults = {
     ImagePath = "Images/box_images/warrior_fury_02.png",
     URL = "https://www.wowhead.com/guide/classes/warrior/fury/talent-builds-pve-dps",
   },
-  [259] = {
+  [261] = {
     Class = "Warrior",
     Spec = "Fury",
     Role = "dps",
@@ -2592,7 +2612,7 @@ Mythicbus_WowheadResults = {
     ImagePath = "Images/box_images/warrior_fury_03.png",
     URL = "https://www.wowhead.com/guide/classes/warrior/fury/talent-builds-pve-dps",
   },
-  [260] = {
+  [262] = {
     Class = "Warrior",
     Spec = "Fury",
     Role = "dps",
@@ -2602,7 +2622,7 @@ Mythicbus_WowheadResults = {
     ImagePath = "Images/box_images/warrior_fury_04.png",
     URL = "https://www.wowhead.com/guide/classes/warrior/fury/talent-builds-pve-dps",
   },
-  [261] = {
+  [263] = {
     Class = "Warrior",
     Spec = "Fury",
     Role = "dps",
@@ -2612,7 +2632,7 @@ Mythicbus_WowheadResults = {
     ImagePath = "Images/box_images/warrior_fury_05.png",
     URL = "https://www.wowhead.com/guide/classes/warrior/fury/talent-builds-pve-dps",
   },
-  [262] = {
+  [264] = {
     Class = "Warrior",
     Spec = "Fury",
     Role = "dps",
@@ -2622,7 +2642,7 @@ Mythicbus_WowheadResults = {
     ImagePath = "Images/box_images/warrior_fury_06.png",
     URL = "https://www.wowhead.com/guide/classes/warrior/fury/talent-builds-pve-dps",
   },
-  [263] = {
+  [265] = {
     Class = "Warrior",
     Spec = "Fury",
     Role = "dps",
@@ -2632,7 +2652,7 @@ Mythicbus_WowheadResults = {
     ImagePath = "Images/box_images/warrior_fury_07.png",
     URL = "https://www.wowhead.com/guide/classes/warrior/fury/talent-builds-pve-dps",
   },
-  [264] = {
+  [266] = {
     Class = "Warrior",
     Spec = "Fury",
     Role = "dps",
@@ -2642,7 +2662,7 @@ Mythicbus_WowheadResults = {
     ImagePath = "Images/box_images/warrior_fury_08.png",
     URL = "https://www.wowhead.com/guide/classes/warrior/fury/talent-builds-pve-dps",
   },
-  [265] = {
+  [267] = {
     Class = "Warrior",
     Spec = "Protection",
     Role = "tank",
@@ -2652,7 +2672,7 @@ Mythicbus_WowheadResults = {
     ImagePath = "Images/box_images/warrior_protection_01.png",
     URL = "https://www.wowhead.com/guide/classes/warrior/protection/talent-builds-pve-tank",
   },
-  [266] = {
+  [268] = {
     Class = "Warrior",
     Spec = "Protection",
     Role = "tank",
@@ -2662,7 +2682,7 @@ Mythicbus_WowheadResults = {
     ImagePath = "Images/box_images/warrior_protection_02.png",
     URL = "https://www.wowhead.com/guide/classes/warrior/protection/talent-builds-pve-tank",
   },
-  [267] = {
+  [269] = {
     Class = "Warrior",
     Spec = "Protection",
     Role = "tank",
@@ -2672,7 +2692,7 @@ Mythicbus_WowheadResults = {
     ImagePath = "Images/box_images/warrior_protection_03.png",
     URL = "https://www.wowhead.com/guide/classes/warrior/protection/talent-builds-pve-tank",
   },
-  [268] = {
+  [270] = {
     Class = "Warrior",
     Spec = "Protection",
     Role = "tank",
@@ -2682,7 +2702,7 @@ Mythicbus_WowheadResults = {
     ImagePath = "Images/box_images/warrior_protection_04.png",
     URL = "https://www.wowhead.com/guide/classes/warrior/protection/talent-builds-pve-tank",
   },
-  [269] = {
+  [271] = {
     Class = "Warrior",
     Spec = "Protection",
     Role = "tank",
@@ -2692,7 +2712,7 @@ Mythicbus_WowheadResults = {
     ImagePath = "Images/box_images/warrior_protection_05.png",
     URL = "https://www.wowhead.com/guide/classes/warrior/protection/talent-builds-pve-tank",
   },
-  [270] = {
+  [272] = {
     Class = "Warrior",
     Spec = "Protection",
     Role = "tank",
