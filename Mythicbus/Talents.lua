@@ -158,7 +158,7 @@ Mythicbus_WowheadResults = {
     Role = "dps",
     RowIndex = "1",
     ButtonLabel = "Copy Raid",
-    TalentString = "CEkAAAAAAAAAAAAAAAAAAAAAAYmZGzMzmxMzMmZmMmZAAAAAAAzyDMmtZYmBzMWmZMDzMGzyALziZMMbaaMzMG2AAAAAAAAYmBDAAAAD",
+    TalentString = "",
     ImagePath = "Images/box_images/demon_hunter_havoc_01.png",
     URL = "https://www.wowhead.com/guide/classes/demon-hunter/havoc/talent-builds-pve-dps",
   },
